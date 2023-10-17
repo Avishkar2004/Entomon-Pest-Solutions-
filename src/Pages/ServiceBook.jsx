@@ -9,7 +9,6 @@ const ServiceBook = () => {
   const [number, setNumber] = useState("");
   const [selectedService, setSelectedService] = useState("");
   const [address, setAddress] = useState("");
-  const [successMessage, setSuccessMessage] = useState("");
   const form = useRef();
 
   const emailServiceID = "service_ge1uw36";
@@ -39,7 +38,7 @@ const ServiceBook = () => {
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
-        setSuccessMessage("Your email has been sent successfully.");
+        window.location.href = "/thankYou";
       })
       .catch((error) => {
         console.error("Error sending email:", error);
@@ -120,12 +119,6 @@ const ServiceBook = () => {
           >
             Book Service
           </button>
-
-          {successMessage && (
-            <div className="text-green-500 font-semibold mt-2">
-              {successMessage}
-            </div>
-          )}
         </form>
       </div>
 
