@@ -1,40 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
-import axios from "axios";
-import { useCookies } from "react-cookie";
-
-
-
-// Import Axios with a lowercase 'a'
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-
-
-function getCookie(name) {
-  let cookieValue = null;
-  if (document.cookie && document.cookie !== '') {
-      const cookies = document.cookie.split(';');
-      for (let i = 0; i < cookies.length; i++) {
-          const cookie = cookies[i].trim();
-          // Does this cookie string begin with the name we want?
-          if (cookie.substring(0, name.length + 1) === (name + '=')) {
-              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-              break;
-          }
-      }
-  }
-  return cookieValue;
-}
-const csrftoken = getCookie('csrftoken');
-
-
-const axiosInstance = axios.create({
-  headers: {
-      "X-CSRFToken": csrftoken // Include the CSRF token here
-  },
-});
-
+import emailjs from "@emailjs/browser";
 
 const ServiceBook = () => {
   const [name, setName] = useState("");
@@ -42,6 +10,42 @@ const ServiceBook = () => {
   const [selectedService, setSelectedService] = useState("");
   const [address, setAddress] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
+  const form = useRef();
+
+  const emailServiceID = "service_ge1uw36";
+  const emailTemplateID = "template_tr3visw";
+  const emailUserID = "zVub6WqkcLT-oKEer";
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const emailParams = {
+      user_name: name,
+      user_tal: number,
+      user_selectService: selectedService,
+      user_texr: address,
+    };
+    console.log(emailParams);
+    // Create the email message with user's name and phone number
+    const emailMessage = `You received a new message from ${name} (${number}) with the subject: ${selectedService} address: ${address} You have received a inquiry. Best wishes, Thank You.`;
+
+    // Send the email using EmailJS
+    emailjs
+      .send(
+        emailServiceID,
+        emailTemplateID,
+        emailParams,
+        emailUserID,
+        emailMessage
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        setSuccessMessage("Your email has been sent successfully.");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        setSuccessMessage("Error sending the email. Please try again later.");
+      });
+  };
 
   const services = [
     "Bed Bug",
@@ -54,57 +58,14 @@ const ServiceBook = () => {
     "Flea & Fly",
   ];
 
-  
-
-  const handleBookingSubmit = async (e) => {
-    e.preventDefault();
-
-    if (name && number && selectedService && address) {
-      const formData = {
-        name,
-        number,
-        selectedService,
-        address,
-      };
-
-      try {
-        // Send a POST request to your Django backend
-        const response = await axiosInstance.post(
-          "https://www.pestokiller.com/getbackend/",
-          formData
-
-          
-        );
-
-        console.log(axiosInstance,formData);
-
-        if (response.data.message === "Data inserted successfully") {
-          console.log("Form data submitted:", formData);
-          setSuccessMessage("Thank you! Your booking has been submitted.");
-          window.location.href = "/thankYou";
-        } else {
-          setSuccessMessage("Error submitting the booking.");
-        }
-
-        // Clear the form fields
-        setName("");
-        setNumber("");
-        setSelectedService("");
-        setAddress("");
-      } catch (error) {
-        console.error("Error submitting booking:", error);
-        setSuccessMessage("Error submitting the booking.");
-      }
-    }
-  };
-
   return (
     <div className="flex xsm:mt-[-10rem] xsm:ml-2 xsm:mr-2 xl:mt-[-30rem] md:mt-[-15rem] flex-col lg:mt-[-19rem] sm:mt-[-7rem]  ssm:ml-4 ssm:mr-4 ssm:mt-[-10rem] sm:flex-row items-center justify-center">
       <div className="p-4 gap-10 sm:p-9 rounded-md sm:rounded-md bg-gradient-to-br border border-black w-full sm:w-96 mb-4 sm:mb-0">
         <h1 className="text-2xl font-semibold p-2">Book a Service</h1>
-        <form onSubmit={handleBookingSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <label className="block mb-2 font-semibold">Name:</label>
           <input
+            name="user_name"
             required
             type="text"
             className="w-full p-2 border border-black rounded-md"
@@ -115,6 +76,7 @@ const ServiceBook = () => {
 
           <label className="block mt-1 mb-2 font-semibold">Phone Number:</label>
           <input
+            name="user_tal"
             required
             type="tel"
             className="w-full p-2 border border-black rounded-md"
@@ -127,6 +89,7 @@ const ServiceBook = () => {
             Select a Service:
           </label>
           <select
+            name="user_selectService"
             required
             className="w-full p-2 border border-black rounded-md"
             value={selectedService}
@@ -142,6 +105,7 @@ const ServiceBook = () => {
 
           <label className="block mt-1 mb-2 font-semibold">Address</label>
           <input
+            name="user_texr"
             required
             type="text"
             className="w-full p-2 border border-black rounded-md"
@@ -216,16 +180,15 @@ const ServiceBook = () => {
               </button>
 
               <button
-  onClick={() => {
-    const phoneNumber = "918010281236"; // Phone number without the plus sign and country code
-    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
-    window.open(url, "_blank");
-  }}
-  className="bg-green-500 ml-[-12px] text-white px-4 py-2 mr-8 rounded-md"
->
-  Whatsapp
-</button>
-
+                onClick={() => {
+                  const phoneNumber = "918010281236"; // Phone number without the plus sign and country code
+                  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+                  window.open(url, "_blank");
+                }}
+                className="bg-green-500 ml-[-12px] text-white px-4 py-2 mr-8 rounded-md"
+              >
+                Whatsapp
+              </button>
             </div>
           </div>
         </div>

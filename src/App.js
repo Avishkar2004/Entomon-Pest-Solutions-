@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios, { Axios } from "axios";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Pages/Header";
 import Footer from "./Pages/Footer";
@@ -36,21 +35,8 @@ function App() {
       delay: 400,
     });
   }, []);
-  const [data, setData] = useState();
 
-  const fetchData = async () => {
-    try {
-      const response = await Axios.get("https://www.pestokiller.com/");
-      setData(response.data);
-    } catch (error) {
-      console.error("Error fetching data from backend:", error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
+  
   return (
     <Router>
       <Header />

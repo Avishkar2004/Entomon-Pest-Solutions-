@@ -1,9 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PhoneCall from "../assets/Global/telephone.png";
-import axios from "axios";
-
-axios.defaults.withCredentials = true;
-
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
@@ -24,24 +21,50 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const emailServiceID = "service_upbnec7";
+  const emailTemplateID = "template_tr3visw";
+  const emailUserID = "zVub6WqkcLT-oKEer";
+
+  const sendEmail = (e) => {
     e.preventDefault();
+    const emailParams = {
+      user_name: formData.name,
+      user_email: formData.email,
+      user_tal: formData.telephone,
+      user_selectService: formData.pests,
+      user_texr: formData.postcode,
+      user_establishmentType: formData.establishmentType,
+    };
 
-    try {
-      const response = await axios.post(
-        "https://www.pestokiller.com/contactsave/",
-        formData
-      );
+    // Create the email message with user's information
+    const emailMessage = `You have received a new service booking from ${formData.name} (${formData.email}) (${formData.telephone}). Service type ${formData.telephone} user postcode: ${formData.postcode} user establishmentType: ${formData.establishmentType} The details are as follows:
+  
+  Name: ${formData.name}
+  Email: ${formData.email}
+  Phone Number: ${formData.telephone}
+  Address: ${formData.postcode}
+  Selected Service: ${formData.pests}
+  Establishment Type: ${formData.establishmentType}
+  
+  Thank You.`;
 
-      if (response.data.message === "Data inserted successfully") {
-        window.location.href = '/thankYou'
-      } else {
-        setSuccessMessage("Error submitting the message.");
-      }
-    } catch (error) {
-      console.error("Error submitting message:", error);
-      setSuccessMessage("Error submitting the message.");
-    }
+    // Send the email using EmailJS
+    emailjs
+      .send(
+        emailServiceID,
+        emailTemplateID,
+        emailParams,
+        emailUserID,
+        emailMessage
+      )
+      .then((response) => {
+        console.log("Email sent successfully!", response);
+        setSuccessMessage("Your email has been sent successfully.");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        setSuccessMessage("Error sending the email. Please try again later.");
+      });
   };
 
   return (
@@ -71,7 +94,7 @@ const Contact = () => {
       </div>
 
       <div className="max-w-lg p-6 mt-4 rounded-md items-center xsm:ml-1 xsm:mr-[-6rem] ssm:ml-10 ssm:mr-[-6rem] sm:ml-[7rem] sm:mr-[-25rem] md:ml-[10rem] md:mr-[-22rem] xl:mr-[-100rem] xl:ml-[30rem] lg:ml-[15rem]">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={sendEmail}>
           <div className="mb-4">
             <div className="flex items-center mb-2">
               <label className="block text-black font-medium">
@@ -109,7 +132,6 @@ const Contact = () => {
               onChange={handleChange}
               className="w-full px-4 py-4 font-semibold border rounded-md focus:outline-none focus:border-blue-500"
               placeholder="Your Email"
-              required
             />
           </div>
           <div className="mb-4">
@@ -121,7 +143,6 @@ const Contact = () => {
               onChange={handleChange}
               className="w-full px-4 py-4 font-semibold border rounded-md focus:outline-none focus:border-blue-500"
               placeholder="Your Phone Number"
-              required
             />
           </div>
           <div className="mb-4">
@@ -133,7 +154,6 @@ const Contact = () => {
               onChange={handleChange}
               className="w-full px-4 py-4 font-semibold border rounded-md focus:outline-none focus:border-blue-500"
               placeholder="Enter Your Address"
-              required
             />
           </div>
           <div className="mb-4">
@@ -143,7 +163,6 @@ const Contact = () => {
               value={formData.pests}
               onChange={handleChange}
               className="w-full px-4 py-4 font-semibold border rounded-md focus:outline-none focus:border-blue-500"
-              required
             >
               <option disabled>Select any one...</option>
               <option value="Ant & Crawling Insects">
