@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import PhoneCall from "../assets/Global/telephone.png";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const [successMessage, setSuccessMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,9 +20,9 @@ const Contact = () => {
     });
   };
 
-  const emailServiceID = "service_upbnec7";
-  const emailTemplateID = "template_tr3visw";
-  const emailUserID = "zVub6WqkcLT-oKEer";
+  const emailServiceID = "service_ycteqon";
+  const emailTemplateID = "template_hvcfvys";
+  const emailUserID = "8j3Jz543CBJTdv4vp";
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -59,11 +58,10 @@ const Contact = () => {
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
-        setSuccessMessage("Your email has been sent successfully.");
+        window.location.href = "/thankYou";
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-        setSuccessMessage("Error sending the email. Please try again later.");
       });
   };
 
@@ -215,11 +213,6 @@ const Contact = () => {
             Send Message
           </button>
         </form>
-        {successMessage && (
-          <div className="text-green-500 font-semibold mt-2">
-            {successMessage}
-          </div>
-        )}
       </div>
     </div>
   );
