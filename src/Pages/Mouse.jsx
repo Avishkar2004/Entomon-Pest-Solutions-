@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import BedBugs1 from "../assets/BedBug/BedBug1.webp";
-import BedBugs2 from "../assets/BedBug/BedBug2.webp";
-import BedBugSafe from "../assets/BedBug/BedBug3.webp";
-import BedBugControl from "../assets/BedBug/BedBug4.webp";
-import BedBugControl2 from "../assets/BedBug/BedBug5.webp";
+import Mouses1 from "../assets/Mouse/mouse1.webp";
+import Mouses2 from "../assets/Mouse/mouse2.webp";
+import MouseSafe from "../assets/Mouse/mouse3.webp";
+import MouseControl from "../assets/Mouse/mouse4.webp";
+import MouseControl2 from "../assets/Mouse/mouse5.webp";
 
-const BedBug = () => {
+const Mouse = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(999);
+  const [price, setPrice] = useState(699);
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -16,16 +16,15 @@ const BedBug = () => {
 
     // Update price based on the selected option
     if (selectedValue === "1 BHK") {
-      setPrice(999);
+      setPrice(699);
     } else if (selectedValue === "2 BHK") {
-      setPrice(1800);
+      setPrice(799);
     } else if (selectedValue === "3 BHK") {
-      setPrice(2200);
+      setPrice(999);
     } else if (selectedValue === "Other") {
       setPrice(0);
     }
   };
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -46,19 +45,19 @@ const BedBug = () => {
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
-            src={BedBugs1}
+            src={Mouses1}
             alt=""
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
-            src={BedBugs2}
+            src={Mouses2}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
-            src={BedBugSafe}
+            src={MouseSafe}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
@@ -82,7 +81,7 @@ const BedBug = () => {
               />
             </svg>
             <span>
-              4.51 <span className="text-slate-400 font-normal">(356)</span>
+              4.23 <span className="text-slate-400 font-normal">(78)</span>
             </span>
           </dd>
           <dt className="sr-only">Location</dt>
@@ -115,7 +114,7 @@ const BedBug = () => {
         </dl>
         <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
           <Link
-            to="/"
+            to="/contact"
             type="button"
             className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
           >
@@ -123,10 +122,10 @@ const BedBug = () => {
           </Link>
         </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
-          We specialize in effectively treating and eliminating BedBugs from
-          your home or business, using proven methods. Our goal is to ensure
-          complete eradication and provide a long-term solution to protect your
-          property from further BedBug infestations.
+          We specialize in effectively treating and eliminating Mouses from your
+          home or business, using proven methods. Our goal is to ensure complete
+          eradication and provide a long-term solution to protect your property
+          from further Mouse infestations.
         </p>
       </div>
       <div className="text-center mt-10">
@@ -138,7 +137,7 @@ const BedBug = () => {
           {/* Image */}
           <div className="lg:w-1/2 relative">
             <img
-              src={BedBugs2}
+              src={Mouses2}
               alt="Luxury Apartment"
               className="w-full h-auto lg:h-full object-cover"
             />
@@ -146,8 +145,8 @@ const BedBug = () => {
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
               Luxury Apartments
             </h2>
             <select
@@ -166,7 +165,7 @@ const BedBug = () => {
             <p className="text-gray-700 mb-6">
               Discover the ultimate in luxury living with our spacious
               apartments. Additional charges may apply. Contact us for details.
-            </p>
+            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}
@@ -180,33 +179,101 @@ const BedBug = () => {
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            BedBug CONTROL & TREATMENT
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
+            Mouse Control and Treatment
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            We specialize in effectively treating and eliminating BedBug from
-            your home or business, using proven methods. Our goal is to ensure
-            complete eradication and provide a long-term solution to protect
-            your property from further BedBug infestations.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with termites, a comprehensive inspection is necessary to
-            accurately assess the extent of the BedBug Issue and determine the
-            most appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – Identification :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Confirm the presence of mice by looking for droppings, gnaw marks,
+              or other signs.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Sanitation :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Keep the living space clean, secure food in airtight containers,
+              and eliminate potential nesting sites.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Sealing Entry Points :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Close off access points by sealing gaps, cracks, and holes in
+              walls using materials like steel wool or caulk.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – Traps :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Set snap traps baited with peanut butter or other high-protein
+              foods in areas with mouse activity.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Rodenticides (Caution Required) :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              If using rodenticides, follow instructions carefully to avoid harm
+              to pets or unintended targets. It's generally recommended to use
+              these with caution and consider other methods first.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 - Monitoring and Prevention :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Regularly check traps, reposition them based on mouse activity,
+              and take steps to prevent future infestations by maintaining a
+              clean environment.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-48">
+        <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-36">
           <div class="max-w-2xl">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={BedBugs1}
+                src={MouseControl}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -215,7 +282,7 @@ const BedBug = () => {
           <div class="max-w-2xl mt-4 sm:mt-0 px-4 sm:px-8 w-auto">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={BedBugControl2}
+                src={MouseControl2}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -232,22 +299,22 @@ const BedBug = () => {
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold">Sightings and fecal droppings:</span>
-            BedBuges are nocturnal creatures and tend to hide during the day. If
-            you notice live BedBuges scurrying around at night or find small
-            dark droppings resembling coffee grounds, it could indicate an
+            Mousees are nocturnal creatures and tend to hide during the day. If
+            you notice live Mousees scurrying around at night or find small dark
+            droppings resembling coffee grounds, it could indicate an
             infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">UnpleasBedBug odor:</span>
-            BedBuges emit a distinctive musty odor that can become noticeable in
-            areas with a large population. If you detect an unpleasBedBug smell,
+            <span class="font-semibold">Unpleasant odor:</span>
+            Mousees emit a distinctive musty odor that can become noticeable in
+            areas with a large population. If you detect an unpleasant smell,
             particularly in kitchen or bathroom areas, it could be a sign of a
-            BedBug infestation.
+            Mouse infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with a BedBug infestation requires professional expertise. A
+            Dealing with a Mouse infestation requires professional expertise. A
             licensed pest control company can assess the severity of the
-            infestation and implement appropriate BedBug control measures. This
+            infestation and implement appropriate Mouse control measures. This
             may include insecticide treatments, baits, and sealing entry points
             to prevent further infestations.
           </p>
@@ -256,7 +323,7 @@ const BedBug = () => {
         <div className="mt-10 flex flex-col items-start text-start container font-bold">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              BedBuges are active mostly during nighttime or in dark, concealed
+              Mousees are active mostly during nighttime or in dark, concealed
               areas.
             </li>
             <li>
@@ -269,12 +336,12 @@ const BedBug = () => {
               floors, and furniture.
             </li>
             <li>
-              BedBugs can travel and infest new areas by navigating through gaps
+              Mousees can travel and infest new areas by navigating through gaps
               and openings, and they are also known to be carried in infested
               items such as bags, boxes, and furniture.
             </li>
             <li className="text-red-500">
-              Remember, if you suspect a BedBug infestation in your property, it
+              Remember, if you suspect a Mouse infestation in your property, it
               is essential to contact a professional pest control service to
               assess the situation and provide effective treatment options.
             </li>
@@ -285,4 +352,4 @@ const BedBug = () => {
   );
 };
 
-export default BedBug;
+export default Mouse;

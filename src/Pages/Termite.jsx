@@ -28,6 +28,13 @@ const Termite = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
+      top: 500,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToTopBook = () => {
+    window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
@@ -41,7 +48,7 @@ const Termite = () => {
             House
           </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-           Experties In Termite Treatement 
+            Experties In Termite Treatement
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -113,7 +120,7 @@ const Termite = () => {
             India, Pune
           </dd>
         </dl>
-       
+
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
           We specialize in effectively treating and eliminating termites from
           your home or business, using proven methods. Our goal is to ensure
@@ -122,15 +129,17 @@ const Termite = () => {
         </p>
       </div>
       <div className="text-center mt-10">
-      <h1
-  className="text-3xl font-semibold mb-5 text-center"
-  style={{ color: 'green', fontSize: '16', fontFamily: 'Times New Roman Georgia Garamond' }}
->
-Approximate Price
-</h1>
+        <h1
+          className="text-3xl font-semibold mb-5 text-center"
+          style={{
+            color: "green",
+            fontSize: "16",
+            fontFamily: "Times New Roman Georgia Garamond",
+          }}
+        >
+          Approximate Price
+        </h1>
       </div>
-
-   
 
       {/* from here i made responsive */}
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
@@ -146,25 +155,25 @@ Approximate Price
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <select
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <select
               value={selectOption}
               onChange={handleOptionChange}
-              className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
+              className="w-full py-3 px-4 border rounded-lg mb-12 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
             >
               <option>1 BHK</option>
               <option>2 BHK</option>
               <option>3 BHK</option>
               <option>Other</option>
-            </select>
+            </select> */}
 
-            <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
+            {/* <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
               Price: ₹{price}
-            </div>
+            </div> */}
             <Link
               to="/contact"
-              onClick={scrollToTop}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-3 px-8 rounded-xl focus:outline-none focus:ring focus:ring-indigo-300 transition duration-300"
+              onClick={scrollToTopBook}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-3 px-10 rounded-xl focus:outline-none focus:ring focus:ring-indigo-300 transition duration-300"
             >
               Book Now
             </Link>
@@ -174,52 +183,101 @@ Approximate Price
 
       <div className="py-10 mt-5 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4" style={{ color: 'green', fontSize: '16', fontFamily: 'Times New Roman Georgia Garamond' }}>
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
             Termite Control & Treatement.
           </h1>
 
           <div className="space-y-6">
-  <h2 className="text-lg font-semibold text-gray-800 mb-2">Step 1 – The inspection
-</h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-  The first step is finding termite mud tubes.
-   As a homeowner, 
-   it's a good idea to walk around your house regularly. 
-   Termites make these tubes from dirt and poop to travel from the ground, 
-   where they live, to your home's wooden parts they eat.
-  </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – The inspection :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              The first step is finding termite mud tubes. As a homeowner, it's
+              a good idea to walk around your house regularly. Termites make
+              these tubes from dirt and poop to travel from the ground, where
+              they live, to your home's wooden parts they eat.
+            </p>
 
-  <h2 className="text-lg font-semibold text-gray-800 mb-2">Step 2 – Scraping and removing the tubes</h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-  Being thorough is key! Make sure to completely scrape and remove all the tubes. This helps prevent any chance of re-infestation.
-  </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Scraping and removing the tubes :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Being thorough is key! Make sure to completely scrape and remove
+              all the tubes. This helps prevent any chance of re-infestation.
+            </p>
 
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Digging a trench :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Digging a trench along the foundation footing is necessary to
+              treat the colony underground and set up a barrier to prevent
+              future infiltration.
+            </p>
 
-  <h2 className="text-lg font-semibold text-gray-800 mb-2">Step 3 – Digging a trench</h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-  Digging a trench along the foundation footing is necessary to treat the colony underground and set up a barrier to prevent future infiltration.  </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – 1st Treatment :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              The first treatment is applied in the trench using top quality EPA
+              regulated termiticide materials.
+            </p>
 
-  <h2 className="text-lg font-semibold text-gray-800 mb-2">Step 4 – 1st Treatment</h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-  The first treatment is applied in the trench using top quality EPA regulated termiticide materials.
-  </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Backfilling :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Proper backfilling of the trench to ensure proper containment of
+              the termiticide as well as protection from odors and exposure.
+            </p>
 
-  <h2 className="text-lg font-semibold text-gray-800 mb-2">Step 5 – Backfilling</h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-  Proper backfilling of the trench to ensure proper containment of the termiticide as well as protection from odors and exposure.  </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 – Treating the rim joist :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              The final step is treating the rim joist with a borate. Borate has
+              a very low toxicity level and is highly effective in the
+              preservation of your home’s important wooden substructure. This is
+              an additional step to ensure the protection of your home.
+            </p>
 
-
-  <h2 className="text-lg font-semibold text-gray-800 mb-2">Step 6 – Treating the rim joist</h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-  The final step is treating the rim joist with a borate. Borate has a very low toxicity level and is highly effective in the preservation of your home’s important wooden substructure. This is an additional step to ensure the protection of your home.</p>
-
-  <h2 className="text-lg font-semibold text-gray-800 mb-2"></h2>
-  <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2" style={{fontFamily:"sans-serif"}}>
-    For further details or to schedule an inspection, please contact us
-    today. We are here to help.
-  </p>
-</div>
-
+            <h2 className="text-lg font-semibold text-gray-800 mb-2"></h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help.
+              <a href="/" className="text-blue-300 underline">
+                call us
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -253,24 +311,27 @@ Approximate Price
 
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold" style={{fontFamily:"sans-serif"}}>Termites are wood-eating insects that are often confused with ants. They are more closely related to cockroaches. Termites are also called wood bugs because they have destroyed structures and households</span>
+            <span class="font-semibold" style={{ fontFamily: "sans-serif" }}>
+              Termites are wood-eating insects that are often confused with
+              ants. They are more closely related to cockroaches. Termites are
+              also called wood bugs because they have destroyed structures and
+              households
+            </span>
           </p>
-          <p class="mb-4 sm:text-base" style={{fontFamily:"sans-serif"}}>
-            <span class="font-semibold">Here are some facts about termites:</span>
+          <p class="mb-4 sm:text-base" style={{ fontFamily: "sans-serif" }}>
+            <span class="font-semibold">
+              Here are some facts about termites:
+            </span>
             <br></br>
-            
-They survive mostly in warm and humid temperatures.
-They can break down wood into smaller substances, making it easier for them to chew and digest.
-They can get into your home through a crack no bigger than the width of a penny.
-They eat 24 hours a day.
-They can coexist with other colonies, but if one goes into the other's premises, it will be immediately killed and removed.
-The only kind of termite that has wings is the reproductive swarmer.
-
+            They survive mostly in warm and humid temperatures. They can break
+            down wood into smaller substances, making it easier for them to chew
+            and digest. They can get into your home through a crack no bigger
+            than the width of a penny. They eat 24 hours a day. They can coexist
+            with other colonies, but if one goes into the other's premises, it
+            will be immediately killed and removed. The only kind of termite
+            that has wings is the reproductive swarmer.
           </p>
-          
         </div>
-
-        
       </div>
     </main>
   );

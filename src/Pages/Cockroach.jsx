@@ -33,6 +33,13 @@ const Cockroach = () => {
     });
   };
 
+  const scrollToTopBook = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
@@ -131,7 +138,16 @@ const Cockroach = () => {
       </div>
 
       <div className="text-center mt-10">
-        <h1 className="text-[30px] font-bold">PRICE CALCULATOR</h1>
+        <h1
+          className="text-3xl font-semibold mb-5 text-center"
+          style={{
+            color: "green",
+            fontSize: "16",
+            fontFamily: "Times New Roman Georgia Garamond",
+          }}
+        >
+          Approximate Price
+        </h1>
       </div>
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
         <div className="lg:flex items-center">
@@ -146,11 +162,8 @@ const Cockroach = () => {
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
-              Home
-            </h2>
-            <select
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <select
               value={selectOption}
               onChange={handleOptionChange}
               className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
@@ -159,17 +172,14 @@ const Cockroach = () => {
               <option>2 BHK</option>
               <option>3 BHK</option>
               <option>Other</option>
-            </select>
-            <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
+            </select> */}
+            {/* <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
               Price: ₹{price}
-            </div>
-            <p className="text-gray-700 mb-6">
-              Discover the ultimate in luxury living with our spacious
-              apartments. Additional charges may apply. Contact us for details.
-            </p>
+            </div> */}
+
             <Link
               to="/contact"
-              onClick={scrollToTop}
+              onClick={scrollToTopBook}
               className="bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-3 px-8 rounded-xl focus:outline-none focus:ring focus:ring-indigo-300 transition duration-300"
             >
               Book Now
@@ -180,24 +190,142 @@ const Cockroach = () => {
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            COCKROACH CONTROL & TREATMENT
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
+            Cockroach Control and Treatment
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            We specialize in effectively treating and eliminating COCKROACH from
-            your home or business, using proven methods. Our goal is to ensure
-            complete eradication and provide a long-term solution to protect
-            your property from further COCKROACH infestations.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with cockroachs, a comprehensive inspection is necessary
-            to accurately assess the extent of the COCKROACH Issue and determine
-            the most appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – Identify the Problem :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Confirm that you are dealing with a cockroach infestation.
+              Different species may require different treatment methods.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Sanitation :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Maintain a clean and sanitary environment. Cockroaches are
+              attracted to food crumbs, spills, and garbage. Clean up spills
+              promptly, store food in airtight containers, and regularly dispose
+              of garbage.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Eliminate Hiding Places :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Reduce clutter and eliminate hiding spots for cockroaches. Seal
+              cracks and crevices in walls, floors, and around pipes.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – Use Cockroach Baits :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Place cockroach baits in areas where cockroaches are likely to
+              travel. Baits contain a slow-acting poison that cockroaches carry
+              back to their nests, affecting the entire population.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Cockroach Gel Bait :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Apply gel bait in cracks, crevices, and other hiding spots. This
+              attracts cockroaches and acts as a potent poison.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 – Insect Growth Regulators (IGRs) :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              IGRs disrupt the cockroach life cycle by preventing nymphs from
+              reaching maturity. This can help control the population over time.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 7 – Diatomaceous Earth :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Diatomaceous earth is a natural substance that can be sprinkled in
+              areas where cockroaches are active. It damages the exoskeleton of
+              insects, leading to dehydration and death.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 8 – Seal Entry Points :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Identify and seal any entry points, such as cracks in walls, gaps
+              around windows and doors, and openings around pipes. This helps
+              prevent new cockroaches from entering your home.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 9 – Professional Pest Control Services :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              If the infestation persists or is severe, consider hiring a
+              professional pest control service. They have access to stronger
+              pesticides and can implement more advanced methods to eliminate
+              cockroaches.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 10 – : Regular Monitoring :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Continue monitoring for signs of cockroach activity even after
+              treatment. If needed, repeat the application of baits or other
+              control methods.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+            </p>
+          </div>
         </div>
       </div>
 

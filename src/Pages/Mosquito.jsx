@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Generals1 from "../assets/General/General1.jpg";
-import Generals2 from "../assets/General/General2.jpg";
-import GeneralSafe from "../assets/General/General3.jpg";
-import GeneralControl from "../assets/General/General4.jpg";
-import GeneralControl2 from "../assets/General/General5.jpg";
+import Mosquitos1 from "../assets/Mosquito/mosquito1.webp";
+import Mosquitos2 from "../assets/Mosquito/mosquito2.webp";
+import MosquitoSafe from "../assets/Mosquito/mm.avif";
+import MosquitoControl from "../assets/Mosquito/msd.jpg";
+import MosquitoControl2 from "../assets/Mosquito/gpp.jpeg";
 
-const General = () => {
+const Mosquito = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(1299);
+  const [price, setPrice] = useState(599);
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -18,13 +18,14 @@ const General = () => {
     if (selectedValue === "1 BHK") {
       setPrice(599);
     } else if (selectedValue === "2 BHK") {
-      setPrice(1999);
+      setPrice(999);
     } else if (selectedValue === "3 BHK") {
-      setPrice(2399);
+      setPrice(1299);
     } else if (selectedValue === "Other") {
       setPrice(0);
     }
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -37,7 +38,7 @@ const General = () => {
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
-            House
+            Beach House in Collingwood
           </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
             Entire house/Colony
@@ -45,19 +46,19 @@ const General = () => {
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
-            src={Generals1}
+            src={Mosquitos1}
             alt=""
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
-            src={Generals2}
+            src={Mosquitos2}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
-            src={GeneralSafe}
+            src={MosquitoSafe}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
@@ -81,7 +82,7 @@ const General = () => {
               />
             </svg>
             <span>
-              4 <span className="text-slate-400 font-normal">(498)</span>
+              4.50 <span className="text-slate-400 font-normal">(159)</span>
             </span>
           </dd>
           <dt className="sr-only">Location</dt>
@@ -122,10 +123,10 @@ const General = () => {
           </Link>
         </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
-          We specialize in effectively treating and eliminating Generals from
+          We specialize in effectively treating and eliminating Mosquitos from
           your home or business, using proven methods. Our goal is to ensure
           complete eradication and provide a long-term solution to protect your
-          property from further General infestations.
+          property from further Mosquito infestations.
         </p>
       </div>
       <div className="text-center mt-10">
@@ -137,7 +138,7 @@ const General = () => {
           {/* Image */}
           <div className="lg:w-1/2 relative">
             <img
-              src={GeneralSafe}
+              src={MosquitoSafe}
               alt="Luxury Apartment"
               className="w-full h-auto lg:h-full object-cover"
             />
@@ -145,11 +146,9 @@ const General = () => {
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
-              Luxury Apartments
-            </h2>
-            <select
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+           
+            {/* <select
               value={selectOption}
               onChange={handleOptionChange}
               className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
@@ -165,7 +164,7 @@ const General = () => {
             <p className="text-gray-700 mb-6">
               Discover the ultimate in luxury living with our spacious
               apartments. Additional charges may apply. Contact us for details.
-            </p>
+            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}
@@ -178,25 +177,86 @@ const General = () => {
       </div>
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            General CONTROL & TREATMENT
+      <div className="max-w-5xl mx-auto text-center">
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
+            Mosquito Control and Treatment
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            We specialize in effectively treating and eliminating General from
-            your home or business, using proven methods. Our goal is to ensure
-            complete eradication and provide a long-term solution to protect
-            your property from further General infestations.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with termites, a comprehensive inspection is necessary to
-            accurately assess the extent of the General Issue and determine the
-            most appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – Remove Standing Wate :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Eliminate stagnant water sources around your home where mosquitoes breed, such as in flower pots, bird baths, or clogged gutters.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Use Mosquito Repellen :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Apply mosquito repellent containing DEET, picaridin, or oil of lemon eucalyptus to exposed skin and clothing.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Install Screens :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Fit window and door screens to prevent mosquitoes from entering your living spaces.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – Mosquito Nets :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+             Use bed nets treated with insecticide, especially while sleeping in areas with a high mosquito presence.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Mosquito Traps or Zappers :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Place mosquito traps or electric bug zappers in areas where mosquitoes are active to capture and kill them.
+            </p>
+
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 –Indoor and Outdoor Insecticides :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+             Apply insecticides, such as mosquito sprays or foggers, following safety guidelines and considering environmental impact. Focus on areas with high mosquito activity both indoors and outdoors.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -205,7 +265,7 @@ const General = () => {
           <div class="max-w-2xl">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={GeneralControl}
+                src={MosquitoControl}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -214,7 +274,7 @@ const General = () => {
           <div class="max-w-2xl mt-4 sm:mt-0 px-4 sm:px-8 w-auto">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={GeneralControl2}
+                src={MosquitoControl2}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -223,59 +283,76 @@ const General = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl pt-10 mx-auto text-center">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+      <div class="max-w-4xl mt-10 mx-auto text-center">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
           Silent Destroyers
         </h1>
 
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold"> Sightings and fecal droppings:</span>
-            Generales are nocturnal creatures and tend to hide during the day.
-            If you notice live Generales scurrying around at night or find small
-            dark droppings resembling coffee grounds, it could indicate an
-            infestation.
+            <span class="font-semibold">
+              Termites are highly destructive pests
+            </span>
+            that can cause extensive damage to structures and properties. These
+            silent invaders feed on cellulose-rich materials such as wood,
+            putting your home or business at risk. Understanding the behavior
+            and signs of termite infestations is crucial for early detection and
+            effective pest control.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">UnpleasGeneral odor:</span>
-            Generales emit a distinctive musty odor that can become noticeable
-            in areas with a large population. If you detect an unpleasGeneral
-            smell, particularly in kitchen or bathroom areas, it could be a sign
-            of a General infestation.
+            <span class="font-semibold">Hollow-sounding or damaged wood:</span>
+            Termites feed on wood from the inside out, leaving a thin outer
+            layer intact. Tap on suspected areas to check for a hollow sound or
+            look for damaged wood with maze-like patterns.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with a General infestation requires professional expertise.
-            A licensed pest control company can assess the severity of the
-            infestation and implement appropriate General control measures. This
-            may include insecticide treatments, baits, and sealing entry points
-            to prevent further infestations.
+            Dealing with termite infestations requires professional expertise. A
+            licensed pest control company can assess the extent of the
+            infestation and implement appropriate termite control measures. This
+            may include liquid termiticides, termite baits, or fumigation,
+            depending on the specific situation.
+          </p>
+          <p class="sm:text-base">
+            <span class="font-semibold">Termites are destructive pests</span>
+            that can cause significant damage to your property. Understanding
+            the signs of infestation, taking preventive measures, and seeking
+            professional termite control services are essential steps in
+            safeguarding your home or business. Don't hesitate to contact our
+            expert team for a thorough termite inspection and effective pest
+            management solutions.
           </p>
         </div>
 
-        <div className="mt-10 flex flex-col items-start text-start container font-bold">
-          <ul className="list-disc pl-6 space-y-2">
+        <div class="mt-10 flex flex-col items-start text-start container font-bold">
+          <ul class="list-disc pl-6 space-y-2">
             <li>
-              Generales are active mostly during nighttime or in dark, concealed
-              areas.
+              Termites are primarily active during the night or in dimly lit,
+              concealed areas.
             </li>
             <li>
-              They prefer to avoid exposure to light and maintain a hidden
+              They have a strong aversion to light and tend to maintain a hidden
               presence within the colonies they infest.
             </li>
             <li>
-              These resilient insects can establish their hiding spots in
-              various locations, including cracks, crevices, and voids in walls,
-              floors, and furniture.
+              Termites, particularly subterranean ones, establish their nests
+              within the soil.
             </li>
             <li>
-              Generals can travel and infest new areas by navigating through
-              gaps and openings, and they are also known to be carried in
-              infested items such as bags, boxes, and furniture.
+              Intricate tunnel systems are constructed by termites to access
+              their food sources, typically cellulose-based materials such as
+              wood, starting from the ground up.
             </li>
-            <li className="text-red-500">
-              Remember, if you suspect a General infestation in your property,
-              it is essential to contact a professional pest control service to
-              assess the situation and provide effective treatment options.
+            <li>
+              Travel and Infestation: Termites have the ability to infest new
+              areas through soil traversal, utilizing mud tubes, or by being
+              transported within infested wood, furniture, or other
+              cellulose-based materials.
+            </li>
+            <li class="text-red-500">
+              Remember, if you suspect a termite infestation on your property,
+              it is imperative to seek assistance from a professional pest
+              control service to evaluate the situation and provide effective
+              treatment options.
             </li>
           </ul>
         </div>
@@ -284,4 +361,4 @@ const General = () => {
   );
 };
 
-export default General;
+export default Mosquito;

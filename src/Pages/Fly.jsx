@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Mouses1 from "../assets/Mouse/mouse1.webp";
-import Mouses2 from "../assets/Mouse/mouse2.webp";
-import MouseSafe from "../assets/Mouse/mouse3.webp";
-import MouseControl from "../assets/Mouse/mouse4.webp";
-import MouseControl2 from "../assets/Mouse/mouse5.webp";
+import Flys1 from "../assets/Fly/Fly1.webp";
+import Flys2 from "../assets/Fly/Fly2.avif";
+import FlySafe from "../assets/Fly/Fly3.avif";
+import FlyControl from "../assets/Fly/Fly4.webp";
+import FlyControl2 from "../assets/Fly/Fly5.webp";
 
-const Mouse = () => {
+const Fly = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(699);
+  const [price, setPrice] = useState(799);
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -16,15 +16,16 @@ const Mouse = () => {
 
     // Update price based on the selected option
     if (selectedValue === "1 BHK") {
-      setPrice(699);
-    } else if (selectedValue === "2 BHK") {
       setPrice(799);
-    } else if (selectedValue === "3 BHK") {
+    } else if (selectedValue === "2 BHK") {
       setPrice(999);
+    } else if (selectedValue === "3 BHK") {
+      setPrice(1299);
     } else if (selectedValue === "Other") {
       setPrice(0);
     }
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -40,24 +41,24 @@ const Mouse = () => {
             House
           </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house
+            Entire house/Colony
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
-            src={Mouses1}
+            src={Flys1}
             alt=""
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
-            src={Mouses2}
+            src={Flys2}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
-            src={MouseSafe}
+            src={FlySafe}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
@@ -81,7 +82,7 @@ const Mouse = () => {
               />
             </svg>
             <span>
-              4.23 <span className="text-slate-400 font-normal">(78)</span>
+              4.35 <span className="text-slate-400 font-normal">(51)</span>
             </span>
           </dd>
           <dt className="sr-only">Location</dt>
@@ -114,7 +115,7 @@ const Mouse = () => {
         </dl>
         <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
           <Link
-            to="/contact"
+            to="/"
             type="button"
             className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
           >
@@ -122,10 +123,10 @@ const Mouse = () => {
           </Link>
         </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
-          We specialize in effectively treating and eliminating Mouses from your
+          We specialize in effectively treating and eliminating Flys from your
           home or business, using proven methods. Our goal is to ensure complete
           eradication and provide a long-term solution to protect your property
-          from further Mouse infestations.
+          from further Fly infestations.
         </p>
       </div>
       <div className="text-center mt-10">
@@ -137,7 +138,7 @@ const Mouse = () => {
           {/* Image */}
           <div className="lg:w-1/2 relative">
             <img
-              src={Mouses2}
+              src={FlySafe}
               alt="Luxury Apartment"
               className="w-full h-auto lg:h-full object-cover"
             />
@@ -145,8 +146,8 @@ const Mouse = () => {
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
               Luxury Apartments
             </h2>
             <select
@@ -157,7 +158,9 @@ const Mouse = () => {
               <option>1 BHK</option>
               <option>2 BHK</option>
               <option>3 BHK</option>
-              <option>Other</option>
+              <option>4 BHK</option>
+              <option>5 BHK</option>
+              <option>6 BHK</option>
             </select>
             <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
               Price: ₹{price}
@@ -165,7 +168,7 @@ const Mouse = () => {
             <p className="text-gray-700 mb-6">
               Discover the ultimate in luxury living with our spacious
               apartments. Additional charges may apply. Contact us for details.
-            </p>
+            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}
@@ -179,24 +182,92 @@ const Mouse = () => {
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            Mouse CONTROL & TREATMENT
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
+            Fly Control and Treatment
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            We specialize in effectively treating and eliminating Mouse from
-            your home or business, using proven methods. Our goal is to ensure
-            complete eradication and provide a long-term solution to protect
-            your property from further Mouse infestations.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with termites, a comprehensive inspection is necessary to
-            accurately assess the extent of the Mouse Issue and determine the
-            most appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – Sanitation :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Keep trash bins tightly sealed, and promptly dispose of organic
+              waste. Regularly clean and sanitize areas where flies may breed,
+              such as drains and garbage disposal units.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Remove Breeding Sites :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Identify and eliminate potential breeding sites for flies, such as
+              decaying organic matter. Keep compost bins covered and clean up
+              fallen fruits or vegetables in your garden.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Fly Traps :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Use fly traps or fly paper in areas with high fly activity. These
+              can help reduce the fly population.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – Fly Baits :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Set up fly baits containing insecticides to attract and kill
+              flies. Follow product instructions carefully.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Fly Screens :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Install screens on windows and doors to prevent flies from
+              entering your home.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 - Professional Pest Control :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              If the infestation persists or is severe, consider seeking
+              professional pest control services. Professionals have access to
+              more potent insecticides and can implement advanced methods to
+              control the infestation.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help.
+              <a href="/" className="text-blue-300 underline">
+                call us
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
@@ -205,7 +276,7 @@ const Mouse = () => {
           <div class="max-w-2xl">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={MouseControl}
+                src={FlyControl}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -214,7 +285,7 @@ const Mouse = () => {
           <div class="max-w-2xl mt-4 sm:mt-0 px-4 sm:px-8 w-auto">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={MouseControl2}
+                src={FlyControl2}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -230,32 +301,32 @@ const Mouse = () => {
 
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Sightings and fecal droppings:</span>
-            Mousees are nocturnal creatures and tend to hide during the day. If
-            you notice live Mousees scurrying around at night or find small dark
+            <span class="font-semibold"> Sightings and fecal droppings:</span>
+            Flyes are nocturnal creatures and tend to hide during the day. If
+            you notice live Flyes scurrying around at night or find small dark
             droppings resembling coffee grounds, it could indicate an
             infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Unpleasant odor:</span>
-            Mousees emit a distinctive musty odor that can become noticeable in
-            areas with a large population. If you detect an unpleasant smell,
+            <span class="font-semibold">UnpleasFly odor:</span>
+            Flyes emit a distinctive musty odor that can become noticeable in
+            areas with a large population. If you detect an unpleasFly smell,
             particularly in kitchen or bathroom areas, it could be a sign of a
-            Mouse infestation.
+            Fly infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with a Mouse infestation requires professional expertise. A
+            Dealing with a Fly infestation requires professional expertise. A
             licensed pest control company can assess the severity of the
-            infestation and implement appropriate Mouse control measures. This
-            may include insecticide treatments, baits, and sealing entry points
-            to prevent further infestations.
+            infestation and implement appropriate Fly control measures. This may
+            include insecticide treatments, baits, and sealing entry points to
+            prevent further infestations.
           </p>
         </div>
 
         <div className="mt-10 flex flex-col items-start text-start container font-bold">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Mousees are active mostly during nighttime or in dark, concealed
+              Flyes are active mostly during nighttime or in dark, concealed
               areas.
             </li>
             <li>
@@ -268,14 +339,14 @@ const Mouse = () => {
               floors, and furniture.
             </li>
             <li>
-              Mousees can travel and infest new areas by navigating through gaps
+              Flys can travel and infest new areas by navigating through gaps
               and openings, and they are also known to be carried in infested
               items such as bags, boxes, and furniture.
             </li>
             <li className="text-red-500">
-              Remember, if you suspect a Mouse infestation in your property, it
-              is essential to contact a professional pest control service to
-              assess the situation and provide effective treatment options.
+              Remember, if you suspect a Fly infestation in your property, it is
+              essential to contact a professional pest control service to assess
+              the situation and provide effective treatment options.
             </li>
           </ul>
         </div>
@@ -284,4 +355,4 @@ const Mouse = () => {
   );
 };
 
-export default Mouse;
+export default Fly;

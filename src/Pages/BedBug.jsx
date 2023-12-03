@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Flys1 from "../assets/Fly/Fly1.webp";
-import Flys2 from "../assets/Fly/Fly2.avif";
-import FlySafe from "../assets/Fly/Fly3.avif";
-import FlyControl from "../assets/Fly/Fly4.webp";
-import FlyControl2 from "../assets/Fly/Fly5.webp";
+import BedBugs1 from "../assets/BedBug/BedBug1.webp";
+import BedBugs2 from "../assets/BedBug/BedBug2.webp";
+import BedBugSafe from "../assets/BedBug/BedBug3.webp";
+// import BedBugControl from "../assets/BedBug/BedBug4.webp";
+import BedBugControl2 from "../assets/BedBug/BedBug5.webp";
 
-const Fly = () => {
+const BedBug = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(799);
+  const [price, setPrice] = useState(999);
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -16,11 +16,11 @@ const Fly = () => {
 
     // Update price based on the selected option
     if (selectedValue === "1 BHK") {
-      setPrice(799);
-    } else if (selectedValue === "2 BHK") {
       setPrice(999);
+    } else if (selectedValue === "2 BHK") {
+      setPrice(1800);
     } else if (selectedValue === "3 BHK") {
-      setPrice(1299);
+      setPrice(2200);
     } else if (selectedValue === "Other") {
       setPrice(0);
     }
@@ -41,24 +41,24 @@ const Fly = () => {
             House
           </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house/Colony
+            Entire house
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
-            src={Flys1}
+            src={BedBugs1}
             alt=""
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
-            src={Flys2}
+            src={BedBugs2}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
-            src={FlySafe}
+            src={BedBugSafe}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
@@ -82,7 +82,7 @@ const Fly = () => {
               />
             </svg>
             <span>
-              4.35 <span className="text-slate-400 font-normal">(51)</span>
+              4.51 <span className="text-slate-400 font-normal">(356)</span>
             </span>
           </dd>
           <dt className="sr-only">Location</dt>
@@ -123,10 +123,10 @@ const Fly = () => {
           </Link>
         </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
-          We specialize in effectively treating and eliminating Flys from your
-          home or business, using proven methods. Our goal is to ensure complete
-          eradication and provide a long-term solution to protect your property
-          from further Fly infestations.
+          We specialize in effectively treating and eliminating BedBugs from
+          your home or business, using proven methods. Our goal is to ensure
+          complete eradication and provide a long-term solution to protect your
+          property from further BedBug infestations.
         </p>
       </div>
       <div className="text-center mt-10">
@@ -138,7 +138,7 @@ const Fly = () => {
           {/* Image */}
           <div className="lg:w-1/2 relative">
             <img
-              src={FlySafe}
+              src={BedBugs2}
               alt="Luxury Apartment"
               className="w-full h-auto lg:h-full object-cover"
             />
@@ -146,8 +146,8 @@ const Fly = () => {
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
               Luxury Apartments
             </h2>
             <select
@@ -158,9 +158,7 @@ const Fly = () => {
               <option>1 BHK</option>
               <option>2 BHK</option>
               <option>3 BHK</option>
-              <option>4 BHK</option>
-              <option>5 BHK</option>
-              <option>6 BHK</option>
+              <option>Other</option>
             </select>
             <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
               Price: ₹{price}
@@ -168,7 +166,7 @@ const Fly = () => {
             <p className="text-gray-700 mb-6">
               Discover the ultimate in luxury living with our spacious
               apartments. Additional charges may apply. Contact us for details.
-            </p>
+            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}
@@ -182,33 +180,134 @@ const Fly = () => {
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            Fly CONTROL & TREATMENT
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
+            Bed Bug Control and Treatment
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            We specialize in effectively treating and eliminating Fly from your
-            home or business, using proven methods. Our goal is to ensure
-            complete eradication and provide a long-term solution to protect
-            your property from further Fly infestations.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with termites, a comprehensive inspection is necessary to
-            accurately assess the extent of the Fly Issue and determine the most
-            appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – Identify Infested Areas :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Inspect the living space thoroughly, focusing on seams and folds
+              of mattresses, cracks in furniture, and other potential hiding
+              spots for bed bugs.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Wash and Heat Treat Bedding :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Launder all bedding, linens, and clothing in hot water and dry
+              them on the highest heat setting. This helps kill bed bugs and
+              their eggs.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Vacuum :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Vacuum infested areas, including mattresses, box springs, and
+              carpeting. Dispose of the vacuum bag or clean the vacuum canister
+              outside to prevent bed bugs from re-infesting the area.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – Use Bed Bug Encasements :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Encase mattresses and box springs with bed bug-proof covers. This
+              helps trap any remaining bed bugs inside and prevents them from
+              feeding on you.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Apply Insecticides :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Use insecticides specifically labeled for bed bug control. Apply
+              them to cracks and crevices where bed bugs hide. Follow the
+              product instructions carefully, and consider consulting with a
+              pest control professional for effective treatment.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 - Steam Treatment :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Steam clean infested areas using a high-temperature steam cleaner.
+              Bed bugs are sensitive to heat, and steam can kill them at all
+              stages of development.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 7 - Isolate and Declutter :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Reduce clutter in the living space, and isolate infested items to
+              prevent bed bugs from spreading.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 8 - Seek Professional Help :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              If the infestation is severe or persists after DIY efforts,
+              consider hiring a licensed pest control professional. They have
+              access to more potent insecticides and can implement advanced
+              treatment methods.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 9 - Monitor and Prevent :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Regularly monitor for signs of bed bugs and take preventive
+              measures, such as being cautious about bringing used furniture
+              into your home and inspecting hotel rooms when traveling.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-36">
+        <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-48">
           <div class="max-w-2xl">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={FlyControl}
+                src={BedBugs1}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -217,7 +316,7 @@ const Fly = () => {
           <div class="max-w-2xl mt-4 sm:mt-0 px-4 sm:px-8 w-auto">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={FlyControl2}
+                src={BedBugControl2}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -233,32 +332,32 @@ const Fly = () => {
 
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold"> Sightings and fecal droppings:</span>
-            Flyes are nocturnal creatures and tend to hide during the day. If
-            you notice live Flyes scurrying around at night or find small dark
-            droppings resembling coffee grounds, it could indicate an
+            <span class="font-semibold">Sightings and fecal droppings:</span>
+            BedBuges are nocturnal creatures and tend to hide during the day. If
+            you notice live BedBuges scurrying around at night or find small
+            dark droppings resembling coffee grounds, it could indicate an
             infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">UnpleasFly odor:</span>
-            Flyes emit a distinctive musty odor that can become noticeable in
-            areas with a large population. If you detect an unpleasFly smell,
+            <span class="font-semibold">UnpleasBedBug odor:</span>
+            BedBuges emit a distinctive musty odor that can become noticeable in
+            areas with a large population. If you detect an unpleasBedBug smell,
             particularly in kitchen or bathroom areas, it could be a sign of a
-            Fly infestation.
+            BedBug infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with a Fly infestation requires professional expertise. A
+            Dealing with a BedBug infestation requires professional expertise. A
             licensed pest control company can assess the severity of the
-            infestation and implement appropriate Fly control measures. This may
-            include insecticide treatments, baits, and sealing entry points to
-            prevent further infestations.
+            infestation and implement appropriate BedBug control measures. This
+            may include insecticide treatments, baits, and sealing entry points
+            to prevent further infestations.
           </p>
         </div>
 
         <div className="mt-10 flex flex-col items-start text-start container font-bold">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Flyes are active mostly during nighttime or in dark, concealed
+              BedBuges are active mostly during nighttime or in dark, concealed
               areas.
             </li>
             <li>
@@ -271,14 +370,14 @@ const Fly = () => {
               floors, and furniture.
             </li>
             <li>
-              Flys can travel and infest new areas by navigating through gaps
+              BedBugs can travel and infest new areas by navigating through gaps
               and openings, and they are also known to be carried in infested
               items such as bags, boxes, and furniture.
             </li>
             <li className="text-red-500">
-              Remember, if you suspect a Fly infestation in your property, it is
-              essential to contact a professional pest control service to assess
-              the situation and provide effective treatment options.
+              Remember, if you suspect a BedBug infestation in your property, it
+              is essential to contact a professional pest control service to
+              assess the situation and provide effective treatment options.
             </li>
           </ul>
         </div>
@@ -287,4 +386,4 @@ const Fly = () => {
   );
 };
 
-export default Fly;
+export default BedBug;

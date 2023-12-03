@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Ants1 from "../assets/Ant/Ant1.webp";
-import Ants2 from "../assets/Ant/Ant2.webp";
-import AntSafe from "../assets/Ant/Ant3.webp";
-import AntControl from "../assets/Ant/Ant4.webp";
-import AntControl2 from "../assets/Ant/Ant5.webp";
+import WoodBorers1 from "../assets/WoodBorer/WoodBorer1.webp";
+import WoodBorers2 from "../assets/WoodBorer/WoodBorer2.webp";
+import WoodBorerSafe from "../assets/WoodBorer/WoodBorer3.webp";
+import WoodBorerControl from "../assets/WoodBorer/WoodBorer4.webp";
+import WoodBorerControl2 from "../assets/WoodBorer/WoodBorer5.webp";
 
-const Ant = () => {
+const WoodBorer = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(599);
+  const [price, setPrice] = useState(1999);
 
   const handleOptionChange = (event) => {
     const selectedValue = event.target.value;
@@ -16,11 +16,11 @@ const Ant = () => {
 
     // Update price based on the selected option
     if (selectedValue === "1 BHK") {
-      setPrice(599);
+      setPrice(1999);
     } else if (selectedValue === "2 BHK") {
-      setPrice(699);
+      setPrice(1999);
     } else if (selectedValue === "3 BHK") {
-      setPrice(799);
+      setPrice(2299);
     } else if (selectedValue === "Other") {
       setPrice(0);
     }
@@ -46,19 +46,19 @@ const Ant = () => {
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
-            src={Ants1}
+            src={WoodBorers1}
             alt=""
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
-            src={Ants2}
+            src={WoodBorers2}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
-            src={AntSafe}
+            src={WoodBorerSafe}
             alt=""
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
@@ -82,7 +82,7 @@ const Ant = () => {
               />
             </svg>
             <span>
-              4.90 <span className="text-slate-400 font-normal">(45)</span>
+              4.32 <span className="text-slate-400 font-normal">(245)</span>
             </span>
           </dd>
           <dt className="sr-only">Location</dt>
@@ -123,10 +123,10 @@ const Ant = () => {
           </Link>
         </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
-          We specialize in effectively treating and eliminating Ants from your
-          home or business, using proven methods. Our goal is to ensure complete
-          eradication and provide a long-term solution to protect your property
-          from further Ant infestations.
+          We specialize in effectively treating and eliminating WoodBorers from
+          your home or business, using proven methods. Our goal is to ensure
+          complete eradication and provide a long-term solution to protect your
+          property from further WoodBorer infestations.
         </p>
       </div>
       <div className="text-center mt-10">
@@ -138,7 +138,7 @@ const Ant = () => {
           {/* Image */}
           <div className="lg:w-1/2 relative">
             <img
-              src={Ants2}
+              src={WoodBorers2}
               alt="Luxury Apartment"
               className="w-full h-auto lg:h-full object-cover"
             />
@@ -146,8 +146,8 @@ const Ant = () => {
           </div>
 
           {/* Content */}
-          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-left">
-            <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
               Home
             </h2>
             <select
@@ -166,7 +166,7 @@ const Ant = () => {
             <p className="text-gray-700 mb-6">
               Discover the ultimate in luxury living with our spacious
               apartments. Additional charges may apply. Contact us for details.
-            </p>
+            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}
@@ -180,33 +180,115 @@ const Ant = () => {
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            Ant CONTROL & TREATMENT
+          <h1
+            className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
+            style={{
+              color: "green",
+              fontSize: "16",
+              fontFamily: "Times New Roman Georgia Garamond",
+            }}
+          >
+            Wood borer Control and Treatment
           </h1>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            We specialize in effectively treating and eliminating Ant from your
-            home or business, using proven methods. Our goal is to ensure
-            complete eradication and provide a long-term solution to protect
-            your property from further Ant infestations.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with termites, a comprehensive inspection is necessary to
-            accurately assess the extent of the Ant Issue and determine the most
-            appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+          <div className="space-y-6">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 1 – Identify the Infestation :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Confirm that you are dealing with wood borers. Look for small
+              holes, sawdust-like frass, and damaged wood. Identify the specific
+              type of wood borer if possible.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 2 – Isolate and Remove Infested Wood :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Identify and isolate infested wooden items. Remove and destroy
+              severely damaged wood to prevent the spread of the infestation.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 3 – Thorough Cleaning :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Clean the affected area thoroughly, removing any dust, frass, or
+              wood particles. This helps in assessing the extent of the
+              infestation and preparing for treatment.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 4 – Use Wood Borer Insecticides :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Apply wood borer insecticides to the affected wood. Follow the
+              product instructions carefully, as some treatments may require
+              multiple applications.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 5 – Fumigation :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              In severe cases, especially in larger structures, consider
+              fumigation. This involves sealing the area and introducing a
+              fumigant gas to eliminate wood borers. This is typically a job for
+              professionals.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 6 - Preventive Measures :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Implement preventive measures such as treating susceptible wood
+              with borate-based products before construction or applying
+              protective coatings to wooden surfaces.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Step 7 - Consult with Professionals :-
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              If the infestation is extensive or if you are uncertain about the
+              best course of action, consult with pest control professionals.
+              They can assess the situation and recommend appropriate
+              treatments.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              For further details or to schedule an inspection, please contact
+              us today. We are here to help.
+              <a href="/" className="text-blue-300 underline">
+                call us
+              </a>
+            </p>
+          </div>
         </div>
       </div>
 
       <div class="container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-20">
+        <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-36">
           <div class="max-w-2xl">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={AntControl}
+                src={WoodBorerControl}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -215,7 +297,7 @@ const Ant = () => {
           <div class="max-w-2xl mt-4 sm:mt-0 px-4 sm:px-8 w-auto">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={AntControl2}
+                src={WoodBorerControl2}
                 alt="Termite Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -228,36 +310,35 @@ const Ant = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
           Silent Destroyers
         </h1>
-
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold"> Sightings and fecal droppings:</span>
-            Antes are nocturnal creatures and tend to hide during the day. If
-            you notice live Antes scurrying around at night or find small dark
-            droppings resembling coffee grounds, it could indicate an
+            WoodBoreres are nocturnal creatures and tend to hide during the day.
+            If you notice live WoodBoreres scurrying around at night or find
+            small dark droppings resembling coffee grounds, it could indicate an
             infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Unpleasant odor:</span>
-            Antes emit a distinctive musty odor that can become noticeable in
-            areas with a large population. If you detect an unpleasant smell,
-            particularly in kitchen or bathroom areas, it could be a sign of a
-            Ant infestation.
+            <span class="font-semibold">UnpleasWoodBorer odor:</span>
+            WoodBoreres emit a distinctive musty odor that can become noticeable
+            in areas with a large population. If you detect an unpleasWoodBorer
+            smell, particularly in kitchen or bathroom areas, it could be a sign
+            of a WoodBorer infestation.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with a Ant infestation requires professional expertise. A
-            licensed pest control company can assess the severity of the
-            infestation and implement appropriate Ant control measures. This may
-            include insecticide treatments, baits, and sealing entry points to
-            prevent further infestations.
+            Dealing with a WoodBorer infestation requires professional
+            expertise. A licensed pest control company can assess the severity
+            of the infestation and implement appropriate WoodBorer control
+            measures. This may include insecticide treatments, baits, and
+            sealing entry points to prevent further infestations.
           </p>
         </div>
 
         <div className="mt-10 flex flex-col items-start text-start container font-bold">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Antes are active mostly during nighttime or in dark, concealed
-              areas.
+              WoodBoreres are active mostly during nighttime or in dark,
+              concealed areas.
             </li>
             <li>
               They prefer to avoid exposure to light and maintain a hidden
@@ -269,14 +350,14 @@ const Ant = () => {
               floors, and furniture.
             </li>
             <li>
-              Ants can travel and infest new areas by navigating through gaps
-              and openings, and they are also known to be carried in infested
-              items such as bags, boxes, and furniture.
+              WoodBorers can travel and infest new areas by navigating through
+              gaps and openings, and they are also known to be carried in
+              infested items such as bags, boxes, and furniture.
             </li>
             <li className="text-red-500">
-              Remember, if you suspect a Ant infestation in your property, it is
-              essential to contact a professional pest control service to assess
-              the situation and provide effective treatment options.
+              Remember, if you suspect a WoodBorer infestation in your property,
+              it is essential to contact a professional pest control service to
+              assess the situation and provide effective treatment options.
             </li>
           </ul>
         </div>
@@ -285,4 +366,4 @@ const Ant = () => {
   );
 };
 
-export default Ant;
+export default WoodBorer;
