@@ -44,9 +44,6 @@ const Termite = () => {
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
-            House
-          </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
             Experties In Termite Treatement
           </p>
@@ -182,7 +179,7 @@ const Termite = () => {
       </div>
 
       <div className="py-10 mt-5 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <h1
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{
@@ -309,7 +306,7 @@ const Termite = () => {
           Silent Destroyers
         </h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold" style={{ fontFamily: "sans-serif" }}>
               Termites are wood-eating insects that are often confused with

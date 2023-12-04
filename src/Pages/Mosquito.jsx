@@ -1,4 +1,4 @@
- import React, { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Mosquitos1 from "../assets/Mosquito/mosquito1.webp";
 import Mosquitos2 from "../assets/Mosquito/mosquito2.webp";
@@ -37,11 +37,8 @@ const Mosquito = () => {
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
-            Beach House in Collingwood
-          </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house/Colony
+            Experties In Mosquito Treatement
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -113,15 +110,6 @@ const Mosquito = () => {
             India, Pune
           </dd>
         </dl>
-        <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-          <Link
-            to="/"
-            type="button"
-            className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
-          >
-            Check Service
-          </Link>
-        </div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
           We specialize in effectively treating and eliminating Mosquitos from
           your home or business, using proven methods. Our goal is to ensure
@@ -147,7 +135,6 @@ const Mosquito = () => {
 
           {/* Content */}
           <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
-           
             {/* <select
               value={selectOption}
               onChange={handleOptionChange}
@@ -176,8 +163,8 @@ const Mosquito = () => {
         </div>
       </div>
 
-      <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto text-center">
+      <div className="py-10 mt-9 bg-slate-100 rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto">
           <h1
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{
@@ -186,75 +173,185 @@ const Mosquito = () => {
               fontFamily: "Times New Roman Georgia Garamond",
             }}
           >
-            Mosquito Control and Treatment
+            Get Rid of Mosquitoes
           </h1>
 
           <div className="space-y-6">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 1 – Remove Standing Wate :-
+              1. Eliminate Mosquito Breeding Sites-Remove Standing Water
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Eliminate stagnant water sources around your home where mosquitoes breed, such as in flower pots, bird baths, or clogged gutters.
+              Mosquitoes thrive in tropical weather but are found throughout the
+              INDIA. Many species (not all) rest during the day in dense
+              vegetation such as tall grass, weeds, and shrubs. Any successful
+              mosquito control program should target these areas.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              2. Spray Professional Residual Insecticides-To Get Rid Of Adult
+              Mosquitoes
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Adult mosquitoes are commonly found in bushes and shrubs because
+              they feed on plant nectar. Many types of adult mosquitoes are
+              found resting in vegetation during the daytime.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              <ul className="list-disc ">
+                <li className="text-red-500">
+                  <p className="text-gray-700">
+                    Trim and get rid of the overgrowth of weeds.
+                  </p>
+                </li>
+                <li className="text-red-500">
+                  <p className="text-gray-700">
+                    To get rid of adult mosquitoes, spray the foliage of bushes
+                    and shrubs, lower limbs of shade trees, tall grass, and
+                    shaded areas with a residual insecticide.
+                  </p>
+                </li>
+              </ul>
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              3. Using Foggers and Misting System Compounds
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              We have both high-end foggers and propane foggers to apply fogging
+              compounds for mosquito control. Fogging enables you to coat the
+              leaves and foliage more effectively.
+            </p>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
+              Prevent Mosquitoes
+            </h2>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Mosquitoes can lay eggs in sources of standing water such as:
             </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2 – Use Mosquito Repellen :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Apply mosquito repellent containing DEET, picaridin, or oil of lemon eucalyptus to exposed skin and clothing.
-            </p>
+            <ul className="list-disc ">
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  puddles{" "}
+                </p>
+              </li>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3 – Install Screens :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Fit window and door screens to prevent mosquitoes from entering your living spaces.
-            </p>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  ponds
+                </p>
+              </li>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4 – Mosquito Nets :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-             Use bed nets treated with insecticide, especially while sleeping in areas with a high mosquito presence.
-            </p>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  lakes
+                </p>
+              </li>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5 – Mosquito Traps or Zappers :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Place mosquito traps or electric bug zappers in areas where mosquitoes are active to capture and kill them.
-            </p>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  children's toys
+                </p>
+              </li>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  ditches
+                </p>
+              </li>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6 –Indoor and Outdoor Insecticides :-
-            </h2>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  old tires
+                </p>
+              </li>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  clogged gutters
+                </p>
+              </li>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  buckets
+                </p>
+              </li>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  flower pots
+                </p>
+              </li>
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  poorly maintained pools
+                </p>
+              </li>
+
+              <li className="text-red-500">
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  bird baths
+                </p>
+              </li>
+            </ul>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-             Apply insecticides, such as mosquito sprays or foggers, following safety guidelines and considering environmental impact. Focus on areas with high mosquito activity both indoors and outdoors.
+              Eliminate or treat these sources with a mosquito larvicide
+              whenever possible.
             </p>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
               For further details or to schedule an inspection, please contact
-              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+              us today. We are here to help.{" "}
+              <a href="/" className="text-blue-300 underline">
+                call us
+              </a>
             </p>
           </div>
         </div>
@@ -288,71 +385,67 @@ const Mosquito = () => {
           Silent Destroyers
         </h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">
-              Termites are highly destructive pests
-            </span>
-            that can cause extensive damage to structures and properties. These
-            silent invaders feed on cellulose-rich materials such as wood,
-            putting your home or business at risk. Understanding the behavior
-            and signs of termite infestations is crucial for early detection and
-            effective pest control.
+            <span class="font-semibold">Breeding grounds: </span>
+            Mosquitoes lay their eggs in standing water, so eliminating
+            potential breeding sites is essential. Regularly check and empty
+            containers like flowerpots, bird baths, and clogged gutters where
+            stagnant water can accumulate.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Hollow-sounding or damaged wood:</span>
-            Termites feed on wood from the inside out, leaving a thin outer
-            layer intact. Tap on suspected areas to check for a hollow sound or
-            look for damaged wood with maze-like patterns.
+            <span class="font-semibold">HBites and buzzing sounds: </span>
+            Mosquitoes are known for their itchy bites. If you notice an
+            increase in mosquito bites, especially during peak mosquito activity
+            times (dawn and dusk), it may indicate a higher mosquito population.
+            Additionally, the buzzing sound of female mosquitoes is a common
+            sign of their presence.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with termite infestations requires professional expertise. A
-            licensed pest control company can assess the extent of the
-            infestation and implement appropriate termite control measures. This
-            may include liquid termiticides, termite baits, or fumigation,
-            depending on the specific situation.
+            <span class="font-semibold"> Preventive measures:</span>
+            Use screens on windows and doors to keep mosquitoes out of your
+            home. Consider using mosquito nets while sleeping, wearing long
+            sleeves and pants, and using insect repellent to protect yourself
+            from bites.
           </p>
           <p class="sm:text-base">
-            <span class="font-semibold">Termites are destructive pests</span>
-            that can cause significant damage to your property. Understanding
-            the signs of infestation, taking preventive measures, and seeking
-            professional termite control services are essential steps in
-            safeguarding your home or business. Don't hesitate to contact our
-            expert team for a thorough termite inspection and effective pest
-            management solutions.
+            <span class="font-semibold">Professional mosquito control:</span>
+            If mosquito infestations are severe, professional pest control
+            services can help. Mosquito control methods may include the use of
+            insecticides, larvicides, and fogging to reduce adult mosquito
+            populations.
           </p>
         </div>
 
         <div class="mt-10 flex flex-col items-start text-start container font-bold">
           <ul class="list-disc pl-6 space-y-2">
             <li>
-              Termites are primarily active during the night or in dimly lit,
-              concealed areas.
+              Disease Vectors: Mosquitoes can transmit diseases such as malaria,
+              dengue, Zika, and West Nile virus.
             </li>
             <li>
-              They have a strong aversion to light and tend to maintain a hidden
-              presence within the colonies they infest.
+              Breeding Sites: Mosquitoes breed in standing water, laying their
+              eggs on the water's surface.
             </li>
             <li>
-              Termites, particularly subterranean ones, establish their nests
-              within the soil.
+              Attracted to Odors: Mosquitoes are attracted to body heat, carbon
+              dioxide, and body odors when seeking hosts.
             </li>
             <li>
-              Intricate tunnel systems are constructed by termites to access
-              their food sources, typically cellulose-based materials such as
-              wood, starting from the ground up.
+              Prevention: Measures to prevent mosquito bites include using
+              repellents, wearing protective clothing, and using bed nets.
             </li>
             <li>
-              Travel and Infestation: Termites have the ability to infest new
-              areas through soil traversal, utilizing mud tubes, or by being
-              transported within infested wood, furniture, or other
-              cellulose-based materials.
+              Day and Night Activity: Mosquitoes are most active during dawn and
+              dusk, but some species are active during the day.
             </li>
-            <li class="text-red-500">
-              Remember, if you suspect a termite infestation on your property,
-              it is imperative to seek assistance from a professional pest
-              control service to evaluate the situation and provide effective
-              treatment options.
+            <li>
+              Global Distribution: Mosquitoes are found worldwide, except in
+              extreme cold or high-altitude environments.
+            </li>
+            <li className="text-red-500">
+              Species Diversity: There are over 3,500 species of mosquitoes,
+              each with its own characteristics and habitat preferences.
             </li>
           </ul>
         </div>

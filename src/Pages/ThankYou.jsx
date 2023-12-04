@@ -1,5 +1,5 @@
 import React from "react";
-import ThankYouImage from "../assets/Navbar/logo.png"; // Replace with your actual image path
+import ThankYouImage from "../assets/Navbar/Logo.jpeg";
 
 const ThankYou = () => {
   return (

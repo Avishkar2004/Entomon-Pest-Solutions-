@@ -37,11 +37,8 @@ const Ant = () => {
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
-            House
-          </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house/Colony
+            Experties In Ant Treatement
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -113,15 +110,7 @@ const Ant = () => {
             India, Pune
           </dd>
         </dl>
-        <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-          <Link
-            to="/"
-            type="button"
-            className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
-          >
-            Check Service
-          </Link>
-        </div>
+        <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4"></div>
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
           We specialize in effectively treating and eliminating Ants from your
           home or business, using proven methods. Our goal is to ensure complete
@@ -179,7 +168,7 @@ const Ant = () => {
       </div>
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <h1
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{
@@ -192,57 +181,83 @@ const Ant = () => {
           </h1>
           <div className="space-y-6">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 1 – Identify Ant Trails and Nest :-
+              1. Chalk{" "}
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Locate ant trails and identify the nest if possible. Follow their
-              path to understand their entry points.
+              One of the home remedies to get rid of ants is to use chalk. Chalk
+              contains calcium carbonate, which helps in keeping ants away.
+              Spray some powdered chalk in the areas that are the entry points
+              of ants or draw a line of chalk at the entrance. To keep ants out
+              of your house, draw chalk lines so that these bugs don't enter.
+              While it is not clear why this line stops the ants from coming
+              inside, it is surely effective. Make sure you make the line in a
+              way that is out of reach of any child in the house.{" "}
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2 – Clean and Sanitize :-
+              2. Lemons{" "}
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Keep surfaces clean, especially areas where you've seen ants.
-              Clean up food crumbs, spills, and residue. Ants are attracted to
-              food sources.
+              Squeeze a lemon or place lemon peels in places from where the ants
+              enter. You can also wash your floors with water that has a little
+              lemon juice added to it. Ants don't like the smell of lemon juice
+              so they will keep away. Anything sour and bitter may keep the ants
+              away, but any sugar is the ants' best friend. So ensure you do not
+              keep anything sweet that may attract the ants in some way or the
+              other. Keep your kitchen slab clean and place the peels right
+              there.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3 – Sealing Entry Points :-
+              3. Oranges{" "}
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Close off entry points by sealing cracks, gaps, and holes in walls
-              using caulk or other suitable materials.
+              Oranges are the same as lemons; they keep the ants away from
+              visiting your house. Make a paste of one cup of warm water and a
+              few orange peels, which will help in getting rid of ants. Spread
+              this paste around the entry points of ants and wipe it afterwards.
+              You can also place orange peels on the kitchen slab or wherever
+              you think these ants may enter. It acts as a natural deterrent for
+              ants that may not only keep them but also keep them away. So,
+              bring the orange rinds to some use and ensure no ants visit your
+              house anymore.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4 – Ant Baits :-
+              4. Pepper{" "}
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Use ant baits containing slow-acting insecticides. Place baits
-              near ant trails or entry points. Worker ants will carry the bait
-              back to the nest, affecting the entire colony.
+              Ants are pretty fond of sugar but they hate pepper. Sprinkle
+              pepper at the areas from where ants enter your house. This will
+              help to get rid of ants. Cayenne pepper or black pepper are hated
+              by ants. You can also make a solution of pepper and water and
+              spray it near the entrant areas. The pepper wouldn't kill the ants
+              but deter them from returning to your house. Make sure you clean
+              the area where you want to spray the pepper solution.{" "}
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5 – Natural Repellents :-
+              5. Salt
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Use natural repellents like cinnamon, peppermint oil, or vinegar
-              near ant entry points to deter them. However, these are often less
-              effective than chemical methods.
+              Spreading salt near nooks and corners where ants enter the house
+              will help keep ants away. Table salt is one of the best and
+              cheapest ways to get rid of ants naturally. Use ordinary table
+              salt, not health-boosting rock salt. All you need to do is to boil
+              water and add a large amount of salt to it, stirring it until
+              dissolves. Pour into a spray bottle and spray where you think ants
+              tend to enter from.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
               Step 6 - Ant Sprays and Dusts :-
@@ -271,7 +286,10 @@ const Ant = () => {
               style={{ fontFamily: "sans-serif" }}
             >
               For further details or to schedule an inspection, please contact
-              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+              us today. We are here to help.{" "}
+              <a href="/" className="text-blue-300 underline">
+                call us
+              </a>
             </p>
           </div>
         </div>
@@ -305,7 +323,7 @@ const Ant = () => {
           Silent Destroyers
         </h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold"> Sightings and fecal droppings:</span>
             Antes are nocturnal creatures and tend to hide during the day. If

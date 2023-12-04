@@ -41,7 +41,7 @@ const WoodBorer = () => {
             House
           </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house/Colony
+            Experties In Wood Borer Treatement
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -113,15 +113,7 @@ const WoodBorer = () => {
             India, Pune
           </dd>
         </dl>
-        <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-          <Link
-            to="/"
-            type="button"
-            className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
-          >
-            Check Service
-          </Link>
-        </div>
+
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
           We specialize in effectively treating and eliminating WoodBorers from
           your home or business, using proven methods. Our goal is to ensure
@@ -179,7 +171,7 @@ const WoodBorer = () => {
       </div>
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <h1
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{
@@ -192,83 +184,67 @@ const WoodBorer = () => {
           </h1>
           <div className="space-y-6">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 1 – Identify the Infestation :-
+              Step 1: Insecticide Treatment
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Confirm that you are dealing with wood borers. Look for small
-              holes, sawdust-like frass, and damaged wood. Identify the specific
-              type of wood borer if possible.
+              Insecticide is a synthetic pyrethroid insecticide that contains
+              the active ingredient Cypermethrin and serves as a good contact
+              insecticide that can prevent infestation of tree borers to
+              infested trees and shrubs. Timing is crucial as it is best to
+              treat trees early on in an infestation to attack the newly-hatched
+              tree borer larvae before they begin tunneling into the bark.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Measure the square footage of the treatment area to help you
+              determine how much Insecticide you need to mix. In a sprayer,
+              dilute 0.33 to 0.65 fl. oz. per 1,000 sq.ft. in a volume of water
+              sufficient for uniform coverage such as 3 to 20 gallons. Once you
+              have calculated and mixed the appropriate amount of Insecticide in
+              a sprayer, shake the sprayer well and you're ready to treat.
+            </p>
+            <p
+              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+              style={{ fontFamily: "sans-serif" }}
+            >
+              Apply over the tree trunks, trigs, and branches on a fan spray
+              setting but not to the point of runoff. If you see any holes or
+              cavities in the wood, spray them directly via pin stream setting.
+              You want to saturate the openings and contact as many insects as
+              possible.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2 – Isolate and Remove Infested Wood :-
+              Step 2: Soil Treatment with Dominion 2L
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Identify and isolate infested wooden items. Remove and destroy
-              severely damaged wood to prevent the spread of the infestation.
+              Once the tree has been treated, we recommend a soil treatment with
+              Dominion 2L. Dominion 2L is a systemic insecticide meaning that it
+              when applied to the soil, it will be taken up into the tree roots
+              and help to control any tree borer pest that tries to burrow or
+              feast on the tree. Measure the diameter of your tree before
+              treating.
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3 – Thorough Cleaning :-
-            </h2>
+
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Clean the affected area thoroughly, removing any dust, frass, or
-              wood particles. This helps in assessing the extent of the
-              infestation and preparing for treatment.
+              Dilute Dominion 2L at a rate of 0.1 to 0.4 fl. oz. per inch of
+              trunk diameter. So for example, if your trunk's diameter is 15
+              inches you will need to mix 1.5 to 6 fl. oz. of Dominion 2L per 5
+              gallons of water. Mix it in a sprayer and apply uniformly as a
+              drench around the base of the tree directing the application to
+              the root area.
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4 – Use Wood Borer Insecticides :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Apply wood borer insecticides to the affected wood. Follow the
-              product instructions carefully, as some treatments may require
-              multiple applications.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5 – Fumigation :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              In severe cases, especially in larger structures, consider
-              fumigation. This involves sealing the area and introducing a
-              fumigant gas to eliminate wood borers. This is typically a job for
-              professionals.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6 - Preventive Measures :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Implement preventive measures such as treating susceptible wood
-              with borate-based products before construction or applying
-              protective coatings to wooden surfaces.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 7 - Consult with Professionals :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              If the infestation is extensive or if you are uncertain about the
-              best course of action, consult with pest control professionals.
-              They can assess the situation and recommend appropriate
-              treatments.
-            </p>
+
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}
@@ -310,7 +286,7 @@ const WoodBorer = () => {
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
           Silent Destroyers
         </h1>
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold"> Sightings and fecal droppings:</span>
             WoodBoreres are nocturnal creatures and tend to hide during the day.

@@ -37,11 +37,8 @@ const Fly = () => {
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
-            House
-          </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house/Colony
+            Experties In Fly Treatement
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -113,15 +110,7 @@ const Fly = () => {
             India, Pune
           </dd>
         </dl>
-        <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-          <Link
-            to="/"
-            type="button"
-            className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
-          >
-            Check Service
-          </Link>
-        </div>
+
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
           We specialize in effectively treating and eliminating Flys from your
           home or business, using proven methods. Our goal is to ensure complete
@@ -181,7 +170,7 @@ const Fly = () => {
       </div>
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <h1
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{
@@ -194,68 +183,91 @@ const Fly = () => {
           </h1>
           <div className="space-y-6">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 1 – Sanitation :-
+              1. Exclusion
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Keep trash bins tightly sealed, and promptly dispose of organic
-              waste. Regularly clean and sanitize areas where flies may breed,
-              such as drains and garbage disposal units.
+              A fly infestation is far less likely when there are no easy access
+              points for them to enter. Ensure that all doors and windows close
+              properly and tightly. Weather stripping is recommended for any
+              exterior openings. Repair all holes and tears in window screens.
+              Locate any unsealed crevices or cracks that lead outside of your
+              building and seal them with a silicone-based caulk. Create a
+              positive airflow draft that directs air outside of your building.
+              This way, smaller airborne flies will have difficulty entering
+              your business. Make sure that your employees remember to close all
+              doors and windows, especially those adjacent to lights.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2 – Remove Breeding Sites :-
+              2. Inspection
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Identify and eliminate potential breeding sites for flies, such as
-              decaying organic matter. Keep compost bins covered and clean up
-              fallen fruits or vegetables in your garden.
+              Inspect the perimeter of your building and search for any feeding
+              or breeding locations. A common female house fly can lay
+              approximately 500 eggs in three to four weeks, so identifying
+              possible breeding areas is critical to the prevention process.
+              Thoroughly investigate any wet or moist areas, since flies need
+              water to survive and reproduce. Check for larvae or maggots on any
+              materials received from vendor shipments. Eliminate any other
+              possible attractants from the premises.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3 – Fly Traps :-
+              3. Sanitation
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Use fly traps or fly paper in areas with high fly activity. These
-              can help reduce the fly population.
+              Regular trash removal and sanitation will also help minimize the
+              risk of unwanted flies. Clean any garbage collection sites that
+              may have accumulated debris or waste. Cycle produce stock often to
+              dispose of moist or rotting material. Place any exterior trash
+              receptacles as far away from the building as possible. Repair
+              leaking drainage lines, which can also attract fruit flies and
+              phorid flies. Since flies are usually attracted to odors, it is
+              important to sanitize areas that contain pungent-smelling
+              bacteria. Note that many flies are attracted to nitrogen and
+              ammonia, since rotting organic materials will often contain these
+              substances. Therefore, is it imperative that you choose your
+              cleaning materials wisely, and eliminate odors; don’t simply mask
+              them.
             </p>
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4 – Fly Baits :-
+              4. Control
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Set up fly baits containing insecticides to attract and kill
-              flies. Follow product instructions carefully.
+              Wall-mounted insect light traps (also known as ILTs) are highly
+              recommended by pest professionals to keep fly populations in
+              check. Flies and other insects are attracted to specific
+              wavelengths of light, which are emitted by ILTs to lure unwanted
+              pests and eliminate them swiftly. When used efficiently, ILTs are
+              placed in strategic locations to ensure that the light trap will
+              be the first light source that intruding insects will see. Your
+              pest professional will work with you to determine the best
+              locations to place ILTs, keeping in mind customer traffic and low
+              visibility areas. Fly traps are sometimes used as a supplement to
+              your IPM solution in locations where electricity is unavailable or
+              where ILTs would otherwise be impossible or inappropriate.
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5 – Fly Screens :-
-            </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
               style={{ fontFamily: "sans-serif" }}
             >
-              Install screens on windows and doors to prevent flies from
-              entering your home.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6 - Professional Pest Control :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              If the infestation persists or is severe, consider seeking
-              professional pest control services. Professionals have access to
-              more potent insecticides and can implement advanced methods to
-              control the infestation.
+              It’s crucial to understand which control methods are suitable for
+              your business type. For example, insecticide or chemical
+              treatments can be dangerous, and not appropriate to use around
+              food or other customer-handled goods. Chemical treatments should
+              be applied only by licensed pest management professionals, and
+              should be considered only if all other pest management methods
+              have been unsuccessful.
             </p>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
@@ -299,7 +311,7 @@ const Fly = () => {
           Silent Destroyers
         </h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold"> Sightings and fecal droppings:</span>
             Flyes are nocturnal creatures and tend to hide during the day. If

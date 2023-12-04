@@ -6,7 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import Logo from "../assets/Navbar/logo.png";
+import Logo from "../assets/Navbar/Logo.jpeg";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -59,7 +59,7 @@ const Header = () => {
         className="p-1 font-normal"
       >
         <a
-        target="_blank"
+          target="_blank"
           href="https://api.whatsapp.com/send?phone=918010281236"
           className="flex items-center pl-9 xl:pl-2 xl:text-lg text-green-500 font-bold xsm:pl-1"
         >

@@ -44,11 +44,8 @@ const Cockroach = () => {
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-          <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">
-            Beach House in Collingwood
-          </h1>
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
-            Entire house/Colony
+            Experties In Cockroach Treatment
           </p>
         </div>
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
@@ -120,15 +117,7 @@ const Cockroach = () => {
             India, Pune
           </dd>
         </dl>
-        <div className="mt-4 col-start-1 row-start-3 self-center sm:mt-0 sm:col-start-2 sm:row-start-2 sm:row-span-2 lg:mt-6 lg:col-start-1 lg:row-start-3 lg:row-end-4">
-          <Link
-            to="/"
-            type="button"
-            className="bg-indigo-600 text-white text-sm leading-6 font-medium py-2 px-3 rounded-lg"
-          >
-            Check Service
-          </Link>
-        </div>
+
         <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-base">
           We specialize in effectively treating and eliminating Cockroachs from
           your home or business, using proven methods. Our goal is to ensure
@@ -189,7 +178,7 @@ const Cockroach = () => {
       </div>
 
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto">
           <h1
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4"
             style={{
@@ -272,18 +261,7 @@ const Cockroach = () => {
             </p>
 
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 7 – Diatomaceous Earth :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Diatomaceous earth is a natural substance that can be sprinkled in
-              areas where cockroaches are active. It damages the exoskeleton of
-              insects, leading to dehydration and death.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 8 – Seal Entry Points :-
+              Step 7 – Seal Entry Points :-
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
@@ -293,22 +271,8 @@ const Cockroach = () => {
               around windows and doors, and openings around pipes. This helps
               prevent new cockroaches from entering your home.
             </p>
-
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 9 – Professional Pest Control Services :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              If the infestation persists or is severe, consider hiring a
-              professional pest control service. They have access to stronger
-              pesticides and can implement more advanced methods to eliminate
-              cockroaches.
-            </p>
-
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 10 – : Regular Monitoring :-
+              Step 8 – : Regular Monitoring :-
             </h2>
             <p
               className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
@@ -323,7 +287,10 @@ const Cockroach = () => {
               style={{ fontFamily: "sans-serif" }}
             >
               For further details or to schedule an inspection, please contact
-              us today. We are here to help. <a href="/" className="text-blue-300 underline">call us</a>
+              us today. We are here to help.{" "}
+              <a href="/" className="text-blue-300 underline">
+                call us
+              </a>
             </p>
           </div>
         </div>
@@ -357,7 +324,7 @@ const Cockroach = () => {
           Silent Destroyers
         </h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem]">
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
             <span class="font-semibold">Sightings and fecal droppings: </span>
             Cockroaches are nocturnal creatures and tend to hide during the day.
