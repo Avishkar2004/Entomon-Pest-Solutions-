@@ -122,7 +122,7 @@ const ServiceBook = () => {
       </div>
 
       <div className="flex flex-col items-center sm:flex-row justify-center w-full sm:w-auto">
-        <div className="p-4 sm:p-9 sm:pt-[0] pt-[-5rem] rounded-lg md:pt-32 lg:pt-[-120rem] border border-black ssm:ml-4 ssm:mr-4 bg-white">
+        <div className="p-4 sm:p-9 sm:pt-[0] pt-[-5rem] rounded-lg md:pt-[2rem] lg:pt-[5rem] border border-black ssm:ml-4 ssm:mr-4 bg-white">
           <h1 className="text-center text-2xl font-semibold mb-4 ">
             Contact Us
           </h1>
@@ -132,16 +132,16 @@ const ServiceBook = () => {
               We're open for any suggestions or just to have a chat
             </p>
 
-            <div className="mb-4 ml-[-12px]">
-              <div className="flex flex-wrap items-center space-x-2 whitespace-break-spaces gap-2">
-                <span>
-                  <HomeIcon />
-                </span>
-                <span className="font-bold">Address:</span>
-                <span className="pl-8 xl:pl-[1px]">
-                  Naryan Peth Bhatacha bol pune 411030
-                </span>
-              </div>
+            <div className="flex items-center mb-4 ml-[-12px] space-x-4">
+              <span>
+                <HomeIcon />
+              </span>
+              <span className="font-bold ">Address:</span>
+              <span className="pl-2 xl:pl-[1px] text-left">
+                Office No-4, Shukdhashree{" "}
+                <p>Apartment, Sr No.422, Narayan Peth,</p>
+                Pune, Pune City, Maharashtra, India, 411030.
+              </span>
             </div>
 
             <div className="mb-4 ml-[-12px]">

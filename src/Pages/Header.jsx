@@ -49,7 +49,7 @@ const Header = () => {
           className="flex items-center mr-6 xl:ml-[-8.5rem] lg:-ml-32  xl:text-lg lg:text-lg text-black font-bold"
         >
           <EmailIcon style={{ marginRight: "8px" }} />
-          pestokiller.co@gmail.com
+          entomon.pestsolutions@gmail.com{" "}
         </a>
       </Typography>
       <Typography

@@ -36,7 +36,7 @@ const PestOptionsPage = () => {
   };
 
   const handleRedirect8 = () => {
-    window.location.href = "/general";
+    window.location.href = "/sanitization";
   };
   const handleRedirect9 = () => {
     window.location.href = "/fleafly";
@@ -49,13 +49,16 @@ const PestOptionsPage = () => {
   return (
     <div className="min-h-screen mb-[12rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-15 ssm:mt-[5rem] md:mt-[2rem] flex items-center justify-center">
       <div className="p-8 ml-[-12px] mr-[-12px] items-center text-center w-[70rem] rounded-lg shadow-xl xl:-mt-[20rem] sm:-mt-[8rem] ssm:-mt-[11rem] md:-mt-[12rem] lg:-mt-[12rem] bg-white">
-      <h1
-  className="text-3xl font-semibold mb-5 text-center"
-  style={{ color: 'green', fontSize: '16', fontFamily: 'Times New Roman Georgia Garamond' }}
->
-  Our Pest Control Services
-</h1>
-
+        <h1
+          className="text-3xl font-semibold mb-5 text-center"
+          style={{
+            color: "green",
+            fontSize: "16",
+            fontFamily: "Times New Roman Georgia Garamond",
+          }}
+        >
+          Our Pest Control Services
+        </h1>
 
         <div className="flex flex-wrap gap-8 ml-12 item-center">
           {/* Termite Control */}
@@ -198,7 +201,7 @@ const PestOptionsPage = () => {
               to="/general"
               className="flex items-center justify-center text-black py-3 px-6 rounded-lg  focus:outline-none focus:ring-blue-400"
             >
-              General
+              Sanitization
             </Link>
           </div>
 

@@ -51,7 +51,7 @@ function App() {
         <Route path="/ant" component={Ant} />
         <Route path="/woodborer" component={WoodBorer} />
         <Route path="/bedbug" component={BedBug} />
-        <Route path="/general" component={General} />
+        <Route path="/sanitization" component={General} />
         <Route path="/fleafly" component={Fly} />
         <Route path="/agriculture" component={Agriculture} />
       </Switch>

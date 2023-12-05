@@ -168,7 +168,7 @@ const General = () => {
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-            General Control & Treatment
+            Sanitization{" "}
           </h1>
           <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
             We specialize in effectively treating and eliminating General from
@@ -228,52 +228,107 @@ const General = () => {
 
         <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold"> Sightings and fecal droppings:</span>
-            Generales are nocturnal creatures and tend to hide during the day.
-            If you notice live Generales scurrying around at night or find small
-            dark droppings resembling coffee grounds, it could indicate an
-            infestation.
+            <span class="font-semibold"> Visible Dirt and Grime:</span>
+            If you observe visible dirt, grime, or stains on surfaces, it may
+            indicate a lack of proper cleaning and sanitization. Regular
+            cleaning routines are essential to prevent the buildup of
+            contaminants.
           </p>
           <p class="mb-4 sm:text-base">
-            <span class="font-semibold">UnpleasGeneral odor:</span>
-            Generales emit a distinctive musty odor that can become noticeable
-            in areas with a large population. If you detect an unpleasGeneral
-            smell, particularly in kitchen or bathroom areas, it could be a sign
-            of a General infestation.
+            <span class="font-semibold">Foul Odors:</span>
+            Unpleasant smells, such as musty or moldy odors, can suggest the
+            presence of bacteria or fungi. Proper cleaning and disinfection can
+            help eliminate these odors and improve the overall air quality.
           </p>
           <p class="mb-4 sm:text-base">
-            Dealing with a General infestation requires professional expertise.
-            A licensed pest control company can assess the severity of the
-            infestation and implement appropriate General control measures. This
-            may include insecticide treatments, baits, and sealing entry points
-            to prevent further infestations.
+            {" "}
+            <span className="font-semibold">Presence of Mold and Mildew:</span>
+            Mold and mildew thrive in damp and humid environments. If you notice
+            black or greenish patches on walls, ceilings, or other surfaces, it
+            could be a sign of inadequate sanitization. Addressing moisture
+            issues and using appropriate cleaning agents can help prevent mold
+            growth.
+          </p>
+          <p class="mb-4 sm:text-base">
+            {" "}
+            <span className="font-semibold">Illness Outbreaks:</span>
+            An increase in illness outbreaks or the spread of infectious
+            diseases among individuals in a specific location may indicate a
+            lack of proper sanitization. Regular disinfection of high-touch
+            surfaces and common areas is crucial to reduce the risk of
+            infections.
+          </p>
+          <p class="mb-4 sm:text-base">
+            {" "}
+            <span className="font-semibold">Insect or Pest Infestations:</span>
+            Similar to General infestations, the presence of pests or insects
+            can be a sign of poor sanitization. Food residues and uncleaned
+            areas can attract pests. Implementing proper sanitation practices,
+            including cleaning up food spills promptly, can help prevent pest
+            infestations.
+          </p>
+          <p class="mb-4 sm:text-base">
+            {" "}
+            <span className="font-semibold">Surface Contamination:</span>
+            If surfaces, especially in high-traffic areas, feel sticky or have
+            visible residues, it may indicate inadequate cleaning. Regular
+            cleaning with appropriate sanitizing agents is necessary to maintain
+            a hygienic environment.
+          </p>
+          <p class="mb-4 sm:text-base">
+            <span className="font-semibold">
+              Professional Sanitization Services:
+            </span>
+            For comprehensive sanitization, especially in large or commercial
+            spaces, it's advisable to hire professional sanitization services.
+            These services often use specialized equipment and disinfectants to
+            ensure thorough cleaning and sanitation.
           </p>
         </div>
 
         <div className="mt-10 flex flex-col items-start text-start container font-bold">
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              Generales are active mostly during nighttime or in dark, concealed
-              areas.
+              Nighttime or Concealed Activity: Similar to Generals preferring
+              darkness, areas that are not easily visible or concealed spots may
+              harbor germs and contaminants. Pay special attention to cleaning
+              and sanitizing hidden corners, gaps, and voids in walls, floors,
+              and furniture.
             </li>
             <li>
-              They prefer to avoid exposure to light and maintain a hidden
-              presence within the colonies they infest.
+              Avoidance of Light: Germs and bacteria can thrive in areas with
+              minimal exposure to light. Proper sanitization should include
+              spaces where light may not reach easily, ensuring a comprehensive
+              cleaning process in both visible and concealed areas.
             </li>
             <li>
-              These resilient insects can establish their hiding spots in
-              various locations, including cracks, crevices, and voids in walls,
-              floors, and furniture.
+              Establishment of Hiding Spots: Just as Generals establish hiding
+              spots, bacteria and viruses can find refuge in various locations.
+              Regular sanitization routines should target potential hiding
+              spots, including cracks, crevices, and hard-to-reach areas where
+              contaminants may accumulate.
             </li>
             <li>
-              Generals can travel and infest new areas by navigating through
-              gaps and openings, and they are also known to be carried in
-              infested items such as bags, boxes, and furniture.
+              Travel and Infestation Routes: Germs can spread through contact
+              and airborne transmission. Consider how people and items move
+              within a space, and focus on sanitizing commonly touched surfaces,
+              pathways, and frequently used items to prevent the spread of
+              contaminants.
+            </li>
+            <li>
+              Carried in Infested Items: Similar to Generals being carried in
+              bags and furniture, germs can be transported through personal
+              belongings. Implement proper sanitization practices for items like
+              bags, packages, and commonly touched objects to reduce the risk of
+              introducing contaminants into different areas.
             </li>
             <li className="text-red-500">
-              Remember, if you suspect a General infestation in your property,
-              it is essential to contact a professional pest control service to
-              assess the situation and provide effective treatment options.
+              Professional Sanitization Services: Just as professional pest
+              control services are recommended for Generals, hiring specialized
+              sanitization services is crucial for ensuring a thorough and
+              effective cleaning process. These services often use advanced
+              equipment and disinfectants to target hard-to-reach areas and
+              achieve a high level of cleanliness.
             </li>
           </ul>
         </div>
