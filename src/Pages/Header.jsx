@@ -6,7 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import Logo from "../assets/Navbar/Logo.jpeg";
+import Logo from "../assets/Navbar/Logo.png";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -82,7 +82,7 @@ const Header = () => {
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
           <img
-            className="mx-auto object-scale-down flex h-20 w-auto max-w-screen-xl "
+            className="mx-auto flex h-[5rem] w-auto max-w-screen-xl "
             src={Logo}
             alt="Pest Control Logo"
           />
