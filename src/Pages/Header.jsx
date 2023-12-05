@@ -75,18 +75,19 @@ const Header = () => {
       className="mx-auto max-w-screen-xxl py-2 px-4 lg:px-8 lg:py-4"
       style={{ boxShadow: "-moz-initial" }}
     >
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+      <div className="mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="/"
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
           <img
-            className="mx-auto flex h-min w-[7rem] max-w-screen-xl "
+            className="mx-auto object-scale-down flex h-20 w-auto max-w-screen-xl "
             src={Logo}
             alt="Pest Control Logo"
           />
         </Typography>
+
         <div className="hidden lg:flex">{navList}</div>
         <Link
           to="/contact"
