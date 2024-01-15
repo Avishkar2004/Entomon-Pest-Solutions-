@@ -41,7 +41,7 @@ const Testimonial = () => {
                   ))}
                 </ul>
                 <p data-aos="zoom-in" data-aos-delay="100">
-                  I have taken service from pestokiller for my packaged drinking
+                  I have taken service from Entomon Pest Solution for my packaged drinking
                   water factory. They firstly professionally inspected the pest
                   and causes of pest in my factory. Then the performed the
                   lizard and spider control service. This service was too
@@ -83,7 +83,7 @@ const Testimonial = () => {
                   ))}
                 </ul>
                 <p data-aos="zoom-in" data-aos-delay="400">
-                  I have taken recently service from pestokiller for my hostel
+                  I have taken recently service from Entomon Pest Solution for my hostel
                   they provide huge discount independent sale that ongoing on
                   their website. It's worth I will suggest best service in peth
                   area for bedbug.This service proved highly effective, leaving

@@ -126,18 +126,7 @@ const Cockroach = () => {
         </p>
       </div>
 
-      <div className="text-center mt-10">
-        <h1
-          className="text-3xl font-semibold mb-5 text-center"
-          style={{
-            color: "green",
-            fontSize: "16",
-            fontFamily: "Times New Roman Georgia Garamond",
-          }}
-        >
-          Approximate Price
-        </h1>
-      </div>
+    
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
         <div className="lg:flex items-center">
           {/* Image */}

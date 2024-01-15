@@ -1,7 +1,7 @@
 {
   "hosting": {
     "public": "build",
-    "ignore": ["**, !*"],
+    "ignore": ["*, !"],
     "rewrites": [
       {
         "source": "**",  
@@ -11,4 +11,3 @@
     "site": "entomon-pest-solutions"
   }
 }
-

@@ -44,8 +44,10 @@ const Header = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
+        
+
         <a
-          href="mailto:pestokiller.co@gmail.com"
+          href="mailto:entomon.pestsolution@gmail.com"
           className="flex items-center mr-6 xl:ml-[-8.5rem] lg:-ml-32  xl:text-lg lg:text-lg text-black font-bold"
         >
           <EmailIcon style={{ marginRight: "8px" }} />

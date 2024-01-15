@@ -118,9 +118,6 @@ const Ant = () => {
           from further Ant infestations.
         </p>
       </div>
-      <div className="text-center mt-10">
-        <h1 className="text-[30px] font-bold">PRICE CALCULATOR</h1>
-      </div>
 
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
         <div className="lg:flex items-center">

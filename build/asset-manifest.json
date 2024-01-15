@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.55f17fe6.css",
-    "main.js": "/static/js/main.ad0d3172.js",
+    "main.css": "/static/css/main.0737f29a.css",
+    "main.js": "/static/js/main.58abc6f7.js",
     "static/media/c6.png": "/static/media/c6.d9eb57073c516cb49525.png",
     "static/media/safe.png": "/static/media/safe.0a327cfbc0d0072e5871.png",
+    "static/media/Logo.png": "/static/media/Logo.d440e6a5b9844c7ea129.png",
     "static/media/cockroach.png": "/static/media/cockroach.6de487adeaedf5a83d89.png",
     "static/media/c2.jpeg": "/static/media/c2.df6dda3425e237eaf0fe.jpeg",
     "static/media/c4.jpeg": "/static/media/c4.8494c35e59694598ea0b.jpeg",
@@ -20,7 +21,6 @@
     "static/media/mm.avif": "/static/media/mm.f212a7218b43cf9e351c.avif",
     "static/media/Agriculture1.webp": "/static/media/Agriculture1.281f2246efd4ca0f7e1c.webp",
     "static/media/TermitePhoto.webp": "/static/media/TermitePhoto.9b421b1cc213378d4471.webp",
-    "static/media/logo.png": "/static/media/logo.d37cd42ced3cce8ed2b6.png",
     "static/media/General2.jpg": "/static/media/General2.9a60258e17c9f7aca3c6.jpg",
     "static/media/mouse1.webp": "/static/media/mouse1.a5217cdce7a3f6043f5c.webp",
     "static/media/BedBug5.webp": "/static/media/BedBug5.a1dd735552e35818aad1.webp",
@@ -58,17 +58,16 @@
     "static/media/mouse3.webp": "/static/media/mouse3.67196825a3fc11363f14.webp",
     "static/media/mouse4.webp": "/static/media/mouse4.26e18b7eaa9cdd967a5f.webp",
     "static/media/mosquito2.webp": "/static/media/mosquito2.e78186c40e5fa2bff40f.webp",
-    "static/media/BedBug4.webp": "/static/media/BedBug4.bfc52183bdd2065b4eba.webp",
     "static/media/mosquito1.webp": "/static/media/mosquito1.56f4a3a6fe357602d07a.webp",
     "static/media/BedBug2.webp": "/static/media/BedBug2.d77ed5fcf130fbfd5623.webp",
     "static/media/Fly2.avif": "/static/media/Fly2.4dec10c3160f8e4f6747.avif",
     "static/media/Fly1.webp": "/static/media/Fly1.a9d305c4c8af88202b2d.webp",
     "index.html": "/index.html",
-    "main.55f17fe6.css.map": "/static/css/main.55f17fe6.css.map",
-    "main.ad0d3172.js.map": "/static/js/main.ad0d3172.js.map"
+    "main.0737f29a.css.map": "/static/css/main.0737f29a.css.map",
+    "main.58abc6f7.js.map": "/static/js/main.58abc6f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.55f17fe6.css",
-    "static/js/main.ad0d3172.js"
+    "static/css/main.0737f29a.css",
+    "static/js/main.58abc6f7.js"
   ]
 }

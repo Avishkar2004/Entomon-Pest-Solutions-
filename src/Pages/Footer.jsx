@@ -24,7 +24,7 @@ const Footer = () => {
       <p className="bg-[#d3b76f] mt-28 mb-5 pb-3 p-[1rem] h-3 "></p>
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
         <div className="mb-6 md:w-1/4">
-          <h1 className="text-2xl font-bold">PESTOKILLER</h1>
+          <h1 className="text-2xl font-bold">Entomon Pest Solution Pvt Ltd.</h1>
           <p className="mt-2">
             Welcome to our pest control website! We offer top-quality pest
             control services to keep your home or business pest-free. Our expert
@@ -71,9 +71,9 @@ const Footer = () => {
             <HomeIcon />
             Naryan Peth, Bhatacha bol, Pune, 411030
             <br />
-            <a href="mailto:pestokiller.co@gmail.com">
+            <a href="mailto:entomon.pestsolution@gmail.com">
               <EmailIcon />
-              pestokiller.co@gmail.com
+              entomon.pestsolution@gmail.com
             </a>
             <br />
             <a href="tel:+918010281236">
