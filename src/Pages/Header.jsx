@@ -2,9 +2,7 @@ import React, { useState, useEffect } from "react";
 import {
   Navbar,
   MobileNav,
-  Typography,
-  Button,
-  IconButton,
+  Typography, IconButton
 } from "@material-tailwind/react";
 import Logo from "../assets/Navbar/Logo.png";
 import CallIcon from "@mui/icons-material/Call";
@@ -44,7 +42,7 @@ const Header = () => {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        
+
 
         <a
           href="mailto:entomon.pestsolution@gmail.com"

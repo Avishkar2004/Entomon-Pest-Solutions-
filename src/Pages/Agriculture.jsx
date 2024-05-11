@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import Agricultures1 from "../assets/Agriculture/Agriculture1.webp";
 import Agricultures2 from "../assets/Agriculture/Agriculture2.webp";
 import AgricultureSafe from "../assets/Agriculture/Agriculture3.webp";
