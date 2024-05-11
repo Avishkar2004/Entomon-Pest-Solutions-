@@ -48,7 +48,7 @@ const PestOptionsPage = () => {
 
   return (
     <div className="min-h-screen mb-[12rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-15 ssm:mt-[5rem] md:mt-[2rem] flex items-center justify-center">
-      <div className="p-8 ml-[-12px] mr-[-12px] items-center text-center w-[70rem] rounded-lg shadow-xl xl:-mt-[20rem] sm:-mt-[8rem] ssm:-mt-[11rem] md:-mt-[12rem] lg:-mt-[12rem] bg-white">
+      <div className="p-8 ml-[-12px] w-[70rem] rounded-lg shadow-xl xl:-mt-[20rem] sm:-mt-[8rem] ssm:-mt-[11rem] md:-mt-[12rem] lg:-mt-[12rem] bg-white">
         <h1
           className="text-3xl font-semibold mb-5 text-center"
           style={{
