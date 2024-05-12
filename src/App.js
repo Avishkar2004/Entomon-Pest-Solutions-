@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./Pages/Header";
 import Footer from "./Pages/Footer";
 import BookService from "./Pages/ServiceBook";
-// import CheckService from './Pages/CheckService'
 import Type from "./Pages/ServiceType";
 import Banner from "./Pages/Banner";
 import Testimonial from "./Pages/Testimonial";
