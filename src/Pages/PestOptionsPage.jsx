@@ -63,7 +63,7 @@ const PestOptionsPage = () => {
         <div className="flex flex-wrap gap-8 ml-12 item-center">
           {/* Termite Control */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect}
           >
             <img
@@ -81,7 +81,7 @@ const PestOptionsPage = () => {
 
           {/* Cockroach Control */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect2}
           >
             <img
@@ -99,7 +99,7 @@ const PestOptionsPage = () => {
 
           {/* Mosquito Control */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect3}
           >
             <img
@@ -117,7 +117,7 @@ const PestOptionsPage = () => {
 
           {/* Mouse Control */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect4}
           >
             <img
@@ -135,7 +135,7 @@ const PestOptionsPage = () => {
 
           {/* Ant Service */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect5}
           >
             <img
@@ -153,7 +153,7 @@ const PestOptionsPage = () => {
 
           {/* Wood Borer Service */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect6}
           >
             <img
@@ -171,7 +171,7 @@ const PestOptionsPage = () => {
 
           {/* Bed Bug Service */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect7}
           >
             <img
@@ -189,7 +189,7 @@ const PestOptionsPage = () => {
 
           {/* General Pest Control */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect8}
           >
             <img
@@ -207,7 +207,7 @@ const PestOptionsPage = () => {
 
           {/* FleaFly Services */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect9}
           >
             <img
@@ -225,7 +225,7 @@ const PestOptionsPage = () => {
 
           {/* Agriculture Service */}
           <div
-            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6"
+            className="text-center mt-4 sm:w-1/4 ssm:w-1/4 md:w-1/6 lg:w-1/6 hover:cursor-pointer"
             onClick={handleRedirect10}
           >
             <img

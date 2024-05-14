@@ -3,9 +3,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Payment from "../assets/Footer/payment.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
+  faFacebook, faInstagram, faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import HomeIcon from "@mui/icons-material/Home";
 import EmailIcon from "@mui/icons-material/Email";
@@ -86,13 +84,13 @@ const Footer = () => {
       {/* Social Media Icons */}
       <div className="flex justify-center items-center space-x-4 mt-4">
         <p>Follow Us On:- </p>
-        <a href="#" className="text-blue-500 hover:text-blue-700">
+        <a href="https://www.facebook.com/profile.php?id=61559519045004" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700">
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
-        <a href="#" className="text-blue-500 hover:text-blue-700">
-          <FontAwesomeIcon icon={faTwitter} size="2x" />
+        <a href="https://www.youtube.com/@EntomonPestSolutions/featured" rel="noreferrer" target="_blank" className="text-blue-500 hover:text-blue-700">
+          <FontAwesomeIcon icon={faYoutube} size="2x" />
         </a>
-        <a href="#" className="text-blue-500 hover:text-blue-700">
+        <a href="https://www.instagram.com/entomon_pest_solutions" target="_blank" rel="noreferrer" className="text-blue-500 hover:text-blue-700">
           <FontAwesomeIcon icon={faInstagram} size="2x" />
         </a>
       </div>
