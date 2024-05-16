@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import MosquitoControl2 from "../assets/Mosquito/gpp.jpeg";
+import MosquitoSafe from "../assets/Mosquito/mm.avif";
 import Mosquitos1 from "../assets/Mosquito/mosquito1.webp";
 import Mosquitos2 from "../assets/Mosquito/mosquito2.webp";
-import MosquitoSafe from "../assets/Mosquito/mm.avif";
 import MosquitoControl from "../assets/Mosquito/msd.jpg";
-import MosquitoControl2 from "../assets/Mosquito/gpp.jpeg";
 
 const Mosquito = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");

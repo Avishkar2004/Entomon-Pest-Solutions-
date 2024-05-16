@@ -1,6 +1,6 @@
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import PhoneCall from "../assets/Global/telephone.png";
-import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,7 @@ const Contact = () => {
     pests: "Select any one...",
     establishmentType: "Residential",
   });
-
+  const [sending, setSending] = useState(false);
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -26,6 +26,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSending(true) //Set sending to true to show loader
     const emailParams = {
       user_name: formData.name,
       user_email: formData.email,
@@ -62,12 +63,23 @@ const Contact = () => {
       })
       .catch((error) => {
         console.error("Error sending email:", error);
-      });
+      }).finally(() => {
+        setSending(false) //set sending to false after sending
+      })
+  };
+
+  // Loader
+  const Loader = () => {
+    return (
+      <div className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-800 bg-opacity-50 z-50">
+        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
+      </div>
+    );
   };
 
   return (
-    <div className="min-h-screen container flex flex-col justify-center">
-      <div className="max-w-none ml-4 md:ml-16 md:items-center items-center xsm:ml-12 xsm:mr-[-1rem] ssm:ml-10 ssm:mr-[-6rem] sm:mr-[-4rem] xl:ml-[15rem]">
+    <div className="min-h-screen flex flex-col justify-center items-center">
+      <div className="max-w-none mx-auto md:ml-16 md:flex md:items-center xsm:ml-12 xsm:mr-[1rem] sm:mr-[-4rem]">
         <h1 className="text-4xl font-semibold text-center items-center mt-8 text-red-600">
           Contact Us
         </h1>
@@ -91,8 +103,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="max-w-lg p-6 mt-4 rounded-md items-center xsm:ml-1 xsm:mr-[-6rem] ssm:ml-10 ssm:mr-[-6rem] sm:ml-[7rem] sm:mr-[-25rem] md:ml-[10rem] md:mr-[-22rem] xl:mr-[-100rem] xl:ml-[30rem] lg:ml-[15rem]">
-        <form onSubmit={sendEmail}>
+      <div className="max-w-lg mx-auto p-6 mt-4 rounded-md w-full">
+        <form onSubmit={sendEmail} className="flex flex-col space-y-4">
           <div className="mb-4">
             <div className="flex items-center mb-2">
               <label className="block text-black font-medium">
@@ -102,7 +114,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center mb-2">
               <label className="block"></label>
-              <p className="text-red-700 text-base">
+              <p className="text-red-600 text-base font-bold">
                 Note: All fields are mandatory. We respect the confidentiality
                 of your personal details and adhere to strict data protection
                 practices.
@@ -212,6 +224,7 @@ const Contact = () => {
           >
             Send Message
           </button>
+          {sending && <Loader />}
         </form>
       </div>
     </div>

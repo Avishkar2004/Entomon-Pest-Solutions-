@@ -1,15 +1,15 @@
 import React from "react";
-import Termite from "../assets/Option/termite.png";
+import { Link } from "react-router-dom";
+import Agriculture from "../assets/Option/agriculture.png";
+import Ant from "../assets/Option/ant.png";
+import BedBug from "../assets/Option/bedbug.png";
 import Cockroach from "../assets/Option/cockroach.png";
+import FleaFly from "../assets/Option/flea.png";
+import General from "../assets/Option/general.png";
 import Mosquito from "../assets/Option/mosquito.png";
 import Mouse from "../assets/Option/mouse.png";
-import Ant from "../assets/Option/ant.png";
+import Termite from "../assets/Option/termite.png";
 import WoodBorer from "../assets/Option/wood.png";
-import BedBug from "../assets/Option/bedbug.png";
-import General from "../assets/Option/general.png";
-import FleaFly from "../assets/Option/flea.png";
-import Agriculture from "../assets/Option/agriculture.png";
-import { Link } from "react-router-dom";
 
 const PestOptionsPage = () => {
   const handleRedirect = () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import Residential from "../assets/ServiceType/residential.jpg";
-import Commerical from "../assets/ServiceType/ind.jpg";
 import Industrial from "../assets/ServiceType/factory.jpg";
+import Commerical from "../assets/ServiceType/ind.jpg";
+import Residential from "../assets/ServiceType/residential.jpg";
 
 const ServiceType = () => {
   return (

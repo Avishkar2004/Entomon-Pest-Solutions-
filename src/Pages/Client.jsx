@@ -1,11 +1,11 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import c1 from "../assets/ServiceType/c1.jpeg";
-import c4 from "../assets/ServiceType/c4.jpeg";
 import c2 from "../assets/ServiceType/c2.jpeg";
-import c6 from "../assets/ServiceType/c6.png";
+import c4 from "../assets/ServiceType/c4.jpeg";
 import c5 from "../assets/ServiceType/c5.avif";
+import c6 from "../assets/ServiceType/c6.png";
 
 function Client() {
   return (

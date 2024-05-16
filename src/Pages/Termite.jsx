@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import TermiteGlow from "../assets/Termite/glow.jpg";
-import TermiteNormal from "../assets/Termite/normal.jpg";
-import BeachHouse from "../assets/Termite/beach-house.jpg";
 import TermitePhoto from "../assets/Termite/TermitePhoto.webp";
 import TermitePhoto2 from "../assets/Termite/TermitePhoto2.webp";
+import BeachHouse from "../assets/Termite/beach-house.jpg";
+import TermiteGlow from "../assets/Termite/glow.jpg";
+import TermiteNormal from "../assets/Termite/normal.jpg";
 
 const Termite = () => {
   const [selectOption, setSelectOption] = useState("1 bhk");

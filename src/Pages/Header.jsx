@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from "react";
 import {
-  Navbar,
+  IconButton,
   MobileNav,
-  Typography, IconButton
+  Navbar,
+  Typography
 } from "@material-tailwind/react";
-import Logo from "../assets/Navbar/Logo.png";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Logo from "../assets/Navbar/Logo.png";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);
@@ -61,6 +62,7 @@ const Header = () => {
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=918010281236"
+          rel="noreferrer"
           className="flex items-center pl-9 xl:pl-2 xl:text-lg text-green-500 font-bold xsm:pl-1"
         >
           <WhatsAppIcon style={{ marginRight: "8px" }} />

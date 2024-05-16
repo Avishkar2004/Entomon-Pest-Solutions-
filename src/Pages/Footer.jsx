@@ -1,13 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import Payment from "../assets/Footer/payment.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook, faInstagram, faYoutube
 } from "@fortawesome/free-brands-svg-icons";
-import HomeIcon from "@mui/icons-material/Home";
-import EmailIcon from "@mui/icons-material/Email";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from "@mui/icons-material/Email";
+import HomeIcon from "@mui/icons-material/Home";
+import React from "react";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Payment from "../assets/Footer/payment.png";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -59,22 +59,22 @@ const Footer = () => {
           <h2 className="text-xl font-bold">USEFUL LINKS</h2>
           <ul className="mt-2">
             <li onClick={scrollToTop}>
-              <button>Help</button>
+              <button className="hover:text-blue-500">Help</button>
             </li>
           </ul>
         </div>
         <div className="md:w-1/4">
           <h2 className="text-xl font-bold">CONTACT</h2>
-          <address className="mt-2 leading-relaxed">
+          <address className="mt-2">
             <HomeIcon />
             Naryan Peth, Bhatacha bol, Pune, 411030
             <br />
-            <a href="mailto:entomon.pestsolution@gmail.com">
+            <a href="mailto:entomon.pestsolution@gmail.com" className="hover:text-blue-500">
               <EmailIcon />
               entomon.pestsolution@gmail.com
             </a>
             <br />
-            <a href="tel:+918010281236">
+            <a href="tel:+918010281236" className="hover:text-blue-500">
               <CallIcon />
               +918010281236
             </a>
