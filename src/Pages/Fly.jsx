@@ -44,19 +44,19 @@ const Fly = () => {
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
             src={Flys1}
-            alt=""
+            alt="Fly Treatment in pune"
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
             src={Flys2}
-            alt=""
+            alt="Fly Treatment in pune"
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
             src={FlySafe}
-            alt=""
+            alt="Fly Treatment in pune"
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
@@ -126,7 +126,7 @@ const Fly = () => {
           <div className="lg:w-1/2 relative">
             <img
               src={FlySafe}
-              alt="Luxury Apartment"
+              alt="Fly Treatment in pune"
               className="w-full h-auto lg:h-full object-cover"
             />
             <div className="absolute inset-0 bg-indigo-900 opacity-40"></div>
@@ -287,7 +287,7 @@ const Fly = () => {
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
                 src={FlyControl}
-                alt="Termite Control"
+                alt="Fly Treatment in pune"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
             </div>
@@ -296,7 +296,7 @@ const Fly = () => {
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
                 src={FlyControl2}
-                alt="Termite Control"
+                alt="Fly Treatment in pune"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
             </div>

@@ -86,7 +86,7 @@ const Header = () => {
           <img
             className="mx-auto flex h-[5rem] w-auto max-w-screen-xl "
             src={Logo}
-            alt="Pest Control Logo"
+            alt="Pest Control In Pune"
           />
         </Typography>
 

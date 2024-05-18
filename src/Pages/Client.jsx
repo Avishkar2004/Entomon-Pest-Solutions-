@@ -28,7 +28,7 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c1}
-                alt="Client 1"
+                alt="Goderaj Infinity"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">Goderaj Infinity</p>
@@ -38,7 +38,7 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c4}
-                alt="Client 2"
+                alt="Goderaj Rejue"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">Goderaj Rejue</p>
@@ -47,7 +47,7 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c2}
-                alt="Client 2"
+                alt="Water purification factory"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">Water purification factory</p>
@@ -56,16 +56,16 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c6}
-                alt="Client 2"
+                alt="Bank Of Maharastra"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <p className="text-lg font-semibold">Bank Of Maharastra </p>
+              <p className="text-lg font-semibold">Bank Of Maharastra</p>
               <p className="text-gray-600">Good customer with Yearly contract with pestokiller</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c5}
-                alt="Client 2"
+                alt="State bank of India"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">State bank of India</p>
@@ -81,7 +81,7 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c1}
-                alt="Client 1"
+                alt="Goderaj Infinity"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">Goderaj Infinity</p>
@@ -91,7 +91,7 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c4}
-                alt="Client 2"
+                alt="Goderaj Rejue"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">Goderaj Rejue</p>
@@ -101,7 +101,7 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c2}
-                alt="Client 2"
+                alt="Water purification factory"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">Water purification factory</p>
@@ -110,16 +110,16 @@ function Client() {
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c6}
-                alt="Client 2"
+                alt="Bank Of Maharastra"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <p className="text-lg font-semibold">Bank Of Maharastra </p>
+              <p className="text-lg font-semibold">Bank Of Maharastra</p>
               <p className="text-gray-600">Good customer with Yearly contract with pestokiller</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
               <img
                 src={c5}
-                alt="Client 2"
+                alt="State bank of India"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
               <p className="text-lg font-semibold">State bank of India</p>

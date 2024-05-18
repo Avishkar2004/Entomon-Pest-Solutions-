@@ -17,19 +17,19 @@ const Agriculture = () => {
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
             src={Agricultures1}
-            alt=""
+            alt="Agriculture pest control treatment"
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
             src={Agricultures2}
-            alt=""
+            alt="Effective agriculture pest control services"
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
             src={AgricultureSafe}
-            alt=""
+            alt="Safe agriculture pest control methods"
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
@@ -120,7 +120,7 @@ const Agriculture = () => {
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
                 src={AgricultureControl}
-                alt="Termite Control"
+                alt="Professional agriculture pest control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
             </div>
@@ -129,7 +129,7 @@ const Agriculture = () => {
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
                 src={AgricultureControl2}
-                alt="Termite Control"
+                alt="Agriculture pest control methods"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
             </div>

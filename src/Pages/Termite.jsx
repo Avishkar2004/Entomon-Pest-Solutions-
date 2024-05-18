@@ -51,19 +51,19 @@ const Termite = () => {
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
             src={TermiteNormal}
-            alt=""
+            alt="Termite Control"
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
             src={BeachHouse}
-            alt=""
+            alt="Termite Control"
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
             src={TermiteGlow}
-            alt=""
+            alt="Termite Control"
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
@@ -125,7 +125,7 @@ const Termite = () => {
           property from further termite infestations.
         </p>
       </div>
-   
+
 
       {/* from here i made responsive */}
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
@@ -134,7 +134,7 @@ const Termite = () => {
           <div className="lg:w-1/2 relative">
             <img
               src={BeachHouse}
-              alt="Luxury Apartment"
+              alt="Termite Control"
               className="w-full h-auto lg:h-full object-cover"
             />
             <div className="absolute inset-0 bg-indigo-900 opacity-40"></div>

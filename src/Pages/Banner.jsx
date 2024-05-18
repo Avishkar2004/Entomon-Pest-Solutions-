@@ -51,7 +51,7 @@ function Banner() {
           <div className="absolute inset-0 items-center pr-12 rounded-lg"></div>
           <img
             src={Pest1}
-            alt="Pest Control Image"
+            alt="Pest Control In Pune"
             className="w-full h-auto rounded-lg shadow-lg"
           />
         </div>

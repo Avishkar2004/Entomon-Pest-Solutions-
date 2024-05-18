@@ -16,9 +16,6 @@ const GlowingIcons = () => {
           className="w-8 h-8 md:w-12 md:h-12 sm:w-12 sm:h-12 xsm:h-10 xsm:w-10"
         />
       </a>
-
-
-
       <a
         href="https://api.whatsapp.com/send?phone=918010281236"
         className="glow-icon glow-icon-whatsapp text-green-500 hover:text-green-700"
@@ -29,15 +26,14 @@ const GlowingIcons = () => {
         />
       </a>
       <a
-  href="mailto:pestokiller.co@gmail.com"
-  className="glow-icon glow-icon-email text-red-600 hover:text-red-700"
->
-  <FontAwesomeIcon
-    icon={faEnvelope}
-    className="w-8 h-8 md:w-12 md:h-12 sm:w-12 sm:h-12 xsm:h-10 xsm:w-10"
-  />
-</a>
-
+        href="mailto:pestokiller.co@gmail.com"
+        className="glow-icon glow-icon-email text-red-600 hover:text-red-700"
+      >
+        <FontAwesomeIcon
+          icon={faEnvelope}
+          className="w-8 h-8 md:w-12 md:h-12 sm:w-12 sm:h-12 xsm:h-10 xsm:w-10"
+        />
+      </a>
     </div>
   );
 };

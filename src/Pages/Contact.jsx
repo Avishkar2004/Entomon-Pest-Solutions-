@@ -79,11 +79,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center">
-      <div className="max-w-none mx-auto md:ml-16 md:flex md:items-center xsm:ml-12 xsm:mr-[1rem] sm:mr-[-4rem]">
-        <h1 className="text-4xl font-semibold text-center items-center mt-8 text-red-600">
-          Contact Us
-        </h1>
-        <div className="p-4 md:p-12">
+      <h1 className="text-4xl font-semibold text-center items-center mt-8 text-red-600">
+        Contact Us
+      </h1>
+      <div className="max-w-none mx-auto md:ml-16 md:flex md:items-center xsm:ml-12 xsm:mr-[1rem]">
+        <div className="p-4 md:p-12 justify-center items-center">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center">
             <div className="flex-shrink-0">
               <img

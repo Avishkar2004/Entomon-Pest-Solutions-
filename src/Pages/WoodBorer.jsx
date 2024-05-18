@@ -47,19 +47,19 @@ const WoodBorer = () => {
         <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
           <img
             src={WoodBorers1}
-            alt=""
+            alt="wood borer pest control"
             className="w-full h-60 object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full"
             loading="lazy"
           />
           <img
             src={WoodBorers2}
-            alt=""
+            alt="wood borer pest control"
             className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
           <img
             src={WoodBorerSafe}
-            alt=""
+            alt="wood borer pest control"
             className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32"
             loading="lazy"
           />
@@ -128,7 +128,7 @@ const WoodBorer = () => {
           <div className="lg:w-1/2 relative">
             <img
               src={WoodBorers2}
-              alt="Luxury Apartment"
+              alt="wood borer pest control"
               className="w-full h-auto lg:h-full object-cover"
             />
             <div className="absolute inset-0 bg-indigo-900 opacity-40"></div>
@@ -262,7 +262,7 @@ const WoodBorer = () => {
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
                 src={WoodBorerControl}
-                alt="Termite Control"
+                alt="wood borer pest control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
             </div>
@@ -271,7 +271,7 @@ const WoodBorer = () => {
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
                 src={WoodBorerControl2}
-                alt="Termite Control"
+                alt="wood borer pest control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
             </div>
