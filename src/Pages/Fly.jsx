@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Flys1 from "../assets/Fly/Fly1.webp";
 import Flys2 from "../assets/Fly/Fly2.avif";
@@ -7,6 +7,12 @@ import FlyControl from "../assets/Fly/Fly4.webp";
 import FlyControl2 from "../assets/Fly/Fly5.webp";
 
 const Fly = () => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -157,75 +163,83 @@ const Fly = () => {
               your business. Make sure that your employees remember to close all
               doors and windows, especially those adjacent to lights.
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              2. Inspection
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Inspect the perimeter of your building and search for any feeding
-              or breeding locations. A common female house fly can lay
-              approximately 500 eggs in three to four weeks, so identifying
-              possible breeding areas is critical to the prevention process.
-              Thoroughly investigate any wet or moist areas, since flies need
-              water to survive and reproduce. Check for larvae or maggots on any
-              materials received from vendor shipments. Eliminate any other
-              possible attractants from the premises.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              3. Sanitation
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Regular trash removal and sanitation will also help minimize the
-              risk of unwanted flies. Clean any garbage collection sites that
-              may have accumulated debris or waste. Cycle produce stock often to
-              dispose of moist or rotting material. Place any exterior trash
-              receptacles as far away from the building as possible. Repair
-              leaking drainage lines, which can also attract fruit flies and
-              phorid flies. Since flies are usually attracted to odors, it is
-              important to sanitize areas that contain pungent-smelling
-              bacteria. Note that many flies are attracted to nitrogen and
-              ammonia, since rotting organic materials will often contain these
-              substances. Therefore, is it imperative that you choose your
-              cleaning materials wisely, and eliminate odors; don’t simply mask
-              them.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              4. Control
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Wall-mounted insect light traps (also known as ILTs) are highly
-              recommended by pest professionals to keep fly populations in
-              check. Flies and other insects are attracted to specific
-              wavelengths of light, which are emitted by ILTs to lure unwanted
-              pests and eliminate them swiftly. When used efficiently, ILTs are
-              placed in strategic locations to ensure that the light trap will
-              be the first light source that intruding insects will see. Your
-              pest professional will work with you to determine the best
-              locations to place ILTs, keeping in mind customer traffic and low
-              visibility areas. Fly traps are sometimes used as a supplement to
-              your IPM solution in locations where electricity is unavailable or
-              where ILTs would otherwise be impossible or inappropriate.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              It’s crucial to understand which control methods are suitable for
-              your business type. For example, insecticide or chemical
-              treatments can be dangerous, and not appropriate to use around
-              food or other customer-handled goods. Chemical treatments should
-              be applied only by licensed pest management professionals, and
-              should be considered only if all other pest management methods
-              have been unsuccessful.
-            </p>
+            {isExpanded && (
+              <>
+
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  2. Inspection
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Inspect the perimeter of your building and search for any feeding
+                  or breeding locations. A common female house fly can lay
+                  approximately 500 eggs in three to four weeks, so identifying
+                  possible breeding areas is critical to the prevention process.
+                  Thoroughly investigate any wet or moist areas, since flies need
+                  water to survive and reproduce. Check for larvae or maggots on any
+                  materials received from vendor shipments. Eliminate any other
+                  possible attractants from the premises.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  3. Sanitation
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Regular trash removal and sanitation will also help minimize the
+                  risk of unwanted flies. Clean any garbage collection sites that
+                  may have accumulated debris or waste. Cycle produce stock often to
+                  dispose of moist or rotting material. Place any exterior trash
+                  receptacles as far away from the building as possible. Repair
+                  leaking drainage lines, which can also attract fruit flies and
+                  phorid flies. Since flies are usually attracted to odors, it is
+                  important to sanitize areas that contain pungent-smelling
+                  bacteria. Note that many flies are attracted to nitrogen and
+                  ammonia, since rotting organic materials will often contain these
+                  substances. Therefore, is it imperative that you choose your
+                  cleaning materials wisely, and eliminate odors; don’t simply mask
+                  them.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  4. Control
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Wall-mounted insect light traps (also known as ILTs) are highly
+                  recommended by pest professionals to keep fly populations in
+                  check. Flies and other insects are attracted to specific
+                  wavelengths of light, which are emitted by ILTs to lure unwanted
+                  pests and eliminate them swiftly. When used efficiently, ILTs are
+                  placed in strategic locations to ensure that the light trap will
+                  be the first light source that intruding insects will see. Your
+                  pest professional will work with you to determine the best
+                  locations to place ILTs, keeping in mind customer traffic and low
+                  visibility areas. Fly traps are sometimes used as a supplement to
+                  your IPM solution in locations where electricity is unavailable or
+                  where ILTs would otherwise be impossible or inappropriate.
+                </p>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  It’s crucial to understand which control methods are suitable for
+                  your business type. For example, insecticide or chemical
+                  treatments can be dangerous, and not appropriate to use around
+                  food or other customer-handled goods. Chemical treatments should
+                  be applied only by licensed pest management professionals, and
+                  should be considered only if all other pest management methods
+                  have been unsuccessful.
+                </p>
+              </>
+            )}
+            <button onClick={toggleReadMore}
+              className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+            >{isExpanded ? "Read Less" : "Read More"}</button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

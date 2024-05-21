@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Ants1 from "../assets/Ant/Ant1.webp";
 import Ants2 from "../assets/Ant/Ant2.webp";
@@ -7,6 +7,12 @@ import AntControl from "../assets/Ant/Ant4.webp";
 import AntControl2 from "../assets/Ant/Ant5.webp";
 
 const Ant = () => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -153,91 +159,99 @@ const Ant = () => {
               inside, it is surely effective. Make sure you make the line in a
               way that is out of reach of any child in the house.{" "}
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              2. Lemons{" "}
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Squeeze a lemon or place lemon peels in places from where the ants
-              enter. You can also wash your floors with water that has a little
-              lemon juice added to it. Ants don't like the smell of lemon juice
-              so they will keep away. Anything sour and bitter may keep the ants
-              away, but any sugar is the ants' best friend. So ensure you do not
-              keep anything sweet that may attract the ants in some way or the
-              other. Keep your kitchen slab clean and place the peels right
-              there.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              3. Oranges{" "}
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Oranges are the same as lemons; they keep the ants away from
-              visiting your house. Make a paste of one cup of warm water and a
-              few orange peels, which will help in getting rid of ants. Spread
-              this paste around the entry points of ants and wipe it afterwards.
-              You can also place orange peels on the kitchen slab or wherever
-              you think these ants may enter. It acts as a natural deterrent for
-              ants that may not only keep them but also keep them away. So,
-              bring the orange rinds to some use and ensure no ants visit your
-              house anymore.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              4. Pepper{" "}
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Ants are pretty fond of sugar but they hate pepper. Sprinkle
-              pepper at the areas from where ants enter your house. This will
-              help to get rid of ants. Cayenne pepper or black pepper are hated
-              by ants. You can also make a solution of pepper and water and
-              spray it near the entrant areas. The pepper wouldn't kill the ants
-              but deter them from returning to your house. Make sure you clean
-              the area where you want to spray the pepper solution.{" "}
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              5. Salt
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Spreading salt near nooks and corners where ants enter the house
-              will help keep ants away. Table salt is one of the best and
-              cheapest ways to get rid of ants naturally. Use ordinary table
-              salt, not health-boosting rock salt. All you need to do is to boil
-              water and add a large amount of salt to it, stirring it until
-              dissolves. Pour into a spray bottle and spray where you think ants
-              tend to enter from.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6 - Ant Sprays and Dusts :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Apply ant sprays or dusts containing insecticides to eliminate
-              ants on contact. Follow product instructions carefully and use
-              with caution, especially in areas accessible to pets and children.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 7 - Professional Pest Control :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              If the ant infestation is severe or persistent, consider seeking
-              professional pest control services. They can assess the situation
-              and use more advanced methods to eliminate the colony.
-            </p>
+
+            {isExpanded && (
+              <>
+
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  2. Lemons{" "}
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Squeeze a lemon or place lemon peels in places from where the ants
+                  enter. You can also wash your floors with water that has a little
+                  lemon juice added to it. Ants don't like the smell of lemon juice
+                  so they will keep away. Anything sour and bitter may keep the ants
+                  away, but any sugar is the ants' best friend. So ensure you do not
+                  keep anything sweet that may attract the ants in some way or the
+                  other. Keep your kitchen slab clean and place the peels right
+                  there.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  3. Oranges{" "}
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Oranges are the same as lemons; they keep the ants away from
+                  visiting your house. Make a paste of one cup of warm water and a
+                  few orange peels, which will help in getting rid of ants. Spread
+                  this paste around the entry points of ants and wipe it afterwards.
+                  You can also place orange peels on the kitchen slab or wherever
+                  you think these ants may enter. It acts as a natural deterrent for
+                  ants that may not only keep them but also keep them away. So,
+                  bring the orange rinds to some use and ensure no ants visit your
+                  house anymore.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  4. Pepper{" "}
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Ants are pretty fond of sugar but they hate pepper. Sprinkle
+                  pepper at the areas from where ants enter your house. This will
+                  help to get rid of ants. Cayenne pepper or black pepper are hated
+                  by ants. You can also make a solution of pepper and water and
+                  spray it near the entrant areas. The pepper wouldn't kill the ants
+                  but deter them from returning to your house. Make sure you clean
+                  the area where you want to spray the pepper solution.{" "}
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  5. Salt
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Spreading salt near nooks and corners where ants enter the house
+                  will help keep ants away. Table salt is one of the best and
+                  cheapest ways to get rid of ants naturally. Use ordinary table
+                  salt, not health-boosting rock salt. All you need to do is to boil
+                  water and add a large amount of salt to it, stirring it until
+                  dissolves. Pour into a spray bottle and spray where you think ants
+                  tend to enter from.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 6 - Ant Sprays and Dusts :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Apply ant sprays or dusts containing insecticides to eliminate
+                  ants on contact. Follow product instructions carefully and use
+                  with caution, especially in areas accessible to pets and children.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 7 - Professional Pest Control :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  If the ant infestation is severe or persistent, consider seeking
+                  professional pest control services. They can assess the situation
+                  and use more advanced methods to eliminate the colony.
+                </p>
+              </>
+            )}
+            <button className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+              onClick={toggleReadMore}>{isExpanded ? "Read Less" : "Read More"}</button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

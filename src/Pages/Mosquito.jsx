@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MosquitoControl2 from "../assets/Mosquito/gpp.jpeg";
 import MosquitoSafe from "../assets/Mosquito/mm.avif";
@@ -7,7 +7,13 @@ import Mosquitos2 from "../assets/Mosquito/mosquito2.webp";
 import MosquitoControl from "../assets/Mosquito/msd.jpg";
 
 const Mosquito = () => {
-  
+
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  }
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -150,160 +156,167 @@ const Mosquito = () => {
               vegetation such as tall grass, weeds, and shrubs. Any successful
               mosquito control program should target these areas.
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              2. Spray Professional Residual Insecticides-To Get Rid Of Adult
-              Mosquitoes
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Adult mosquitoes are commonly found in bushes and shrubs because
-              they feed on plant nectar. Many types of adult mosquitoes are
-              found resting in vegetation during the daytime.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              <ul className="list-disc ">
-                <li className="text-red-500">
-                  <p className="text-gray-700">
-                    Trim and get rid of the overgrowth of weeds.
-                  </p>
-                </li>
-                <li className="text-red-500">
-                  <p className="text-gray-700">
-                    To get rid of adult mosquitoes, spray the foliage of bushes
-                    and shrubs, lower limbs of shade trees, tall grass, and
-                    shaded areas with a residual insecticide.
-                  </p>
-                </li>
-              </ul>
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              3. Using Foggers and Misting System Compounds
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              We have both high-end foggers and propane foggers to apply fogging
-              compounds for mosquito control. Fogging enables you to coat the
-              leaves and foliage more effectively.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Prevent Mosquitoes
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Mosquitoes can lay eggs in sources of standing water such as:
-            </p>
+            {isExpanded && (
+              <>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  2. Spray Professional Residual Insecticides-To Get Rid Of Adult
+                  Mosquitoes
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Adult mosquitoes are commonly found in bushes and shrubs because
+                  they feed on plant nectar. Many types of adult mosquitoes are
+                  found resting in vegetation during the daytime.
+                </p>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  <ul className="list-disc ">
+                    <li className="text-red-500">
+                      <p className="text-gray-700">
+                        Trim and get rid of the overgrowth of weeds.
+                      </p>
+                    </li>
+                    <li className="text-red-500">
+                      <p className="text-gray-700">
+                        To get rid of adult mosquitoes, spray the foliage of bushes
+                        and shrubs, lower limbs of shade trees, tall grass, and
+                        shaded areas with a residual insecticide.
+                      </p>
+                    </li>
+                  </ul>
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  3. Using Foggers and Misting System Compounds
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  We have both high-end foggers and propane foggers to apply fogging
+                  compounds for mosquito control. Fogging enables you to coat the
+                  leaves and foliage more effectively.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Prevent Mosquitoes
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Mosquitoes can lay eggs in sources of standing water such as:
+                </p>
 
-            <ul className="list-disc ">
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  puddles{" "}
-                </p>
-              </li>
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      puddles{" "}
+                    </p>
+                  </li>
 
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  ponds
-                </p>
-              </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      ponds
+                    </p>
+                  </li>
 
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  lakes
-                </p>
-              </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      lakes
+                    </p>
+                  </li>
 
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  children's toys
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  ditches
-                </p>
-              </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      children's toys
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      ditches
+                    </p>
+                  </li>
 
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  old tires
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  clogged gutters
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  buckets
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  flower pots
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  poorly maintained pools
-                </p>
-              </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      old tires
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      clogged gutters
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      buckets
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      flower pots
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      poorly maintained pools
+                    </p>
+                  </li>
 
-              <li className="text-red-500">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      bird baths
+                    </p>
+                  </li>
+                </ul>
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  bird baths
+                  Eliminate or treat these sources with a mosquito larvicide
+                  whenever possible.
                 </p>
-              </li>
-            </ul>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Eliminate or treat these sources with a mosquito larvicide
-              whenever possible.
-            </p>
+              </>
+            )}
+            <button onClick={toggleReadMore}
+              className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+            >{isExpanded ? "Read Less" : "Read More"}</button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

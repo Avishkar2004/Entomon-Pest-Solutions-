@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Mouses1 from "../assets/Mouse/mouse1.webp";
 import Mouses2 from "../assets/Mouse/mouse2.webp";
@@ -7,6 +7,11 @@ import MouseControl from "../assets/Mouse/mouse4.webp";
 import MouseControl2 from "../assets/Mouse/mouse5.webp";
 
 const Mouse = () => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -147,62 +152,70 @@ const Mouse = () => {
               Confirm the presence of mice by looking for droppings, gnaw marks,
               or other signs.
             </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2 – Sanitation :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Keep the living space clean, secure food in airtight containers,
-              and eliminate potential nesting sites.
-            </p>
+            {isExpanded && (
+              <>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 2 – Sanitation :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Keep the living space clean, secure food in airtight containers,
+                  and eliminate potential nesting sites.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3 – Sealing Entry Points :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Close off access points by sealing gaps, cracks, and holes in
-              walls using materials like steel wool or caulk.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 3 – Sealing Entry Points :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Close off access points by sealing gaps, cracks, and holes in
+                  walls using materials like steel wool or caulk.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4 – Traps :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Set snap traps baited with peanut butter or other high-protein
-              foods in areas with mouse activity.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 4 – Traps :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Set snap traps baited with peanut butter or other high-protein
+                  foods in areas with mouse activity.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5 – Rodenticides (Caution Required) :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              If using rodenticides, follow instructions carefully to avoid harm
-              to pets or unintended targets. It's generally recommended to use
-              these with caution and consider other methods first.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 5 – Rodenticides (Caution Required) :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  If using rodenticides, follow instructions carefully to avoid harm
+                  to pets or unintended targets. It's generally recommended to use
+                  these with caution and consider other methods first.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6 - Monitoring and Prevention :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Regularly check traps, reposition them based on mouse activity,
-              and take steps to prevent future infestations by maintaining a
-              clean environment.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 6 - Monitoring and Prevention :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Regularly check traps, reposition them based on mouse activity,
+                  and take steps to prevent future infestations by maintaining a
+                  clean environment.
+                </p>
+              </>
+            )}
+            <button
+              onClick={toggleReadMore}
+              className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+            >{isExpanded ? "Read Less" : "Read More"}</button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

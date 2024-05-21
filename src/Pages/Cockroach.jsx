@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import CockroachSafe from "../assets/Cockroach/cockroach.png";
 import Cockroach1 from "../assets/Cockroach/cockroach1.webp";
@@ -7,6 +7,7 @@ import Cockroachs from "../assets/Cockroach/safe.png";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
 
 const Cockroach = () => {
+  const [isExpanded, setIsExpanded] = useState(false)
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -20,6 +21,10 @@ const Cockroach = () => {
       behavior: "smooth",
     });
   };
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
@@ -157,86 +162,95 @@ const Cockroach = () => {
               Different species may require different treatment methods.
             </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2 – Sanitation :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Maintain a clean and sanitary environment. Cockroaches are
-              attracted to food crumbs, spills, and garbage. Clean up spills
-              promptly, store food in airtight containers, and regularly dispose
-              of garbage.
-            </p>
+            {isExpanded && (
+              <>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3 – Eliminate Hiding Places :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Reduce clutter and eliminate hiding spots for cockroaches. Seal
-              cracks and crevices in walls, floors, and around pipes.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 2 – Sanitation :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Maintain a clean and sanitary environment. Cockroaches are
+                  attracted to food crumbs, spills, and garbage. Clean up spills
+                  promptly, store food in airtight containers, and regularly dispose
+                  of garbage.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4 – Use Cockroach Baits :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Place cockroach baits in areas where cockroaches are likely to
-              travel. Baits contain a slow-acting poison that cockroaches carry
-              back to their nests, affecting the entire population.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 3 – Eliminate Hiding Places :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Reduce clutter and eliminate hiding spots for cockroaches. Seal
+                  cracks and crevices in walls, floors, and around pipes.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5 – Cockroach Gel Bait :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Apply gel bait in cracks, crevices, and other hiding spots. This
-              attracts cockroaches and acts as a potent poison.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 4 – Use Cockroach Baits :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Place cockroach baits in areas where cockroaches are likely to
+                  travel. Baits contain a slow-acting poison that cockroaches carry
+                  back to their nests, affecting the entire population.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6 – Insect Growth Regulators (IGRs) :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              IGRs disrupt the cockroach life cycle by preventing nymphs from
-              reaching maturity. This can help control the population over time.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 5 – Cockroach Gel Bait :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Apply gel bait in cracks, crevices, and other hiding spots. This
+                  attracts cockroaches and acts as a potent poison.
+                </p>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 7 – Seal Entry Points :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Identify and seal any entry points, such as cracks in walls, gaps
-              around windows and doors, and openings around pipes. This helps
-              prevent new cockroaches from entering your home.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 8 – : Regular Monitoring :-
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Continue monitoring for signs of cockroach activity even after
-              treatment. If needed, repeat the application of baits or other
-              control methods.
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 6 – Insect Growth Regulators (IGRs) :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  IGRs disrupt the cockroach life cycle by preventing nymphs from
+                  reaching maturity. This can help control the population over time.
+                </p>
+
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 7 – Seal Entry Points :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Identify and seal any entry points, such as cracks in walls, gaps
+                  around windows and doors, and openings around pipes. This helps
+                  prevent new cockroaches from entering your home.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 8 – : Regular Monitoring :-
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Continue monitoring for signs of cockroach activity even after
+                  treatment. If needed, repeat the application of baits or other
+                  control methods.
+                </p>
+              </>
+            )}
+            <button onClick={toggleReadMore}
+              className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+            >{isExpanded ? "Read Less" : "Read More"}
+            </button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

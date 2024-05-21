@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import BedBugs1 from "../assets/BedBug/BedBug1.webp";
 import BedBugs2 from "../assets/BedBug/BedBug2.webp";
@@ -7,13 +7,17 @@ import BedBugSafe from "../assets/BedBug/BedBug3.webp";
 import BedBugControl2 from "../assets/BedBug/BedBug5.webp";
 
 const BedBug = () => {
-
+  const [isExpanded, setIsExpanded] = useState(false)
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
@@ -150,440 +154,449 @@ const BedBug = () => {
               infestation than a big one. But smaller infestations can be harder
               to detect.
             </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Search for bedbugs yourself or hire a professional to do an
-              inspection. Some inspectors use specially trained dogs to hunt
-              down bedbugs by scent.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Bedbugs’ small and narrow bodies enable them to squeeze into tiny
-              spots, like the seams of a mattress or couch and the folds of
-              curtains.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Also, look for them:
-            </p>
-            <ul className="list-disc ">
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  near the tags of the mattress and box spring
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  in cracks in the bed frame and headboard
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  in baseboards
-                </p>
-              </li>
+            {isExpanded && (
+              <>
 
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  between couch cushions
+                  Search for bedbugs yourself or hire a professional to do an
+                  inspection. Some inspectors use specially trained dogs to hunt
+                  down bedbugs by scent.
                 </p>
-              </li>
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  in furniture joints
+                  Bedbugs’ small and narrow bodies enable them to squeeze into tiny
+                  spots, like the seams of a mattress or couch and the folds of
+                  curtains.
                 </p>
-              </li>
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  inside electrical outlets
+                  Also, look for them:
                 </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  under loose wallpaper
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  underneath paintings and posters on the walls
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  in the seam where the wallpaper and ceiling meet
-                </p>
-              </li>
-            </ul>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Use a flashlight and magnifying glass to go over all of these
-              areas.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2: Contain the infestation
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Once you know you have bedbugs, you need to keep them contained so
-              you can get rid of them. A quick and easy way to trap bedbugs is
-              with your vacuum. Run the vacuum over any possible hiding places.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              This includes your:
-            </p>
-            <ul className="list-disc ">
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  bed{" "}
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  dresser{" "}
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  carpets{" "}
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  electronics, like TVs
-                </p>
-              </li>
-            </ul>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Seal up the vacuumed contents into a plastic bag and throw it
-              away. Then thoroughly clean out the vacuum.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Seal up all your linens and affected clothes in plastic bags until
-              you can wash them. Then put them on the highest possible
-              temperature setting in a washer and dryer. If an item cannot be
-              washed, put it in the dryer for 30 minutes at the highest heat
-              setting.
-            </p>
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      near the tags of the mattress and box spring
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      in cracks in the bed frame and headboard
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      in baseboards
+                    </p>
+                  </li>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 3: Prep for bedbug treatment
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Before you start treating your home, do a little prep work to
-              maximize your odds of success. Make sure all your linens, carpets,
-              drapes, clothing, and other hiding places have been cleaned or
-              thrown out (see step 2).
-            </p>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      between couch cushions
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      in furniture joints
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      inside electrical outlets
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      under loose wallpaper
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      underneath paintings and posters on the walls
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      in the seam where the wallpaper and ceiling meet
+                    </p>
+                  </li>
+                </ul>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Use a flashlight and magnifying glass to go over all of these
+                  areas.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 2: Contain the infestation
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Once you know you have bedbugs, you need to keep them contained so
+                  you can get rid of them. A quick and easy way to trap bedbugs is
+                  with your vacuum. Run the vacuum over any possible hiding places.
+                </p>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  This includes your:
+                </p>
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      bed{" "}
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      dresser{" "}
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      carpets{" "}
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      electronics, like TVs
+                    </p>
+                  </li>
+                </ul>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Seal up the vacuumed contents into a plastic bag and throw it
+                  away. Then thoroughly clean out the vacuum.
+                </p>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Seal up all your linens and affected clothes in plastic bags until
+                  you can wash them. Then put them on the highest possible
+                  temperature setting in a washer and dryer. If an item cannot be
+                  washed, put it in the dryer for 30 minutes at the highest heat
+                  setting.
+                </p>
 
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Next, get rid of bedbug hiding places:
-            </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 3: Prep for bedbug treatment
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Before you start treating your home, do a little prep work to
+                  maximize your odds of success. Make sure all your linens, carpets,
+                  drapes, clothing, and other hiding places have been cleaned or
+                  thrown out (see step 2).
+                </p>
 
-            <ul className="list-disc ">
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Pick up books, magazines, clothes, and anything else that’s
-                  lying on your floor and under your bed.
+                  Next, get rid of bedbug hiding places:
                 </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Throw out whatever you can.
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Do not move items from an infested room to a clean one — you
-                  could spread the bugs.
-                </p>
-              </li>
-            </ul>
 
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              {" "}
-              Seal up any open areas:{" "}
-            </p>
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Pick up books, magazines, clothes, and anything else that’s
+                      lying on your floor and under your bed.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Throw out whatever you can.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Do not move items from an infested room to a clean one — you
+                      could spread the bugs.
+                    </p>
+                  </li>
+                </ul>
 
-            <ul className="list-disc ">
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Glue down loose wallpaper.
+                  {" "}
+                  Seal up any open areas:{" "}
                 </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Caulk cracks in furniture and around baseboards.
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Tape up open electrical outlets.
-                </p>
-              </li>
-            </ul>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Finally, move your bed at least 6 inches away from the wall so
-              bedbugs cannot climb on.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 4: Kill the bedbugs
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              How to get rid of bedbugs at home
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              You can first try to remove bedbugs without chemicals. These bugs
-              are pretty easy to kill with high heat at 115°F (46.11°C) or
-              intense cold at 32°F (0°C).
-            </p>
 
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              {" "}
-              Here are a few ways to treat bedbugs using these methods:
-            </p>
-            <ul className="list-disc ">
-              <li className="text-red-500">
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Glue down loose wallpaper.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Caulk cracks in furniture and around baseboards.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Tape up open electrical outlets.
+                    </p>
+                  </li>
+                </ul>
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Wash bedding and clothes in hot water for 30 minutes. Then put
-                  them in a dryer on the highest heat setting for 30 minutes.
+                  Finally, move your bed at least 6 inches away from the wall so
+                  bedbugs cannot climb on.
                 </p>
-              </li>
-              <li className="text-red-500">
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 4: Kill the bedbugs
+                </h2>
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Use a steamer on mattresses, couches, and other places where
-                  bedbugs hide.
+                  How to get rid of bedbugs at home
                 </p>
-              </li>
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Pack up infested items in black bags and leave them outside on
-                  a hot day that reaches 95°F (35°C) or in a closed car. In
-                  cooler temperatures, it can take 2 to 5 months to kill
-                  sealed-up bugs.
+                  You can first try to remove bedbugs without chemicals. These bugs
+                  are pretty easy to kill with high heat at 115°F (46.11°C) or
+                  intense cold at 32°F (0°C).
                 </p>
-              </li>
 
-              <li className="text-red-500">
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Put bags containing bedbugs in the freezer at 0°F (-17.78°C).
-                  Use a thermometer to check the temperature. Leave them in
-                  there for at least 4 days.
+                  {" "}
+                  Here are a few ways to treat bedbugs using these methods:
                 </p>
-              </li>
-            </ul>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Once you’ve cleaned all visible bedbugs, make the area
-              inhospitable for the rest of them. Place bedbug-proof covers over
-              your mattress and box spring. Zip these covers up all the way.
-              Bugs that are trapped inside will die, and new bugs will not be
-              able to get in.
-            </p>
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Wash bedding and clothes in hot water for 30 minutes. Then put
+                      them in a dryer on the highest heat setting for 30 minutes.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Use a steamer on mattresses, couches, and other places where
+                      bedbugs hide.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Pack up infested items in black bags and leave them outside on
+                      a hot day that reaches 95°F (35°C) or in a closed car. In
+                      cooler temperatures, it can take 2 to 5 months to kill
+                      sealed-up bugs.
+                    </p>
+                  </li>
 
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 5: Evaluate and prevent future bedbugs
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Bedbugs can take some time to wipe out. Before you can ensure that
-              your treatment has worked, you need proof that the bugs have moved
-              on. Check the infested areas about once every 7 days for signs of
-              activity.
-            </p>
-
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              To make surviving bedbugs easier to spot, place bedbug
-              interceptors under each leg of the bed. These devices will trap
-              bedbugs before they can climb up into your bed. You may need to
-              keep checking the interceptors for a full year.
-            </p>
-
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Bedbugs are hardy creatures. Just when you think you’ve wiped them
-              out, you might spot them again. You may have to try a few
-              different treatment methods to control the infestation. And if
-              they still do not go away, you’ll want to call in a professional
-              exterminator.
-            </p>
-
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 6: Keep the bedbugs out
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Once the bedbugs are gone, you’ll want to make sure they stay gone
-              for good:
-            </p>
-
-            <ul className="list-disc ">
-              <li className="text-red-500">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Put bags containing bedbugs in the freezer at 0°F (-17.78°C).
+                      Use a thermometer to check the temperature. Leave them in
+                      there for at least 4 days.
+                    </p>
+                  </li>
+                </ul>
                 <p
                   className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
                   style={{ fontFamily: "sans-serif" }}
                 >
-                  Clear up any clutter. Do not leave papers, magazines, clothes,
-                  or other items on the floor.
+                  Once you’ve cleaned all visible bedbugs, make the area
+                  inhospitable for the rest of them. Place bedbug-proof covers over
+                  your mattress and box spring. Zip these covers up all the way.
+                  Bugs that are trapped inside will die, and new bugs will not be
+                  able to get in.
                 </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Cover your mattress and box spring with a bedbug cover and zip
-                  it up all the way.
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Vacuum and wash bedding, furniture, curtains, and carpets
-                  often.
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Seal cracks around light sockets, baseboards, and electrical
-                  outlets so bedbugs cannot sneak in.
-                </p>
-              </li>
-              <li className="text-red-500">
-                <p
-                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-                  style={{ fontFamily: "sans-serif" }}
-                >
-                  Check for bedbugs in hotel rooms when you travel to avoid
-                  bringing them home with you.
-                </p>
-              </li>
-            </ul>
 
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 5: Evaluate and prevent future bedbugs
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Bedbugs can take some time to wipe out. Before you can ensure that
+                  your treatment has worked, you need proof that the bugs have moved
+                  on. Check the infested areas about once every 7 days for signs of
+                  activity.
+                </p>
+
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  To make surviving bedbugs easier to spot, place bedbug
+                  interceptors under each leg of the bed. These devices will trap
+                  bedbugs before they can climb up into your bed. You may need to
+                  keep checking the interceptors for a full year.
+                </p>
+
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Bedbugs are hardy creatures. Just when you think you’ve wiped them
+                  out, you might spot them again. You may have to try a few
+                  different treatment methods to control the infestation. And if
+                  they still do not go away, you’ll want to call in a professional
+                  exterminator.
+                </p>
+
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 6: Keep the bedbugs out
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Once the bedbugs are gone, you’ll want to make sure they stay gone
+                  for good:
+                </p>
+
+                <ul className="list-disc ">
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Clear up any clutter. Do not leave papers, magazines, clothes,
+                      or other items on the floor.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Cover your mattress and box spring with a bedbug cover and zip
+                      it up all the way.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Vacuum and wash bedding, furniture, curtains, and carpets
+                      often.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Seal cracks around light sockets, baseboards, and electrical
+                      outlets so bedbugs cannot sneak in.
+                    </p>
+                  </li>
+                  <li className="text-red-500">
+                    <p
+                      className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                      style={{ fontFamily: "sans-serif" }}
+                    >
+                      Check for bedbugs in hotel rooms when you travel to avoid
+                      bringing them home with you.
+                    </p>
+                  </li>
+                </ul>
+              </>
+            )}
+            <button
+              onClick={toggleReadMore}
+              className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none">
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

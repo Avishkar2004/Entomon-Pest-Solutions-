@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Agricultures1 from "../assets/Agriculture/Agriculture1.webp";
 import Agricultures2 from "../assets/Agriculture/Agriculture2.webp";
 import AgricultureSafe from "../assets/Agriculture/Agriculture3.webp";
@@ -6,6 +6,13 @@ import AgricultureControl from "../assets/Agriculture/Agriculture4.webp";
 import AgricultureControl2 from "../assets/Agriculture/Agriculture5.webp";
 
 const Agriculture = () => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
+
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
@@ -102,15 +109,23 @@ const Agriculture = () => {
             ensure complete eradication and provide a long-term solution to
             protect your property from further Agriculture infestations.
           </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            Just like with termites, a comprehensive inspection is necessary to
-            accurately assess the extent of the Agriculture Issue and determine
-            the most appropriate treatment and control measures.
-          </p>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
-            For further details or to schedule an inspection, please contact us
-            today. We are here to help.
-          </p>
+          {isExpanded && (
+            <>
+              <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
+                Just like with termites, a comprehensive inspection is necessary to
+                accurately assess the extent of the Agriculture Issue and determine
+                the most appropriate treatment and control measures.
+              </p>
+              <p className="text-base sm:text-lg lg:text-xl text-gray-700 mb-6">
+                For further details or to schedule an inspection, please contact us
+                today. We are here to help.
+              </p>
+            </>
+          )}
+          <button
+            onClick={toggleReadMore}
+            className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+          >{isExpanded ? "Read Less" : "Read More"}</button>
         </div>
       </div>
 

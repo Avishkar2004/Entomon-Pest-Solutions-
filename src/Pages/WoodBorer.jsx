@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import WoodBorers1 from "../assets/WoodBorer/WoodBorer1.webp";
 import WoodBorers2 from "../assets/WoodBorer/WoodBorer2.webp";
@@ -7,6 +7,11 @@ import WoodBorerControl from "../assets/WoodBorer/WoodBorer4.webp";
 import WoodBorerControl2 from "../assets/WoodBorer/WoodBorer5.webp";
 
 const WoodBorer = () => {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded)
+  }
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -155,54 +160,61 @@ const WoodBorer = () => {
               treat trees early on in an infestation to attack the newly-hatched
               tree borer larvae before they begin tunneling into the bark.
             </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Measure the square footage of the treatment area to help you
-              determine how much Insecticide you need to mix. In a sprayer,
-              dilute 0.33 to 0.65 fl. oz. per 1,000 sq.ft. in a volume of water
-              sufficient for uniform coverage such as 3 to 20 gallons. Once you
-              have calculated and mixed the appropriate amount of Insecticide in
-              a sprayer, shake the sprayer well and you're ready to treat.
-            </p>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Apply over the tree trunks, trigs, and branches on a fan spray
-              setting but not to the point of runoff. If you see any holes or
-              cavities in the wood, spray them directly via pin stream setting.
-              You want to saturate the openings and contact as many insects as
-              possible.
-            </p>
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Step 2: Soil Treatment with Dominion 2L
-            </h2>
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Once the tree has been treated, we recommend a soil treatment with
-              Dominion 2L. Dominion 2L is a systemic insecticide meaning that it
-              when applied to the soil, it will be taken up into the tree roots
-              and help to control any tree borer pest that tries to burrow or
-              feast on the tree. Measure the diameter of your tree before
-              treating.
-            </p>
+            {isExpanded && (
+              <>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Measure the square footage of the treatment area to help you
+                  determine how much Insecticide you need to mix. In a sprayer,
+                  dilute 0.33 to 0.65 fl. oz. per 1,000 sq.ft. in a volume of water
+                  sufficient for uniform coverage such as 3 to 20 gallons. Once you
+                  have calculated and mixed the appropriate amount of Insecticide in
+                  a sprayer, shake the sprayer well and you're ready to treat.
+                </p>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Apply over the tree trunks, trigs, and branches on a fan spray
+                  setting but not to the point of runoff. If you see any holes or
+                  cavities in the wood, spray them directly via pin stream setting.
+                  You want to saturate the openings and contact as many insects as
+                  possible.
+                </p>
+                <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                  Step 2: Soil Treatment with Dominion 2L
+                </h2>
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Once the tree has been treated, we recommend a soil treatment with
+                  Dominion 2L. Dominion 2L is a systemic insecticide meaning that it
+                  when applied to the soil, it will be taken up into the tree roots
+                  and help to control any tree borer pest that tries to burrow or
+                  feast on the tree. Measure the diameter of your tree before
+                  treating.
+                </p>
 
-            <p
-              className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
-              style={{ fontFamily: "sans-serif" }}
-            >
-              Dilute Dominion 2L at a rate of 0.1 to 0.4 fl. oz. per inch of
-              trunk diameter. So for example, if your trunk's diameter is 15
-              inches you will need to mix 1.5 to 6 fl. oz. of Dominion 2L per 5
-              gallons of water. Mix it in a sprayer and apply uniformly as a
-              drench around the base of the tree directing the application to
-              the root area.
-            </p>
-
+                <p
+                  className="text-base sm:text-lg lg:text-xl text-gray-700 mb-2"
+                  style={{ fontFamily: "sans-serif" }}
+                >
+                  Dilute Dominion 2L at a rate of 0.1 to 0.4 fl. oz. per inch of
+                  trunk diameter. So for example, if your trunk's diameter is 15
+                  inches you will need to mix 1.5 to 6 fl. oz. of Dominion 2L per 5
+                  gallons of water. Mix it in a sprayer and apply uniformly as a
+                  drench around the base of the tree directing the application to
+                  the root area.
+                </p>
+              </>
+            )}
+            <button
+              onClick={toggleReadMore}
+              className="mt-4 text-indigo-600 hover:text-indigo-800 focus:outline-none"
+            >{isExpanded ? "Read Less" : "Read More"}</button>
             <p
               className="text-base sm:text-lg lg:text-xl text-red-500 mb-2"
               style={{ fontFamily: "sans-serif" }}

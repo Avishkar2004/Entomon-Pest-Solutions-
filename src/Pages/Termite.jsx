@@ -5,7 +5,7 @@ import TermitePhoto2 from "../assets/Termite/TermitePhoto2.webp";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
 import TermiteGlow from "../assets/Termite/glow.jpg";
 import TermiteNormal from "../assets/Termite/normal.jpg";
-import Solution from "../assets/Termite/solutions.png"
+import Solution from "../assets/Termite/solutions.png";
 
 const Termite = () => {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -166,8 +166,6 @@ const Termite = () => {
               these tubes from dirt and poop to travel from the ground, where
               they live, to your home's wooden parts they eat.
             </p>
-
-            {/* {isExpanded && ( */}
             {isExpanded && (
 
               <>
