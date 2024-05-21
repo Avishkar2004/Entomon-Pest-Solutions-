@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import BedBugs1 from "../assets/BedBug/BedBug1.webp";
 import BedBugs2 from "../assets/BedBug/BedBug2.webp";
@@ -7,24 +7,6 @@ import BedBugSafe from "../assets/BedBug/BedBug3.webp";
 import BedBugControl2 from "../assets/BedBug/BedBug5.webp";
 
 const BedBug = () => {
-  const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(999);
-
-  const handleOptionChange = (event) => {
-    const selectedValue = event.target.value;
-    setSelectOption(selectedValue);
-
-    // Update price based on the selected option
-    if (selectedValue === "1 BHK") {
-      setPrice(999);
-    } else if (selectedValue === "2 BHK") {
-      setPrice(1800);
-    } else if (selectedValue === "3 BHK") {
-      setPrice(2200);
-    } else if (selectedValue === "Other") {
-      setPrice(0);
-    }
-  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -128,31 +110,10 @@ const BedBug = () => {
               alt="bed bug pest control"
               className="w-full h-auto lg:h-full object-cover"
             />
-            <div className="absolute inset-0 bg-indigo-900 opacity-40"></div>
           </div>
 
           {/* Content */}
           <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
-            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
-              Luxury Apartments
-            </h2>
-            <select
-              value={selectOption}
-              onChange={handleOptionChange}
-              className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
-            >
-              <option>1 BHK</option>
-              <option>2 BHK</option>
-              <option>3 BHK</option>
-              <option>Other</option>
-            </select>
-            <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
-              Price: ₹{price}
-            </div>
-            <p className="text-gray-700 mb-6">
-              Discover the ultimate in luxury living with our spacious
-              apartments. Additional charges may apply. Contact us for details.
-            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}

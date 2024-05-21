@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import CockroachSafe from "../assets/Cockroach/cockroach.png";
 import Cockroach1 from "../assets/Cockroach/cockroach1.webp";
@@ -7,25 +7,6 @@ import Cockroachs from "../assets/Cockroach/safe.png";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
 
 const Cockroach = () => {
-  const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(599);
-
-  const handleOptionChange = (event) => {
-    const selectedValue = event.target.value;
-    setSelectOption(selectedValue);
-
-    // Update price based on the selected option
-    if (selectedValue === "1 BHK") {
-      setPrice(599);
-    } else if (selectedValue === "2 BHK") {
-      setPrice(799);
-    } else if (selectedValue === "3 BHK") {
-      setPrice(999);
-    } else if (selectedValue === "Other") {
-      setPrice(0);
-    }
-  };
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -126,7 +107,7 @@ const Cockroach = () => {
         </p>
       </div>
 
-    
+
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
         <div className="lg:flex items-center">
           {/* Image */}
@@ -136,25 +117,10 @@ const Cockroach = () => {
               alt="Cockroach Treatment in pune"
               className="w-full h-auto lg:h-full object-cover"
             />
-            <div className="absolute inset-0 bg-indigo-900 opacity-40"></div>
           </div>
 
           {/* Content */}
           <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
-            {/* <select
-              value={selectOption}
-              onChange={handleOptionChange}
-              className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
-            >
-              <option>1 BHK</option>
-              <option>2 BHK</option>
-              <option>3 BHK</option>
-              <option>Other</option>
-            </select> */}
-            {/* <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
-              Price: ₹{price}
-            </div> */}
-
             <Link
               to="/contact"
               onClick={scrollToTopBook}

@@ -235,3 +235,60 @@ export default ServiceBook;
             alt="Logo"
           />
         </Typography>
+
+
+
+
+For Area
+
+  const [selectOption, setSelectOption] = useState("1 bhk");
+  const [price, setPrice] = useState(599);
+
+  const handleOptionChange = (event) => {
+    const selectedValue = event.target.value;
+    setSelectOption(selectedValue);
+
+    // Update price based on the selected option
+    if (selectedValue === "1 BHK") {
+      setPrice(599);
+    } else if (selectedValue === "2 BHK") {
+      setPrice(699);
+    } else if (selectedValue === "3 BHK") {
+      setPrice(799);
+    } else if (selectedValue === "Other") {
+      setPrice(0);
+    }
+  };
+
+
+
+   {/* Content */}
+          <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
+            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
+              Home
+            </h2>
+            <select
+              value={selectOption}
+              onChange={handleOptionChange}
+              className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
+            >
+              <option>1 BHK</option>
+              <option>2 BHK</option>
+              <option>3 BHK</option>
+              <option>Other</option>
+            </select>
+            <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
+              Price: ₹{price}
+            </div>
+            <p className="text-gray-700 mb-6">
+              Discover the ultimate in luxury living with our spacious
+              apartments. Additional charges may apply. Contact us for details.
+            </p> */}
+            <Link
+              to="/contact"
+              onClick={scrollToTop}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-3 px-8 rounded-xl focus:outline-none focus:ring focus:ring-indigo-300 transition duration-300"
+            >
+              Book Now
+            </Link>
+          </div>

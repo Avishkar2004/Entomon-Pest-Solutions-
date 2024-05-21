@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import WoodBorers1 from "../assets/WoodBorer/WoodBorer1.webp";
 import WoodBorers2 from "../assets/WoodBorer/WoodBorer2.webp";
@@ -7,24 +7,6 @@ import WoodBorerControl from "../assets/WoodBorer/WoodBorer4.webp";
 import WoodBorerControl2 from "../assets/WoodBorer/WoodBorer5.webp";
 
 const WoodBorer = () => {
-  const [selectOption, setSelectOption] = useState("1 bhk");
-  const [price, setPrice] = useState(1999);
-
-  const handleOptionChange = (event) => {
-    const selectedValue = event.target.value;
-    setSelectOption(selectedValue);
-
-    // Update price based on the selected option
-    if (selectedValue === "1 BHK") {
-      setPrice(1999);
-    } else if (selectedValue === "2 BHK") {
-      setPrice(1999);
-    } else if (selectedValue === "3 BHK") {
-      setPrice(2299);
-    } else if (selectedValue === "Other") {
-      setPrice(0);
-    }
-  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -131,31 +113,10 @@ const WoodBorer = () => {
               alt="wood borer pest control"
               className="w-full h-auto lg:h-full object-cover"
             />
-            <div className="absolute inset-0 bg-indigo-900 opacity-40"></div>
           </div>
 
           {/* Content */}
           <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
-            {/* <h2 className="text-4xl text-indigo-600 font-semibold mb-4">
-              Home
-            </h2>
-            <select
-              value={selectOption}
-              onChange={handleOptionChange}
-              className="w-full py-3 px-4 border rounded-lg mb-6 focus:outline-none focus:ring-2 focus:ring-indigo-400 text-gray-800"
-            >
-              <option>1 BHK</option>
-              <option>2 BHK</option>
-              <option>3 BHK</option>
-              <option>Other</option>
-            </select>
-            <div className="text-xl lg:text-2xl text-indigo-600 mb-6">
-              Price: ₹{price}
-            </div>
-            <p className="text-gray-700 mb-6">
-              Discover the ultimate in luxury living with our spacious
-              apartments. Additional charges may apply. Contact us for details.
-            </p> */}
             <Link
               to="/contact"
               onClick={scrollToTop}
