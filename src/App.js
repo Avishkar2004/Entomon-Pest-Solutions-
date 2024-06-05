@@ -24,6 +24,8 @@ import Termite from "./Pages/Termite";
 import Testimonial from "./Pages/Testimonial";
 import ThankYou from "./Pages/ThankYou";
 import WoodBorer from "./Pages/WoodBorer";
+import FAQs from "./Pages/FAQs";
+import FAQSpecificLocation from "./Pages/FAQSpecificLocation"; // Import the dynamic FAQ page
 
 // import CheckService from "./Pages/CheckService";
 
@@ -35,7 +37,6 @@ function App() {
     });
   }, []);
 
-  
   return (
     <Router>
       <Header />
@@ -53,6 +54,7 @@ function App() {
         <Route path="/sanitization" component={General} />
         <Route path="/fleafly" component={Fly} />
         <Route path="/agriculture" component={Agriculture} />
+        <Route path="/faq/:location" component={FAQSpecificLocation} />
       </Switch>
       <GlowingIcons />
 
@@ -67,6 +69,7 @@ function App() {
                 <Type />
                 <Banner />
                 <HomePage />
+                <FAQs />
                 <Testimonial />
                 <Client />
                 <GlowingIcons />
