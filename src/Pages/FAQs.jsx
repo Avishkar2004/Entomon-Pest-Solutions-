@@ -118,7 +118,7 @@ function FAQs() {
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
                     {locations.map((location) => (
                         <li key={location}>
-                            <Link className="text-blue-700" to={`/faq/${location}`}>
+                            <Link className="text-blue-700 text-sm" to={`/faq/${location}`}>
                                 Pest Control in {location.split('-').map(word => word.charAt(0, 2).toUpperCase() + word.slice(1)).join(", ")}
                             </Link>
                         </li>
