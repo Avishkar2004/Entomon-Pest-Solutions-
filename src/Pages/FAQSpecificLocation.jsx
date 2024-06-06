@@ -1170,7 +1170,6 @@ const faqData = {
             },
         ]
     },
-
     'yerwada-pune': {
         title: 'FAQ – Pest Control in Yerwada , Pune',
         faqs: [
@@ -1205,7 +1204,6 @@ const faqData = {
             },
         ]
     },
-
     'pimple-gurav-pune': {
         title: 'FAQ – Pest Control in Pimple Gurav , Pune',
         faqs: [
@@ -1239,7 +1237,6 @@ const faqData = {
             }
         ]
     },
-
     'pimple-saudagar-pune': {
         title: 'FAQ – Pest Control in Pimple Saudagar , Pune',
         faqs: [
