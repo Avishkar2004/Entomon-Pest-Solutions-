@@ -1136,6 +1136,110 @@ const faqData = {
             },
         ]
     },
+    'tathawade-pune': {
+        title: 'FAQ – Pest Control in Tathawade , Pune',
+        faqs: [
+            {
+                question: "Q. What is the starting price of hiring pest control services in Tathawade, Pune, for 2 BHK?",
+                answer: "The cost of pest control services in Pimple Nilakh, Pune, for a 2-bedroom house is INR 700 onwards. These factors will depend on various factors and services. "
+            },
+            {
+                question: "Q. Will the pest control company add additional services to the final cost as well?",
+                answer: "If the additional services you choose are not free, then their cost will be added to the final cost."
+            },
+            {
+                question: "Q. How much time will it take to complete pest control treatment in a 2-bedroom house?",
+                answer: "For a 2-bedroom house, the duration of the pest control service will be 4-5 hours. More time may be needed if the pest infestation is serious. "
+            },
+        ]
+    },
+    'thergaon-pune': {
+        title: 'FAQ – Pest Control in Thergaon , Pune',
+        faqs: [
+            {
+                question: "Q. What is the starting price of hiring pest control services in Thergaon, Pune, for 2 BHK?",
+                answer: "The cost of pest control services in Pimple Nilakh, Pune, for a 2-bedroom house is INR 700 onwards. These factors will depend on various factors and services. "
+            },
+            {
+                question: "Q. Will the pest control company add additional services to the final cost as well?",
+                answer: "If the additional services you choose are not free, then their cost will be added to the final cost."
+            },
+            {
+                question: "Q. How much time will it take to complete pest control treatment in a 2-bedroom house?",
+                answer: "For a 2-bedroom house, the duration of the pest control service will be 4-5 hours. More time may be needed if the pest infestation is serious. "
+            },
+        ]
+    },
+
+    'yerwada-pune': {
+        title: 'FAQ – Pest Control in Yerwada , Pune',
+        faqs: [
+            {
+                question: "Q. What is the starting price of hiring pest control services in Yerwada, Pune, for 2 BHK?",
+                answer: "The cost of pest control services in Pimple Nilakh, Pune, for a 2-bedroom house is INR 700 onwards. These factors will depend on various factors and services. "
+            },
+            {
+                question: "Q. Will the pest control company add additional services to the final cost as well?",
+                answer: "If the additional services you choose are not free, then their cost will be added to the final cost."
+            },
+            {
+                question: "Q. How much time will it take to complete pest control treatment in a 2-bedroom house?",
+                answer: "For a 2-bedroom house, the duration of the pest control service will be 4-5 hours. More time may be needed if the pest infestation is serious. "
+            },
+        ]
+    },
+    'kharadi-pune': {
+        title: 'FAQ – Pest Control in Kharadi , Pune',
+        faqs: [
+            {
+                question: "Q. What is the starting price of hiring pest control services in Kharadi, Pune, for 2 BHK?",
+                answer: "The cost of pest control services in Pimple Nilakh, Pune, for a 2-bedroom house is INR 700 onwards. These factors will depend on various factors and services. "
+            },
+            {
+                question: "Q. Will the pest control company add additional services to the final cost as well?",
+                answer: "If the additional services you choose are not free, then their cost will be added to the final cost."
+            },
+            {
+                question: "Q. How much time will it take to complete pest control treatment in a 2-bedroom house?",
+                answer: "For a 2-bedroom house, the duration of the pest control service will be 4-5 hours. More time may be needed if the pest infestation is serious. "
+            },
+        ]
+    },
+
+    'pimple-gurav-pune': {
+        title: 'FAQ – Pest Control in Pimple Gurav , Pune',
+        faqs: [
+            {
+                question: "Q. Why I need to hire pest control for my residential and commercial area in Pune?",
+                answer: "Professional exterminators have the right products along with required skills and experience to kill and eliminate bugs from your place. Also they ensure that the bugs will not be able to retune back to your house. If you don’t want to see pests around you then you should hire pest control company in Pune."
+            },
+            {
+                question: "Q. Do the exterminators in Pune use pet and kid friendly pest solution?",
+                answer: "An experienced and professional pest control service provider in Pune use only tested and govt. approved pesticides and chemicals. The products they use are proven for household use and can also be used in sensitive areas like schools and hospitals. Also they take necessary precautions during the pest control procedure so that it won’t harm your kids and pets."
+            },
+            {
+                question: "Q. How long does it take pest control to work?",
+                answer: "The exact timeframe of pest control working depends on the type of the pests the exterminators are dealing with and also the method they are using. But, you can see some noticeable reduction in pest’s activities in one to two days."
+            },
+            {
+                question: "Q. How much does pest control charges in Pune?",
+                answer: "Pest control service charges in Pune vary from case to case. How severe the problem is, what type of pests the exterminators have to deal with, and the size of the area needs to be treated are the common things considered by the pest control companies in Pune to determine the pest control charges. Usually, it cost from Rs 800 – Rs 2000, but the charges are different for termite control and bedbug control as they need more than 2 treatment sessions."
+            },
+            {
+                question: "Q. What type of pest control services are offered by the pest control company in Pune?",
+                answer: "Termite control, mosquito control, ants control, rodent control, cockroach control, carpet beetle control, bedbug control, flies control, wasps control, etc. are the common type of pest control services offered by pest control companies in Pune. And for this they use different types of pest control methods such as integrated pest control service, chemical pest control service, herbal pest control, etc."
+            },
+            {
+                question: "Q. Should I leave my house before or after the pest control procedure?",
+                answer: "The professional exterminators advise to leave your house at both the times before and after the pest control procedure. Thought they use tested and govt. approved pesticides proven for household use, but it cannot be denied that these are manufactured to kill pests and are toxic. So, you will have to take major precautions while the exterminators are using it."
+            },
+            {
+                question: "Q. What are the benefits of hiring pest control professionals in Pune?",
+                answer: "The main advantage of availing pest control service in Pune is the reduced chance of getting health related issues. You will get a healthier and pest-free environment which will eventually provide you better sleep."
+            }
+        ]
+    },
+
     'pimple-saudagar-pune': {
         title: 'FAQ – Pest Control in Pimple Saudagar , Pune',
         faqs: [
