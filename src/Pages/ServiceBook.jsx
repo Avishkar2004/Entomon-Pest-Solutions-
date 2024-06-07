@@ -150,7 +150,7 @@ const ServiceBook = () => {
                   <EmailIcon />
                 </span>
                 <span className="font-bold">Email:</span>
-                pestokiller.co@gmail.com
+                entomon.pestsolution@gmail.com
               </p>
             </div>
             <div className="mb-4 ml-[-12px]">
