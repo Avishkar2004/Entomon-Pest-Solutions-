@@ -8,7 +8,6 @@ import AgricultureControl2 from "../assets/Agriculture/Agriculture5.webp";
 const Agriculture = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
-
   const toggleReadMore = () => {
     setIsExpanded(!isExpanded)
   }
