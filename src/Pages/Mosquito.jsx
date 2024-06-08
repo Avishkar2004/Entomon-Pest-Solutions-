@@ -142,7 +142,6 @@ const Mosquito = () => {
           >
             Get Rid of Mosquitoes
           </h1>
-
           <div className="space-y-6">
             <h2 className="text-lg font-semibold text-gray-800 mb-2">
               1. Eliminate Mosquito Breeding Sites-Remove Standing Water
