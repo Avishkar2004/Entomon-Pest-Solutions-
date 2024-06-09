@@ -15,7 +15,6 @@ function WaterPurify() {
                     Clean and safe drinking water is essential for health and well-being. Water purification is the process of removing undesirable chemicals, biological contaminants, suspended solids, and gases from water.
                 </p>
             </section>
-
             <section className="mb-12">
                 <h2 className="text-3xl font-semibold text-blue-600 mb-6">Common Water Purification Methods</h2>
                 <ul className="list-disc list-inside space-y-4">
