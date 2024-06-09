@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Agriculture from "../assets/Option/agriculture.png";
+import WaterPurify from "../assets/Option/waterPurify.png";
 import Ant from "../assets/Option/ant.png";
 import BedBug from "../assets/Option/bedbug.png";
 import Cockroach from "../assets/Option/cockroach.png";
@@ -43,7 +43,7 @@ const PestOptionsPage = () => {
   };
 
   const handleRedirect10 = () => {
-    window.location.href = "/agriculture";
+    window.location.href = "/WaterPurify";
   };
 
   return (
@@ -230,14 +230,14 @@ const PestOptionsPage = () => {
           >
             <img
               className="h-11 ml-1 md:ml-16 lg:ml-16"
-              src={Agriculture}
-              alt="Agriculture Service"
+              src={WaterPurify}
+              alt="WaterPurify Service"
             />
             <Link
-              to="/agriculture"
+              to="/WaterPurify"
               className="flex items-center justify-center text-black py-3 gap-12 rounded-lg focus:outline-none focus:ring-blue-400"
             >
-              Agriculture
+              Water Purify
             </Link>
           </div>
         </div>

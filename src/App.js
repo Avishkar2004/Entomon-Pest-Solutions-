@@ -2,7 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Agriculture from "./Pages/Agriculture";
+// import Agriculture from "./Pages/Agriculture";
 import Ant from "./Pages/Ant";
 import Banner from "./Pages/Banner";
 import BedBug from "./Pages/BedBug";
@@ -26,6 +26,7 @@ import ThankYou from "./Pages/ThankYou";
 import WoodBorer from "./Pages/WoodBorer";
 import FAQSpecificLocationPune from "./Pages/FAQSpecificLocationPune"; // Import the dynamic FAQ page
 import FAQsPune from "./Pages/FAQsPune";
+import WaterPurify from "./Pages/WaterPurify";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -55,7 +56,8 @@ function App() {
         <Route path="/bedbug" component={BedBug} />
         <Route path="/sanitization" component={General} />
         <Route path="/fleafly" component={Fly} />
-        <Route path="/agriculture" component={Agriculture} />
+        {/* <Route path="/agriculture" component={Agriculture} /> */}
+        <Route path="/WaterPurify" component={WaterPurify} />
         <Route path="/faq/:location" component={FAQSpecificLocationPune} />
         {/* <Route path="/nagar/:location" component={FAQSpecificLocationNagar} /> */}
       </Switch>
