@@ -1739,7 +1739,7 @@ const faqData = {
 
 };
 
-function FAQSpecificLocation() {
+function FAQSpecificLocationPune() {
     const { location } = useParams();
     const faq = faqData[location];
     const [openFaqIndex, setOpenFaqIndex] = useState(null)
@@ -1786,4 +1786,4 @@ function FAQSpecificLocation() {
     );
 }
 
-export default FAQSpecificLocation;
+export default FAQSpecificLocationPune;

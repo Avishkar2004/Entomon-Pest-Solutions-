@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Link } from "react-router-dom";
 
 const locations = [
@@ -14,62 +14,9 @@ const locations = [
     'sangvi-pune',
     'nigdi-pune',
     'koregaon-park-pune',
-    'bibvewadi-pune',
-    'bhugaon-pune',
-    'ambegaon-budruk-pune',
-    'bhukum-pune',
-    'dhankawadi-pune',
-    'kalewadi-pune',
-    'kasarwadi-pune',
-    'maan-pune',
-    'moshi-pune',
-    'phugewadi-pune',
-    'magarpatta-pune',
-    'kothrud-pune',
-    'vishranthwadi-pune',
-    'wagholi-pune',
-    'baner-pune',
-    'kondhwa-pune',
-    'katraj-pune',
-    'karve-nagar-pune',
-    'kalyani-nagar-pune',
-    'undri-pune',
-    'keshav-nagar-pune',
-    'mundhwa-pune',
-    'dhanori-pune',
-    'dhayari-pune',
-    'fursungi-pune',
-    'ghorpadi-pune',
-    'khadki-pune',
-    'pimple-nilakh-pune',
-    'tathawade-pune',
-    'thergaon-pune',
-    'yerwada-pune',
-    'kharadi-pune',
-    'pimple-gurav-pune',
-    'pimple-saudagar-pune',
-    'viman-nagar-pune',
-    'senapati-bapat-road-pune',
-    'ravet-pune',
-    'erandwane-pune',
-    'phursungi-pune',
-    'model-colony-pune',
-    'talawade-pune',
-    'wadgaon-sheri-pune',
-    'vishal-nagar-pune',
-    'lohagaon-pune',
-    'manjri-pune',
-    'pashan-pune',
-    'sus-pune',
-    'balewadi-pune',
-    'warje-pune',
-    'bhosari-pune',
-    'chakan-pune',
-    'dapodi-pune'
 ];
 
-
-function FAQs() {
+function FAQsNagar() {
     return (
         <div className="max-w-5xl mx-auto p-6">
             <h1 className="text-3xl font-bold text-black mb-6">Important Pest Control FAQs</h1>
@@ -118,15 +65,14 @@ function FAQs() {
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
                     {locations.map((location) => (
                         <li key={location}>
-                            <Link className="text-blue-700 text-sm" to={`/faq/${location}`}>
+                            <Link className="text-blue-700 text-sm" to={`/nagar/${location}`}>
                                 Pest Control in {location.split('-').map(word => word.charAt(0, 2).toUpperCase() + word.slice(1)).join(", ")}
                             </Link>
                         </li>
                     ))}
                 </div>
             </section>
-        </div>
-    );
+        </div>)
 }
 
-export default FAQs;
+export default FAQsNagar
