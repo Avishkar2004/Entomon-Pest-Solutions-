@@ -401,3 +401,139 @@ Cockroach :-
           </ul>
         </div>
       </div>
+
+Mosquito :-
+
+ <div class="max-w-4xl mt-10 mx-auto text-center">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+          Silent Destroyers
+        </h1>
+
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold">Breeding grounds: </span>
+            Mosquitoes lay their eggs in standing water, so eliminating
+            potential breeding sites is essential. Regularly check and empty
+            containers like flowerpots, bird baths, and clogged gutters where
+            stagnant water can accumulate.
+          </p>
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold">HBites and buzzing sounds: </span>
+            Mosquitoes are known for their itchy bites. If you notice an
+            increase in mosquito bites, especially during peak mosquito activity
+            times (dawn and dusk), it may indicate a higher mosquito population.
+            Additionally, the buzzing sound of female mosquitoes is a common
+            sign of their presence.
+          </p>
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold"> Preventive measures:</span>
+            Use screens on windows and doors to keep mosquitoes out of your
+            home. Consider using mosquito nets while sleeping, wearing long
+            sleeves and pants, and using insect repellent to protect yourself
+            from bites.
+          </p>
+          <p class="sm:text-base">
+            <span class="font-semibold">Professional mosquito control:</span>
+            If mosquito infestations are severe, professional pest control
+            services can help. Mosquito control methods may include the use of
+            insecticides, larvicides, and fogging to reduce adult mosquito
+            populations.
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-col items-start text-start container font-bold">
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              Disease Vectors: Mosquitoes can transmit diseases such as malaria,
+              dengue, Zika, and West Nile virus.
+            </li>
+            <li>
+              Breeding Sites: Mosquitoes breed in standing water, laying their
+              eggs on the water's surface.
+            </li>
+            <li>
+              Attracted to Odors: Mosquitoes are attracted to body heat, carbon
+              dioxide, and body odors when seeking hosts.
+            </li>
+            <li>
+              Prevention: Measures to prevent mosquito bites include using
+              repellents, wearing protective clothing, and using bed nets.
+            </li>
+            <li>
+              Day and Night Activity: Mosquitoes are most active during dawn and
+              dusk, but some species are active during the day.
+            </li>
+            <li>
+              Global Distribution: Mosquitoes are found worldwide, except in
+              extreme cold or high-altitude environments.
+            </li>
+            <li className="text-red-500">
+              Species Diversity: There are over 3,500 species of mosquitoes,
+              each with its own characteristics and habitat preferences.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+===
+Mouse :--
+
+
+  <div className="max-w-4xl pt-10 mx-auto text-center">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+          Silent Destroyers
+        </h1>
+
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold">Sightings and fecal droppings:</span>
+            Mousees are nocturnal creatures and tend to hide during the day. If
+            you notice live Mousees scurrying around at night or find small dark
+            droppings resembling coffee grounds, it could indicate an
+            infestation.
+          </p>
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold">Unpleasant odor:</span>
+            Mousees emit a distinctive musty odor that can become noticeable in
+            areas with a large population. If you detect an unpleasant smell,
+            particularly in kitchen or bathroom areas, it could be a sign of a
+            Mouse infestation.
+          </p>
+          <p class="mb-4 sm:text-base">
+            Dealing with a Mouse infestation requires professional expertise. A
+            licensed pest control company can assess the severity of the
+            infestation and implement appropriate Mouse control measures. This
+            may include insecticide treatments, baits, and sealing entry points
+            to prevent further infestations.
+          </p>
+        </div>
+
+        <div className="mt-10 flex flex-col items-start text-start container font-bold">
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              Mousees are active mostly during nighttime or in dark, concealed
+              areas.
+            </li>
+            <li>
+              They prefer to avoid exposure to light and maintain a hidden
+              presence within the colonies they infest.
+            </li>
+            <li>
+              These resilient insects can establish their hiding spots in
+              various locations, including cracks, crevices, and voids in walls,
+              floors, and furniture.
+            </li>
+            <li>
+              Mousees can travel and infest new areas by navigating through gaps
+              and openings, and they are also known to be carried in infested
+              items such as bags, boxes, and furniture.
+            </li>
+            <li className="text-red-500">
+              Remember, if you suspect a Mouse infestation in your property, it
+              is essential to contact a professional pest control service to
+              assess the situation and provide effective treatment options.
+            </li>
+          </ul>
+        </div>
+      </div>

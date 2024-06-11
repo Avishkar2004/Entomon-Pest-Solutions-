@@ -6,6 +6,74 @@ import Mosquitos1 from "../assets/Mosquito/mosquito1.webp";
 import Mosquitos2 from "../assets/Mosquito/mosquito2.webp";
 import MosquitoControl from "../assets/Mosquito/msd.jpg";
 
+const locations = [
+  'Aundh-pune',
+  'hinjewadi-pune',
+  'wakad-pune',
+  'hadapsar-pune',
+  'pimpri-chinchwad-pune',
+  'bavdhan-pune',
+  'chandan-nagar-pune',
+  'boat-club-road-pune',
+  'shivajinagar-pune',
+  'sangvi-pune',
+  'nigdi-pune',
+  'koregaon-park-pune',
+  'bibvewadi-pune',
+  'bhugaon-pune',
+  'ambegaon-budruk-pune',
+  'bhukum-pune',
+  'dhankawadi-pune',
+  'kalewadi-pune',
+  'kasarwadi-pune',
+  'maan-pune',
+  'moshi-pune',
+  'phugewadi-pune',
+  'magarpatta-pune',
+  'kothrud-pune',
+  'vishranthwadi-pune',
+  'wagholi-pune',
+  'baner-pune',
+  'kondhwa-pune',
+  'katraj-pune',
+  'karve-nagar-pune',
+  'kalyani-nagar-pune',
+  'undri-pune',
+  'keshav-nagar-pune',
+  'mundhwa-pune',
+  'dhanori-pune',
+  'dhayari-pune',
+  'fursungi-pune',
+  'ghorpadi-pune',
+  'khadki-pune',
+  'pimple-nilakh-pune',
+  'tathawade-pune',
+  'thergaon-pune',
+  'yerwada-pune',
+  'kharadi-pune',
+  'pimple-gurav-pune',
+  'pimple-saudagar-pune',
+  'viman-nagar-pune',
+  'senapati-bapat-road-pune',
+  'ravet-pune',
+  'erandwane-pune',
+  'phursungi-pune',
+  'model-colony-pune',
+  'talawade-pune',
+  'wadgaon-sheri-pune',
+  'vishal-nagar-pune',
+  'lohagaon-pune',
+  'manjri-pune',
+  'pashan-pune',
+  'sus-pune',
+  'balewadi-pune',
+  'warje-pune',
+  'bhosari-pune',
+  'chakan-pune',
+  'dapodi-pune'
+];
+
+
 const Mosquito = () => {
 
   const [isExpanded, setIsExpanded] = useState(false)
@@ -353,76 +421,105 @@ const Mosquito = () => {
         </div>
       </div>
 
-      <div class="max-w-4xl mt-10 mx-auto text-center">
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-          Silent Destroyers
-        </h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Breeding grounds: </span>
-            Mosquitoes lay their eggs in standing water, so eliminating
-            potential breeding sites is essential. Regularly check and empty
-            containers like flowerpots, bird baths, and clogged gutters where
-            stagnant water can accumulate.
-          </p>
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold">HBites and buzzing sounds: </span>
-            Mosquitoes are known for their itchy bites. If you notice an
-            increase in mosquito bites, especially during peak mosquito activity
-            times (dawn and dusk), it may indicate a higher mosquito population.
-            Additionally, the buzzing sound of female mosquitoes is a common
-            sign of their presence.
-          </p>
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold"> Preventive measures:</span>
-            Use screens on windows and doors to keep mosquitoes out of your
-            home. Consider using mosquito nets while sleeping, wearing long
-            sleeves and pants, and using insect repellent to protect yourself
-            from bites.
-          </p>
-          <p class="sm:text-base">
-            <span class="font-semibold">Professional mosquito control:</span>
-            If mosquito infestations are severe, professional pest control
-            services can help. Mosquito control methods may include the use of
-            insecticides, larvicides, and fogging to reduce adult mosquito
-            populations.
-          </p>
+      {/* Blog section */}
+      <div className="container mx-auto mt-10 px-4 sm:px-0">
+        <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
+
+        <div className="grid gap-10 mt-10">
+          {/* First Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={Mosquitos1}
+                alt="Mosquito Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  HOW TO GET RID OF MOSQUITOES?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Mosquitoes are more than just a nuisance. These resilient pests can carry diseases, cause itchy bites, and generally compromise the comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
+                </p>
+                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={Mosquitos2}
+                alt="Mosquito Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  WHEN SHOULD I TREAT MY HOUSE FOR MOSQUITOES?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Mosquitoes are often called the “silent invaders” because of their ability to enter your home undetected and spread diseases such as malaria, dengue, and Zika virus. Each year, mosquitoes cause numerous health issues and discomfort…
+                </p>
+                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="mt-10 flex flex-col items-start text-start container font-bold">
-          <ul class="list-disc pl-6 space-y-2">
-            <li>
-              Disease Vectors: Mosquitoes can transmit diseases such as malaria,
-              dengue, Zika, and West Nile virus.
-            </li>
-            <li>
-              Breeding Sites: Mosquitoes breed in standing water, laying their
-              eggs on the water's surface.
-            </li>
-            <li>
-              Attracted to Odors: Mosquitoes are attracted to body heat, carbon
-              dioxide, and body odors when seeking hosts.
-            </li>
-            <li>
-              Prevention: Measures to prevent mosquito bites include using
-              repellents, wearing protective clothing, and using bed nets.
-            </li>
-            <li>
-              Day and Night Activity: Mosquitoes are most active during dawn and
-              dusk, but some species are active during the day.
-            </li>
-            <li>
-              Global Distribution: Mosquitoes are found worldwide, except in
-              extreme cold or high-altitude environments.
-            </li>
-            <li className="text-red-500">
-              Species Diversity: There are over 3,500 species of mosquitoes,
-              each with its own characteristics and habitat preferences.
-            </li>
-          </ul>
-        </div>
+
       </div>
+
+
+
+
+      <div className="max-w-5xl mx-auto p-6">
+        <h1 className="text-3xl font-bold text-black mb-6">Important Mosquito Control FAQs</h1>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are charges for mosquito control services in Pune?</h3>
+          <p className="text-gray-700 mt-3">Estimated charges for mosquito control services in Pune can be in the range of Rs 1200 to Rs 8200 depending upon the size of the property and level of infestation.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Why hiring mosquito control services in Pune is imperative?</h3>
+          <p className="text-gray-700 mt-3">We at Get Mosquito Control are in the niche for several years. Hence, we completely understand the needs of professional mosquito control services. We understand well that mosquitoes are a nuisance. They are a great threat to health and are noted for spreading diseases. So, it is imperative to hire professional mosquito control services in Pune to get rid of life-threatening mosquitoes.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for mosquito inspection in Pune?</h3>
+          <p className="text-gray-700 mt-3">The estimated charges for mosquito inspection services in Pune will vary based on the size of the property and the extent of the inspection required. It can range from Rs 500 to Rs 2000.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How long does mosquito treatment last?</h3>
+          <p className="text-gray-700 mt-3">The duration of mosquito treatment effectiveness can vary depending on factors such as the type of treatment used, the severity of the infestation, and environmental conditions. Generally, mosquito treatments can last anywhere from a few weeks to a few months.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Is mosquito treatment safe for pets and children?</h3>
+          <p className="text-gray-700 mt-3">Most mosquito treatments are formulated to be safe for pets and children when applied by trained professionals following recommended guidelines. However, it's essential to discuss any concerns with your mosquito control provider and take necessary precautions during and after the treatment.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent mosquito infestation in my home?</h3>
+          <p className="text-gray-700 mt-3">To prevent mosquito infestation, you can take measures such as eliminating standing water sources, sealing cracks and crevices, using mosquito repellents, and scheduling regular mosquito inspections.</p>
+        </div>
+        <section>
+          <h3 className='text-3xl font-bold text-black mb-6'>Local Mosquito Control in Pune Near Me :</h3>
+          <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
+            {locations.map((location) => (
+              <ul key={location}>
+                <Link className="text-blue-700 text-sm" to={`/mos/${location}`}>
+                  Mosquito Control in {location.split('-').map(word => word.charAt(0, 2).toUpperCase() + word.slice(1)).join(", ")}
+                </Link>
+              </ul>
+            ))}
+          </div>
+        </section>
+      </div>
+
+
     </main>
   );
 };

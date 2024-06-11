@@ -30,6 +30,8 @@ import WaterPurify from "./Pages/WaterPurify";
 import BlogPage from "./BlogPage";
 import FAQSTermiteSpecificLocation from "./Pages/FAQSTermiteSpecificLocation";
 import FAQSCockSpecifiLocation from "./Pages/FAQSCockSpecifiLocation";
+import FAQSMosSpecifiLocation from "./Pages/FAQSMosSpecifiLocation";
+import FAQSMouseSpecifiLocation from "./Pages/FAQSMouseSpecifiLocation";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -65,6 +67,8 @@ function App() {
         {/* <Route path="/nagar/:location" component={FAQSpecificLocationNagar} /> */}
         <Route path="/ter/:location" component={FAQSTermiteSpecificLocation} />
         <Route path="/cock/:location" component={FAQSCockSpecifiLocation} />
+        <Route path="/mos/:location" component={FAQSMosSpecifiLocation} />
+        <Route path="/mousep/:location" component={FAQSMouseSpecifiLocation} />
         <Route exact path="/blog/:id" component={BlogPage} />
       </Switch>
       <GlowingIcons />

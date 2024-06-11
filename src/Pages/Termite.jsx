@@ -553,10 +553,6 @@ const Termite = () => {
           </div>
         </div>
       </div>
-
-
-
-
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Termite Control FAQs</h1>
 
