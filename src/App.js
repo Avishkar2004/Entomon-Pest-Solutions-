@@ -32,6 +32,7 @@ import FAQSTermiteSpecificLocation from "./Pages/FAQSTermiteSpecificLocation";
 import FAQSCockSpecifiLocation from "./Pages/FAQSCockSpecifiLocation";
 import FAQSMosSpecifiLocation from "./Pages/FAQSMosSpecifiLocation";
 import FAQSMouseSpecifiLocation from "./Pages/FAQSMouseSpecifiLocation";
+import FAQSAntSpecifiLocation from "./Pages/FAQSAntSpecifiLocation";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -69,6 +70,7 @@ function App() {
         <Route path="/cock/:location" component={FAQSCockSpecifiLocation} />
         <Route path="/mos/:location" component={FAQSMosSpecifiLocation} />
         <Route path="/mousep/:location" component={FAQSMouseSpecifiLocation} />
+        <Route path="/antp/:location" component={FAQSAntSpecifiLocation} />
         <Route exact path="/blog/:id" component={BlogPage} />
       </Switch>
       <GlowingIcons />

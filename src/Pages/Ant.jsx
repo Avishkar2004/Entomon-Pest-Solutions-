@@ -6,6 +6,75 @@ import AntSafe from "../assets/Ant/Ant3.webp";
 import AntControl from "../assets/Ant/Ant4.webp";
 import AntControl2 from "../assets/Ant/Ant5.webp";
 
+
+const locations = [
+  'Aundh-pune',
+  'hinjewadi-pune',
+  'wakad-pune',
+  'hadapsar-pune',
+  'pimpri-chinchwad-pune',
+  'bavdhan-pune',
+  'chandan-nagar-pune',
+  'boat-club-road-pune',
+  'shivajinagar-pune',
+  'sangvi-pune',
+  'nigdi-pune',
+  'koregaon-park-pune',
+  'bibvewadi-pune',
+  'bhugaon-pune',
+  'ambegaon-budruk-pune',
+  'bhukum-pune',
+  'dhankawadi-pune',
+  'kalewadi-pune',
+  'kasarwadi-pune',
+  'maan-pune',
+  'moshi-pune',
+  'phugewadi-pune',
+  'magarpatta-pune',
+  'kothrud-pune',
+  'vishranthwadi-pune',
+  'wagholi-pune',
+  'baner-pune',
+  'kondhwa-pune',
+  'katraj-pune',
+  'karve-nagar-pune',
+  'kalyani-nagar-pune',
+  'undri-pune',
+  'keshav-nagar-pune',
+  'mundhwa-pune',
+  'dhanori-pune',
+  'dhayari-pune',
+  'fursungi-pune',
+  'ghorpadi-pune',
+  'khadki-pune',
+  'pimple-nilakh-pune',
+  'tathawade-pune',
+  'thergaon-pune',
+  'yerwada-pune',
+  'kharadi-pune',
+  'pimple-gurav-pune',
+  'pimple-saudagar-pune',
+  'viman-nagar-pune',
+  'senapati-bapat-road-pune',
+  'ravet-pune',
+  'erandwane-pune',
+  'phursungi-pune',
+  'model-colony-pune',
+  'talawade-pune',
+  'wadgaon-sheri-pune',
+  'vishal-nagar-pune',
+  'lohagaon-pune',
+  'manjri-pune',
+  'pashan-pune',
+  'sus-pune',
+  'balewadi-pune',
+  'warje-pune',
+  'bhosari-pune',
+  'chakan-pune',
+  'dapodi-pune'
+];
+
+
 const Ant = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
@@ -289,62 +358,95 @@ const Ant = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl pt-10 mx-auto text-center">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-          Silent Destroyers
-        </h1>
+      {/* Blog section */}
+      <div className="container mx-auto mt-10 px-4 sm:px-0">
+        <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold"> Sightings and fecal droppings:</span>
-            Antes are nocturnal creatures and tend to hide during the day. If
-            you notice live Antes scurrying around at night or find small dark
-            droppings resembling coffee grounds, it could indicate an
-            infestation.
-          </p>
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Unpleasant odor:</span>
-            Antes emit a distinctive musty odor that can become noticeable in
-            areas with a large population. If you detect an unpleasant smell,
-            particularly in kitchen or bathroom areas, it could be a sign of a
-            Ant infestation.
-          </p>
-          <p class="mb-4 sm:text-base">
-            Dealing with a Ant infestation requires professional expertise. A
-            licensed pest control company can assess the severity of the
-            infestation and implement appropriate Ant control measures. This may
-            include insecticide treatments, baits, and sealing entry points to
-            prevent further infestations.
-          </p>
-        </div>
+        <div className="grid gap-10 mt-10">
+          {/* First Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={Ants1}
+                alt="Ant Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  HOW TO GET RID OF ANTS IN YOUR HOME?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Ants might be tiny, but they can cause big problems when they invade your living space. From foraging for food in your kitchen to creating unsightly trails across your floors, these pesky insects can be a nuisance. If you've recently taken the step to reclaim your home from these unwelcome guests…
+                </p>
+                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
 
-        <div className="mt-10 flex flex-col items-start text-start container font-bold">
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              Antes are active mostly during nighttime or in dark, concealed
-              areas.
-            </li>
-            <li>
-              They prefer to avoid exposure to light and maintain a hidden
-              presence within the colonies they infest.
-            </li>
-            <li>
-              These resilient insects can establish their hiding spots in
-              various locations, including cracks, crevices, and voids in walls,
-              floors, and furniture.
-            </li>
-            <li>
-              Ants can travel and infest new areas by navigating through gaps
-              and openings, and they are also known to be carried in infested
-              items such as bags, boxes, and furniture.
-            </li>
-            <li className="text-red-500">
-              Remember, if you suspect a Ant infestation in your property, it is
-              essential to contact a professional pest control service to assess
-              the situation and provide effective treatment options.
-            </li>
-          </ul>
+          {/* Second Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={AntControl2}
+                alt="Ant Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  WHEN SHOULD I TREAT MY HOUSE FOR ANTS?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Ants are often called the "persistent invaders" because of their ability to find their way into your home and create colonies. Dealing with ants can be frustrating, especially when they keep coming back after treatment. To effectively control ants…
+                </p>
+                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="max-w-5xl mx-auto p-6">
+        <h1 className="text-3xl font-bold text-black mb-6">Important Ant Control FAQs</h1>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are charges for ant control services in Pune?</h3>
+          <p className="text-gray-700 mt-3">Estimated charges for ant control services in Pune can vary depending upon factors such as the size of the property and the severity of the infestation. It may range from Rs 1500 to Rs 10,000.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Why hiring ant control services in Pune is imperative?</h3>
+          <p className="text-gray-700 mt-3">Ants can quickly become a nuisance in your home, contaminating food and surfaces. Some species can also cause structural damage. Hiring professional ant control services ensures effective eradication of ants and helps prevent future infestations.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for ant inspection in Pune?</h3>
+          <p className="text-gray-700 mt-3">The estimated charges for ant inspection services in Pune can range from Rs 800 to Rs 3000, depending on the size of the property and the complexity of the inspection.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How long does ant treatment last?</h3>
+          <p className="text-gray-700 mt-3">The effectiveness of ant treatment can vary depending on factors such as the type of treatment used, the species of ants, and environmental conditions. Typically, ant treatments can last from several weeks to several months.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Is ant treatment safe for pets and children?</h3>
+          <p className="text-gray-700 mt-3">Professional ant treatments are generally safe for pets and children when applied according to the manufacturer's instructions. However, it's essential to follow any precautions advised by the pest control provider to ensure safety.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent ant infestation in my home?</h3>
+          <p className="text-gray-700 mt-3">To prevent ant infestation, seal entry points, eliminate food sources, keep your home clean and dry, and address any moisture issues. Regular inspections and maintenance can also help detect and prevent ant problems.</p>
+        </div>
+        <section>
+          <h3 className='text-3xl font-bold text-black mb-6'>Local Ant Control in Pune Near Me :</h3>
+          <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
+            {locations.map((location) => (
+              <ul key={location}>
+                <Link className="text-blue-700 text-sm" to={`/antp/${location}`}>
+                  Ant Control in {location.split('-').map(word => word.charAt(0, 2).toUpperCase() + word.slice(1)).join(", ")}
+                </Link>
+              </ul>
+            ))}
+          </div>
+        </section>
       </div>
     </main>
   );

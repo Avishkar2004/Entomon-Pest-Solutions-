@@ -171,7 +171,6 @@ const Mouse = () => {
           from further Mouse infestations.
         </p>
       </div>
-
       <div className="container mx-auto mt-10 rounded-lg shadow-lg hover:shadow-2xl overflow-hidden bg-white">
         <div className="lg:flex items-center">
           {/* Image */}
@@ -195,7 +194,6 @@ const Mouse = () => {
           </div>
         </div>
       </div>
-
       <div className="py-10 mt-9 bg-slate-100  rounded-2xl shadow-xl hover:shadow-orange-100 hover:shadow-2xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <h1
@@ -297,7 +295,6 @@ const Mouse = () => {
           </div>
         </div>
       </div>
-
       <div class="container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row md:gap-8 items-center sm:ml-0 md:ml-[-1rem] mr-0 md:mr-[-6rem] xxl:ml-22 lg:mr-5 lg:ml-36">
           <div class="max-w-2xl">
@@ -320,13 +317,9 @@ const Mouse = () => {
           </div>
         </div>
       </div>
-
-
-
       {/* Blog section */}
       <div className="container mx-auto mt-10 px-4 sm:px-0">
         <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
-
         <div className="grid gap-10 mt-10">
           {/* First Blog */}
           <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
@@ -349,7 +342,6 @@ const Mouse = () => {
               </div>
             </div>
           </div>
-
           {/* Second Blog */}
           <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
             <div className="flex flex-col sm:flex-row">
@@ -372,13 +364,7 @@ const Mouse = () => {
             </div>
           </div>
         </div>
-
-
       </div>
-
-
-
-
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Mouse Control FAQs</h1>
 
@@ -419,10 +405,6 @@ const Mouse = () => {
           </div>
         </section>
       </div>
-
-
-
-
     </main>
   );
 };
