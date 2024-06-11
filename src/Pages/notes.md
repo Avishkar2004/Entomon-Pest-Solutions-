@@ -292,3 +292,43 @@ For Area
               Book Now
             </Link>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+ <div className="max-w-4xl mt-10 mx-auto text-center">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+          Silent Destroyers
+        </h1>
+
+        <div className="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
+          <p className="mb-4 sm:text-base">
+            <span className="font-semibold" style={{ fontFamily: "sans-serif" }}>
+              Termites are wood-eating insects that are often confused with
+              ants. They are more closely related to cockroaches. Termites are
+              also called wood bugs because they have destroyed structures and
+              households
+            </span>
+          </p>
+          <p className="mb-4 sm:text-base" style={{ fontFamily: "sans-serif" }}>
+            <span className="font-semibold">
+              Here are some facts about termites:
+            </span>
+            <br></br>
+            They survive mostly in warm and humid temperatures. They can break
+            down wood into smaller substances, making it easier for them to chew
+            and digest. They can get into your home through a crack no bigger
+            than the width of a penny. They eat 24 hours a day. They can coexist
+            with other colonies, but if one goes into the other's premises, it
+            will be immediately killed and removed. The only kind of termite
+            that has wings is the reproductive swarmer.
+          </p>
+        </div>
+      </div>

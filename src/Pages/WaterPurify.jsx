@@ -7,8 +7,7 @@ import cus2 from "../assets/WaterPurify/cus2.webp"
 function WaterPurify() {
     return (
         <div className="p-6 text-gray-900">
-            <h1 className="text-4xl font-bold text-blue-700 mb-8 text-center">Water Purification</h1>
-
+            <h1 className="text-4xl font-bold text-blue-700 mb-8 text-center">Water Proofing</h1>
             <section className="mb-12 text-center">
                 <img src={WaterPurifyImg} alt="Water Purification" className="w-48 h-48 mx-auto mb-6 rounded-lg shadow-md" />
                 <p className="text-lg leading-relaxed">

@@ -27,6 +27,8 @@ import WoodBorer from "./Pages/WoodBorer";
 import FAQSpecificLocationPune from "./Pages/FAQSpecificLocationPune"; // Import the dynamic FAQ page
 import FAQsPune from "./Pages/FAQsPune";
 import WaterPurify from "./Pages/WaterPurify";
+import BlogPage from "./BlogPage";
+import FAQSTermiteSpecificLocation from "./Pages/FAQSTermiteSpecificLocation";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -60,9 +62,10 @@ function App() {
         <Route path="/WaterPurify" component={WaterPurify} />
         <Route path="/faq/:location" component={FAQSpecificLocationPune} />
         {/* <Route path="/nagar/:location" component={FAQSpecificLocationNagar} /> */}
+        <Route path="/ter/:location" component={FAQSTermiteSpecificLocation} />
+        <Route exact path="/blog/:id" component={BlogPage} />
       </Switch>
       <GlowingIcons />
-
       <Route
         render={({ location }) => {
           if (location.pathname === "/") {

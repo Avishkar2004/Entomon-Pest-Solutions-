@@ -2,10 +2,80 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import TermitePhoto from "../assets/Termite/TermitePhoto.webp";
 import TermitePhoto2 from "../assets/Termite/TermitePhoto2.webp";
+import TermitePhoto5 from "../assets/Termite/termite5.webp";
+import TermitePhoto6 from "../assets/Termite/termite6.webp";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
 import TermiteGlow from "../assets/Termite/glow.jpg";
 import TermiteNormal from "../assets/Termite/normal.jpg";
 import Solution from "../assets/Termite/solutions.png";
+
+const locations = [
+  'Aundh-pune',
+  'hinjewadi-pune',
+  'wakad-pune',
+  'hadapsar-pune',
+  'pimpri-chinchwad-pune',
+  'bavdhan-pune',
+  'chandan-nagar-pune',
+  'boat-club-road-pune',
+  'shivajinagar-pune',
+  'sangvi-pune',
+  'nigdi-pune',
+  'koregaon-park-pune',
+  'bibvewadi-pune',
+  'bhugaon-pune',
+  'ambegaon-budruk-pune',
+  'bhukum-pune',
+  'dhankawadi-pune',
+  'kalewadi-pune',
+  'kasarwadi-pune',
+  'maan-pune',
+  'moshi-pune',
+  'phugewadi-pune',
+  'magarpatta-pune',
+  'kothrud-pune',
+  'vishranthwadi-pune',
+  'wagholi-pune',
+  'baner-pune',
+  'kondhwa-pune',
+  'katraj-pune',
+  'karve-nagar-pune',
+  'kalyani-nagar-pune',
+  'undri-pune',
+  'keshav-nagar-pune',
+  'mundhwa-pune',
+  'dhanori-pune',
+  'dhayari-pune',
+  'fursungi-pune',
+  'ghorpadi-pune',
+  'khadki-pune',
+  'pimple-nilakh-pune',
+  'tathawade-pune',
+  'thergaon-pune',
+  'yerwada-pune',
+  'kharadi-pune',
+  'pimple-gurav-pune',
+  'pimple-saudagar-pune',
+  'viman-nagar-pune',
+  'senapati-bapat-road-pune',
+  'ravet-pune',
+  'erandwane-pune',
+  'phursungi-pune',
+  'model-colony-pune',
+  'talawade-pune',
+  'wadgaon-sheri-pune',
+  'vishal-nagar-pune',
+  'lohagaon-pune',
+  'manjri-pune',
+  'pashan-pune',
+  'sus-pune',
+  'balewadi-pune',
+  'warje-pune',
+  'bhosari-pune',
+  'chakan-pune',
+  'dapodi-pune'
+];
+
 
 const Termite = () => {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -432,35 +502,95 @@ const Termite = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl mt-10 mx-auto text-center">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-          Silent Destroyers
-        </h1>
 
-        <div className="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
-          <p className="mb-4 sm:text-base">
-            <span className="font-semibold" style={{ fontFamily: "sans-serif" }}>
-              Termites are wood-eating insects that are often confused with
-              ants. They are more closely related to cockroaches. Termites are
-              also called wood bugs because they have destroyed structures and
-              households
-            </span>
-          </p>
-          <p className="mb-4 sm:text-base" style={{ fontFamily: "sans-serif" }}>
-            <span className="font-semibold">
-              Here are some facts about termites:
-            </span>
-            <br></br>
-            They survive mostly in warm and humid temperatures. They can break
-            down wood into smaller substances, making it easier for them to chew
-            and digest. They can get into your home through a crack no bigger
-            than the width of a penny. They eat 24 hours a day. They can coexist
-            with other colonies, but if one goes into the other's premises, it
-            will be immediately killed and removed. The only kind of termite
-            that has wings is the reproductive swarmer.
-          </p>
+      {/* Blog section */}
+      <div className="container mx-auto mt-10 grid gap-10">
+        <h1 className="text-center text-3xl font-bold mt-3">Blog's</h1>
+        {/* First Blog */}
+        <div className="rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col sm:flex-row">
+            <img
+              src={TermitePhoto6}
+              alt="Termite Control"
+              className="w-full h-auto sm:w-72 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">
+                HOW TO GET RID OF FORMOSAN TERMITES ?
+              </h2>
+              <p className="mt-3 text-gray-600">
+                Roaches are more than just a nuisance. These resilient pests can carry diseases, trigger allergies, and generally compromise the cleanliness and comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests …</p>
+              <Link to="/blog/1" className="mt-4 text-indigo-600 hover:text-indigo-800">
+                Read More
+              </Link>
+            </div>
+          </div>
+        </div>
+        {/* Second Blog */}
+        <div className="rounded-lg shadow-lg overflow-hidden">
+          <div className="flex flex-col sm:flex-row">
+            <img
+              src={TermitePhoto5}
+              alt="Termite Control"
+              className="w-full h-auto sm:w-72 object-cover"
+            />
+            <div className="p-6">
+              <h2 className="text-2xl font-semibold mb-4">
+                WHEN SHOULD I TREAT MY HOUSE FOR TERMITES ?
+              </h2>
+              <p className="mt-3 text-gray-600">
+                Termites are often called the “silent destroyers” because of their ability to chew through wood, flooring, and even wallpaper undetected. Each year, termites cause more than $5 billion in property damage in the United States alone – damage not covered …
+              </p>
+              <Link to="/blog/2" className="text-indigo-600 hover:text-indigo-800">
+                Read More
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
+
+
+      <div className="max-w-5xl mx-auto p-6">
+        <h1 className="text-3xl font-bold text-black mb-6">Important Termite Control FAQs</h1>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are charges for termite control services in Pune?</h3>
+          <p className="text-gray-700 mt-3">Estimated charges for termite control services in Pune can be in the range of Rs 1200 to Rs 8200 depending upon the size of the property and level of infestation.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Why hiring termite control services in Pune is imperative?</h3>
+          <p className="text-gray-700 mt-3">We at Get Termite Control are in the niche for several years. Hence, we completely understand the needs of professional termite control services. We understand well that termites are a nuisance. They are a great threat to health and are noted for damaging properties. So, it is imperative to hire professional termite control services in Pune to get rid of life-threatening termites.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for termite inspection in Pune?</h3>
+          <p className="text-gray-700 mt-3">The estimated charges for termite inspection services in Pune will vary based on the size of the property and the extent of the inspection required. It can range from Rs 500 to Rs 2000.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How long does termite treatment last?</h3>
+          <p className="text-gray-700 mt-3">The duration of termite treatment effectiveness can vary depending on factors such as the type of treatment used, the severity of the infestation, and environmental conditions. Generally, termite treatments can last anywhere from a few years to several years.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Is termite treatment safe for pets and children?</h3>
+          <p className="text-gray-700 mt-3">Most termite treatments are formulated to be safe for pets and children when applied by trained professionals following recommended guidelines. However, it's essential to discuss any concerns with your termite control provider and take necessary precautions during and after the treatment.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent termite infestation in my home?</h3>
+          <p className="text-gray-700 mt-3">To prevent termite infestation, you can take measures such as eliminating moisture sources, sealing cracks and crevices, removing wood debris around the property, and scheduling regular termite inspections.</p>
+        </div>
+        <section>
+          <h3 className='text-3xl font-bold text-black mb-6'>Local Termite Control in Pune Near Me :</h3>
+          <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
+            {locations.map((location) => (
+              <ul key={location}>
+                <Link className="text-blue-700 text-sm" to={`/ter/${location}`}>
+                  Termite Control in {location.split('-').map(word => word.charAt(0, 2).toUpperCase() + word.slice(1)).join(", ")}
+                </Link>
+              </ul>
+            ))}
+          </div>
+        </section>
+      </div>
+
     </main>
   );
 };
