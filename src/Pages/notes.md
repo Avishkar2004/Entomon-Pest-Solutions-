@@ -303,6 +303,8 @@ For Area
 
 
 
+Termite :-
+
  <div className="max-w-4xl mt-10 mx-auto text-center">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
           Silent Destroyers
@@ -330,5 +332,72 @@ For Area
             will be immediately killed and removed. The only kind of termite
             that has wings is the reproductive swarmer.
           </p>
+        </div>
+      </div>
+
+
+Cockroach :-
+
+  <div class="max-w-4xl mt-10 mx-auto text-center">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
+          Silent Destroyers
+        </h1>
+
+        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold">Sightings and fecal droppings: </span>
+            Cockroaches are nocturnal creatures and tend to hide during the day.
+            If you notice live cockroaches scurrying around at night or find
+            small dark droppings resembling coffee grounds, it could indicate an
+            infestation.
+          </p>
+          <p class="mb-4 sm:text-base">
+            <span class="font-semibold">Unpleasant odor: </span>
+            Cockroaches emit a distinctive musty odor that can become noticeable
+            in areas with a large population. If you detect an unpleasant smell,
+            particularly in kitchen or bathroom areas, it could be a sign of a
+            cockroach infestation.
+          </p>
+          <p class="mb-4 sm:text-base">
+            Dealing with a cockroach infestation requires professional
+            expertise. A licensed pest control company can assess the severity
+            of the infestation and implement appropriate cockroach control
+            measures. This may include insecticide treatments, baits, and
+            sealing entry points to prevent further infestations.
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-col items-start text-start container font-bold">
+          <ul class="list-disc pl-6 space-y-2">
+            <li>
+              Cockroaches are active mostly during nighttime or in dark,
+              concealed areas.
+            </li>
+            <li>
+              They prefer to avoid exposure to light and maintain a hidden
+              presence within the colonies they infest.
+            </li>
+            <li>
+              These resilient insects can establish their hiding spots in
+              various locations, including cracks, crevices, and voids in walls,
+              floors, and furniture.
+            </li>
+            <li>
+              Cockroaches can travel and infest new areas by navigating through
+              gaps and openings, and they are also known to be carried in
+              infested items such as bags, boxes, and furniture.
+            </li>
+            <li>
+              Travel and Infestation: cockroachs have the ability to infest new
+              areas through soil traversal, utilizing mud tubes, or by being
+              transported within infested wood, furniture, or other
+              cellulose-based materials.
+            </li>
+            <li class="text-red-500">
+              Remember, if you suspect a cockroach infestation in your property,
+              it is essential to contact a professional pest control service to
+              assess the situation and provide effective treatment options.
+            </li>
+          </ul>
         </div>
       </div>

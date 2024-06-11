@@ -6,6 +6,74 @@ import Cockroach2 from "../assets/Cockroach/cockroach2.webp";
 import Cockroachs from "../assets/Cockroach/safe.png";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
 
+const locations = [
+  'Aundh-pune',
+  'hinjewadi-pune',
+  'wakad-pune',
+  'hadapsar-pune',
+  'pimpri-chinchwad-pune',
+  'bavdhan-pune',
+  'chandan-nagar-pune',
+  'boat-club-road-pune',
+  'shivajinagar-pune',
+  'sangvi-pune',
+  'nigdi-pune',
+  'koregaon-park-pune',
+  'bibvewadi-pune',
+  'bhugaon-pune',
+  'ambegaon-budruk-pune',
+  'bhukum-pune',
+  'dhankawadi-pune',
+  'kalewadi-pune',
+  'kasarwadi-pune',
+  'maan-pune',
+  'moshi-pune',
+  'phugewadi-pune',
+  'magarpatta-pune',
+  'kothrud-pune',
+  'vishranthwadi-pune',
+  'wagholi-pune',
+  'baner-pune',
+  'kondhwa-pune',
+  'katraj-pune',
+  'karve-nagar-pune',
+  'kalyani-nagar-pune',
+  'undri-pune',
+  'keshav-nagar-pune',
+  'mundhwa-pune',
+  'dhanori-pune',
+  'dhayari-pune',
+  'fursungi-pune',
+  'ghorpadi-pune',
+  'khadki-pune',
+  'pimple-nilakh-pune',
+  'tathawade-pune',
+  'thergaon-pune',
+  'yerwada-pune',
+  'kharadi-pune',
+  'pimple-gurav-pune',
+  'pimple-saudagar-pune',
+  'viman-nagar-pune',
+  'senapati-bapat-road-pune',
+  'ravet-pune',
+  'erandwane-pune',
+  'phursungi-pune',
+  'model-colony-pune',
+  'talawade-pune',
+  'wadgaon-sheri-pune',
+  'vishal-nagar-pune',
+  'lohagaon-pune',
+  'manjri-pune',
+  'pashan-pune',
+  'sus-pune',
+  'balewadi-pune',
+  'warje-pune',
+  'bhosari-pune',
+  'chakan-pune',
+  'dapodi-pune'
+];
+
+
 const Cockroach = () => {
   const [isExpanded, setIsExpanded] = useState(false)
   const scrollToTop = () => {
@@ -288,69 +356,105 @@ const Cockroach = () => {
         </div>
       </div>
 
-      <div class="max-w-4xl mt-10 mx-auto text-center">
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-          Silent Destroyers
-        </h1>
+      {/* Blog Section */}
+      <div className="container mx-auto mt-10 px-4 sm:px-0">
+        <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
+        <div className="grid gap-10 mt-10">
+          {/* First Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={Cockroach1}
+                alt="Cockroach Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  HOW TO GET RID OF COCKROACHES?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Roaches are more than just a nuisance. These resilient pests can carry diseases, trigger allergies, and generally compromise the cleanliness and comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
+                </p>
+                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
 
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Sightings and fecal droppings: </span>
-            Cockroaches are nocturnal creatures and tend to hide during the day.
-            If you notice live cockroaches scurrying around at night or find
-            small dark droppings resembling coffee grounds, it could indicate an
-            infestation.
-          </p>
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold">Unpleasant odor: </span>
-            Cockroaches emit a distinctive musty odor that can become noticeable
-            in areas with a large population. If you detect an unpleasant smell,
-            particularly in kitchen or bathroom areas, it could be a sign of a
-            cockroach infestation.
-          </p>
-          <p class="mb-4 sm:text-base">
-            Dealing with a cockroach infestation requires professional
-            expertise. A licensed pest control company can assess the severity
-            of the infestation and implement appropriate cockroach control
-            measures. This may include insecticide treatments, baits, and
-            sealing entry points to prevent further infestations.
-          </p>
-        </div>
-
-        <div class="mt-10 flex flex-col items-start text-start container font-bold">
-          <ul class="list-disc pl-6 space-y-2">
-            <li>
-              Cockroaches are active mostly during nighttime or in dark,
-              concealed areas.
-            </li>
-            <li>
-              They prefer to avoid exposure to light and maintain a hidden
-              presence within the colonies they infest.
-            </li>
-            <li>
-              These resilient insects can establish their hiding spots in
-              various locations, including cracks, crevices, and voids in walls,
-              floors, and furniture.
-            </li>
-            <li>
-              Cockroaches can travel and infest new areas by navigating through
-              gaps and openings, and they are also known to be carried in
-              infested items such as bags, boxes, and furniture.
-            </li>
-            <li>
-              Travel and Infestation: cockroachs have the ability to infest new
-              areas through soil traversal, utilizing mud tubes, or by being
-              transported within infested wood, furniture, or other
-              cellulose-based materials.
-            </li>
-            <li class="text-red-500">
-              Remember, if you suspect a cockroach infestation in your property,
-              it is essential to contact a professional pest control service to
-              assess the situation and provide effective treatment options.
-            </li>
-          </ul>
+          {/* Second Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={Cockroach2}
+                alt="Cockroach Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  WHEN SHOULD I TREAT MY HOUSE FOR COCKROACHES?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Cockroaches are persistent pests known for their ability to survive in diverse environments. They can contaminate food, spread bacteria, and exacerbate allergies. Knowing when to treat your house for cockroaches is crucial in preventing infestations…
+                </p>
+                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div className="max-w-5xl mx-auto p-6">
+        <h1 className="text-3xl font-bold text-black mb-6">Important Cockroach Control FAQs</h1>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are charges for cockroach control services in Pune?</h3>
+          <p className="text-gray-700 mt-3">Estimated charges for cockroach control services in Pune can be in the range of Rs 800 to Rs 6000 depending upon the size of the property and level of infestation.</p>
+        </div>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Why hiring cockroach control services in Pune is imperative?</h3>
+          <p className="text-gray-700 mt-3">We at Get Cockroach Control have been in the niche for several years. Hence, we completely understand the needs of professional cockroach control services. We understand well that cockroaches are a nuisance. They are a great threat to health and are noted for spreading diseases. So, it is imperative to hire professional cockroach control services in Pune to get rid of life-threatening cockroaches.</p>
+        </div>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for cockroach inspection in Pune?</h3>
+          <p className="text-gray-700 mt-3">The estimated charges for cockroach inspection services in Pune will vary based on the size of the property and the extent of the inspection required. It can range from Rs 500 to Rs 1500.</p>
+        </div>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How long does cockroach treatment last?</h3>
+          <p className="text-gray-700 mt-3">The duration of cockroach treatment effectiveness can vary depending on factors such as the type of treatment used, the severity of the infestation, and environmental conditions. Generally, cockroach treatments can last anywhere from a few months to a year.</p>
+        </div>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Is cockroach treatment safe for pets and children?</h3>
+          <p className="text-gray-700 mt-3">Most cockroach treatments are formulated to be safe for pets and children when applied by trained professionals following recommended guidelines. However, it's essential to discuss any concerns with your cockroach control provider and take necessary precautions during and after the treatment.</p>
+        </div>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent cockroach infestation in my home?</h3>
+          <p className="text-gray-700 mt-3">To prevent cockroach infestation, you can take measures such as eliminating food and water sources, sealing cracks and crevices, keeping your home clean, and scheduling regular cockroach inspections.</p>
+        </div>
+
+        <section>
+          <h3 className="text-3xl font-bold text-black mb-6">Local Cockroach Control in Pune Near Me :</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">
+            {locations.map((location) => (
+              <ul key={location}>
+                <Link className="text-blue-700 text-sm" to={`/cock/${location}`}>
+                  Cockroach Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                </Link>
+              </ul>
+            ))}
+          </div>
+        </section>
+      </div>
+
+
+
     </main>
   );
 };

@@ -504,50 +504,57 @@ const Termite = () => {
 
 
       {/* Blog section */}
-      <div className="container mx-auto mt-10 grid gap-10">
-        <h1 className="text-center text-3xl font-bold mt-3">Blog's</h1>
-        {/* First Blog */}
-        <div className="rounded-lg shadow-lg overflow-hidden">
-          <div className="flex flex-col sm:flex-row">
-            <img
-              src={TermitePhoto6}
-              alt="Termite Control"
-              className="w-full h-auto sm:w-72 object-cover"
-            />
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">
-                HOW TO GET RID OF FORMOSAN TERMITES ?
-              </h2>
-              <p className="mt-3 text-gray-600">
-                Roaches are more than just a nuisance. These resilient pests can carry diseases, trigger allergies, and generally compromise the cleanliness and comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests …</p>
-              <Link to="/blog/1" className="mt-4 text-indigo-600 hover:text-indigo-800">
-                Read More
-              </Link>
+      <div className="container mx-auto mt-10 px-4 sm:px-0">
+        <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
+
+        <div className="grid gap-10 mt-10">
+          {/* First Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={TermitePhoto6}
+                alt="Termite Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  HOW TO GET RID OF FORMOSAN TERMITES?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Roaches are more than just a nuisance. These resilient pests can carry diseases, trigger allergies, and generally compromise the cleanliness and comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
+                </p>
+                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-        {/* Second Blog */}
-        <div className="rounded-lg shadow-lg overflow-hidden">
-          <div className="flex flex-col sm:flex-row">
-            <img
-              src={TermitePhoto5}
-              alt="Termite Control"
-              className="w-full h-auto sm:w-72 object-cover"
-            />
-            <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">
-                WHEN SHOULD I TREAT MY HOUSE FOR TERMITES ?
-              </h2>
-              <p className="mt-3 text-gray-600">
-                Termites are often called the “silent destroyers” because of their ability to chew through wood, flooring, and even wallpaper undetected. Each year, termites cause more than $5 billion in property damage in the United States alone – damage not covered …
-              </p>
-              <Link to="/blog/2" className="text-indigo-600 hover:text-indigo-800">
-                Read More
-              </Link>
+
+          {/* Second Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={TermitePhoto5}
+                alt="Termite Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  WHEN SHOULD I TREAT MY HOUSE FOR TERMITES?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Termites are often called the “silent destroyers” because of their ability to chew through wood, flooring, and even wallpaper undetected. Each year, termites cause more than $5 billion in property damage in the United States alone – damage not covered…
+                </p>
+                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+
 
 
       <div className="max-w-5xl mx-auto p-6">
