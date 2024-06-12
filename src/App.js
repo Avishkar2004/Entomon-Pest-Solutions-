@@ -27,7 +27,7 @@ import WoodBorer from "./Pages/WoodBorer";
 import FAQSpecificLocationPune from "./Pages/FAQSpecificLocationPune"; // Import the dynamic FAQ page
 import FAQsPune from "./Pages/FAQsPune";
 import WaterPurify from "./Pages/WaterPurify";
-import BlogPage from "./BlogPage";
+import BlogPage from "./Pages/BlogPage";
 import FAQSTermiteSpecificLocation from "./Pages/FAQSTermiteSpecificLocation";
 import FAQSCockSpecifiLocation from "./Pages/FAQSCockSpecifiLocation";
 import FAQSMosSpecifiLocation from "./Pages/FAQSMosSpecifiLocation";
