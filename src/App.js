@@ -33,6 +33,8 @@ import FAQSCockSpecifiLocation from "./Pages/FAQSCockSpecifiLocation";
 import FAQSMosSpecifiLocation from "./Pages/FAQSMosSpecifiLocation";
 import FAQSMouseSpecifiLocation from "./Pages/FAQSMouseSpecifiLocation";
 import FAQSAntSpecifiLocation from "./Pages/FAQSAntSpecifiLocation";
+import FAQSWoodBSpecifiLocation from "./Pages/FAQSWoodBSpecifiLocation";
+import FAQSBedBugSpecifiLocation from "./Pages/FAQSBedBugSpecifiLocation";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -71,6 +73,11 @@ function App() {
         <Route path="/mos/:location" component={FAQSMosSpecifiLocation} />
         <Route path="/mousep/:location" component={FAQSMouseSpecifiLocation} />
         <Route path="/antp/:location" component={FAQSAntSpecifiLocation} />
+        <Route path="/bedbugp/:location" component={FAQSBedBugSpecifiLocation} />
+        <Route
+          path="/woodborerp/:location"
+          component={FAQSWoodBSpecifiLocation}
+        />
         <Route exact path="/blog/:id" component={BlogPage} />
       </Switch>
       <GlowingIcons />

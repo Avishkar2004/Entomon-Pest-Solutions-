@@ -6,6 +6,75 @@ import WoodBorerSafe from "../assets/WoodBorer/WoodBorer3.webp";
 import WoodBorerControl from "../assets/WoodBorer/WoodBorer4.webp";
 import WoodBorerControl2 from "../assets/WoodBorer/WoodBorer5.webp";
 
+
+const locations = [
+  'Aundh-pune',
+  'hinjewadi-pune',
+  'wakad-pune',
+  'hadapsar-pune',
+  'pimpri-chinchwad-pune',
+  'bavdhan-pune',
+  'chandan-nagar-pune',
+  'boat-club-road-pune',
+  'shivajinagar-pune',
+  'sangvi-pune',
+  'nigdi-pune',
+  'koregaon-park-pune',
+  'bibvewadi-pune',
+  'bhugaon-pune',
+  'ambegaon-budruk-pune',
+  'bhukum-pune',
+  'dhankawadi-pune',
+  'kalewadi-pune',
+  'kasarwadi-pune',
+  'maan-pune',
+  'moshi-pune',
+  'phugewadi-pune',
+  'magarpatta-pune',
+  'kothrud-pune',
+  'vishranthwadi-pune',
+  'wagholi-pune',
+  'baner-pune',
+  'kondhwa-pune',
+  'katraj-pune',
+  'karve-nagar-pune',
+  'kalyani-nagar-pune',
+  'undri-pune',
+  'keshav-nagar-pune',
+  'mundhwa-pune',
+  'dhanori-pune',
+  'dhayari-pune',
+  'fursungi-pune',
+  'ghorpadi-pune',
+  'khadki-pune',
+  'pimple-nilakh-pune',
+  'tathawade-pune',
+  'thergaon-pune',
+  'yerwada-pune',
+  'kharadi-pune',
+  'pimple-gurav-pune',
+  'pimple-saudagar-pune',
+  'viman-nagar-pune',
+  'senapati-bapat-road-pune',
+  'ravet-pune',
+  'erandwane-pune',
+  'phursungi-pune',
+  'model-colony-pune',
+  'talawade-pune',
+  'wadgaon-sheri-pune',
+  'vishal-nagar-pune',
+  'lohagaon-pune',
+  'manjri-pune',
+  'pashan-pune',
+  'sus-pune',
+  'balewadi-pune',
+  'warje-pune',
+  'bhosari-pune',
+  'chakan-pune',
+  'dapodi-pune'
+];
+
+
 const WoodBorer = () => {
   const [isExpanded, setIsExpanded] = useState(false)
 
@@ -252,62 +321,99 @@ const WoodBorer = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl pt-10 mx-auto text-center">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4">
-          Silent Destroyers
-        </h1>
-        <div class="p-4 sm:p-8 lg:p-12 bg-gray-100 rounded-lg shadow-md sm:ml-0 md:ml-[-1rem] md:mr-[-1rem] lg:ml-[-6rem] lg:mr-[-5rem] xl:ml-[-13rem] xl:mr-[-13rem] text-left">
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold"> Sightings and fecal droppings:</span>
-            WoodBoreres are nocturnal creatures and tend to hide during the day.
-            If you notice live WoodBoreres scurrying around at night or find
-            small dark droppings resembling coffee grounds, it could indicate an
-            infestation.
-          </p>
-          <p class="mb-4 sm:text-base">
-            <span class="font-semibold">UnpleasWoodBorer odor:</span>
-            WoodBoreres emit a distinctive musty odor that can become noticeable
-            in areas with a large population. If you detect an unpleasWoodBorer
-            smell, particularly in kitchen or bathroom areas, it could be a sign
-            of a WoodBorer infestation.
-          </p>
-          <p class="mb-4 sm:text-base">
-            Dealing with a WoodBorer infestation requires professional
-            expertise. A licensed pest control company can assess the severity
-            of the infestation and implement appropriate WoodBorer control
-            measures. This may include insecticide treatments, baits, and
-            sealing entry points to prevent further infestations.
-          </p>
-        </div>
+      {/* Blog section */}
+      <div className="container mx-auto mt-10 px-4 sm:px-0">
+        <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
 
-        <div className="mt-10 flex flex-col items-start text-start container font-bold">
-          <ul className="list-disc pl-6 space-y-2">
-            <li>
-              WoodBoreres are active mostly during nighttime or in dark,
-              concealed areas.
-            </li>
-            <li>
-              They prefer to avoid exposure to light and maintain a hidden
-              presence within the colonies they infest.
-            </li>
-            <li>
-              These resilient insects can establish their hiding spots in
-              various locations, including cracks, crevices, and voids in walls,
-              floors, and furniture.
-            </li>
-            <li>
-              WoodBorers can travel and infest new areas by navigating through
-              gaps and openings, and they are also known to be carried in
-              infested items such as bags, boxes, and furniture.
-            </li>
-            <li className="text-red-500">
-              Remember, if you suspect a WoodBorer infestation in your property,
-              it is essential to contact a professional pest control service to
-              assess the situation and provide effective treatment options.
-            </li>
-          </ul>
+        <div className="grid gap-10 mt-10">
+          {/* First Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={WoodBorers1}
+                alt="Wood Borer Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  HOW TO GET RID OF WOOD BORERS IN YOUR HOME?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Wood borers might be tiny, but they can cause big problems when they invade your living space. From damaging wooden structures to creating unsightly holes, these pests can be a nuisance. If you've recently taken the step to reclaim your home from these unwelcome guests…
+                </p>
+                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Blog */}
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+            <div className="flex flex-col sm:flex-row">
+              <img
+                src={WoodBorerSafe}
+                alt="Wood Borer Control"
+                className="w-full h-64 sm:w-72 object-cover"
+              />
+              <div className="p-6">
+                <h2 className="text-2xl font-semibold mb-4 text-gray-800">
+                  WHEN SHOULD I TREAT MY HOUSE FOR WOOD BORERS?
+                </h2>
+                <p className="mt-3 text-gray-600">
+                  Wood borers are often called "silent destroyers" because of their ability to cause significant damage to wooden structures. Dealing with wood borers can be frustrating, especially when they keep coming back after treatment. To effectively control wood borers…
+                </p>
+                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                  Read More
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div className="max-w-5xl mx-auto p-6">
+        <h1 className="text-3xl font-bold text-black mb-6">Important Wood Borer Control FAQs</h1>
+
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are charges for wood borer control services in Pune?</h3>
+          <p className="text-gray-700 mt-3">Estimated charges for wood borer control services in Pune can vary depending upon factors such as the size of the property and the severity of the infestation. It may range from Rs 1500 to Rs 10,000.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Why hiring wood borer control services in Pune is imperative?</h3>
+          <p className="text-gray-700 mt-3">Wood borers can quickly become a nuisance in your home, damaging wooden structures and furniture. Hiring professional wood borer control services ensures effective eradication of these pests and helps prevent future infestations.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for wood borer inspection in Pune?</h3>
+          <p className="text-gray-700 mt-3">The estimated charges for wood borer inspection services in Pune can range from Rs 800 to Rs 3000, depending on the size of the property and the complexity of the inspection.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How long does wood borer treatment last?</h3>
+          <p className="text-gray-700 mt-3">The effectiveness of wood borer treatment can vary depending on factors such as the type of treatment used, the species of borers, and environmental conditions. Typically, wood borer treatments can last from several weeks to several months.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. Is wood borer treatment safe for pets and children?</h3>
+          <p className="text-gray-700 mt-3">Professional wood borer treatments are generally safe for pets and children when applied according to the manufacturer's instructions. However, it's essential to follow any precautions advised by the pest control provider to ensure safety.</p>
+        </div>
+        <div className="faq mb-4">
+          <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent wood borer infestation in my home?</h3>
+          <p className="text-gray-700 mt-3">To prevent wood borer infestation, seal entry points, treat and finish wooden surfaces, keep your home dry, and address any moisture issues. Regular inspections and maintenance can also help detect and prevent wood borer problems.</p>
+        </div>
+        <section>
+          <h3 className='text-3xl font-bold text-black mb-6'>Local Wood Borer Control in Pune Near Me :</h3>
+          <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
+            {locations.map((location) => (
+              <ul key={location}>
+                <Link className="text-blue-700 text-sm" to={`/woodborerp/${location}`}>
+                  Wood Borer Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(", ")}
+                </Link>
+              </ul>
+            ))}
+          </div>
+        </section>
+      </div>
+
+
     </main>
   );
 };
