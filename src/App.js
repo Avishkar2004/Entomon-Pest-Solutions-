@@ -73,7 +73,10 @@ function App() {
         <Route path="/mos/:location" component={FAQSMosSpecifiLocation} />
         <Route path="/mousep/:location" component={FAQSMouseSpecifiLocation} />
         <Route path="/antp/:location" component={FAQSAntSpecifiLocation} />
-        <Route path="/bedbugp/:location" component={FAQSBedBugSpecifiLocation} />
+        <Route
+          path="/bedbugp/:location"
+          component={FAQSBedBugSpecifiLocation}
+        />
         <Route
           path="/woodborerp/:location"
           component={FAQSWoodBSpecifiLocation}
