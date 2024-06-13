@@ -375,7 +375,7 @@ const Cockroach = () => {
                 <p className="mt-3 text-gray-600">
                   Roaches are more than just a nuisance. These resilient pests can carry diseases, trigger allergies, and generally compromise the cleanliness and comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/blog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -397,7 +397,7 @@ const Cockroach = () => {
                 <p className="mt-3 text-gray-600">
                   Cockroaches are persistent pests known for their ability to survive in diverse environments. They can contaminate food, spread bacteria, and exacerbate allergies. Knowing when to treat your house for cockroaches is crucial in preventing infestations…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/blog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
