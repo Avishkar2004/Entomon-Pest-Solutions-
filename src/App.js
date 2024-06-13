@@ -27,7 +27,7 @@ import WoodBorer from "./Pages/WoodBorer";
 import FAQSpecificLocationPune from "./Pages/FAQSpecificLocationPune"; // Import the dynamic FAQ page
 import FAQsPune from "./Pages/FAQsPune";
 import WaterPurify from "./Pages/WaterPurify";
-import BlogPage from "./Pages/BlogPage";
+import TermiteBlog2 from "./Pages/Blogs/Termite/TermiteBlog2";
 import FAQSTermiteSpecificLocation from "./Pages/FAQSTermiteSpecificLocation";
 import FAQSCockSpecifiLocation from "./Pages/FAQSCockSpecifiLocation";
 import FAQSMosSpecifiLocation from "./Pages/FAQSMosSpecifiLocation";
@@ -36,6 +36,7 @@ import FAQSAntSpecifiLocation from "./Pages/FAQSAntSpecifiLocation";
 import FAQSWoodBSpecifiLocation from "./Pages/FAQSWoodBSpecifiLocation";
 import FAQSBedBugSpecifiLocation from "./Pages/FAQSBedBugSpecifiLocation";
 import FAQSFlySpecifiLocation from "./Pages/FAQSFlySpecifiLocation";
+import TermiteBlog1 from "./Pages/Blogs/Termite/TermiteBlog1";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -75,6 +76,7 @@ function App() {
         <Route path="/mousep/:location" component={FAQSMouseSpecifiLocation} />
         <Route path="/antp/:location" component={FAQSAntSpecifiLocation} />
         <Route path="/fly/:location" component={FAQSFlySpecifiLocation} />
+        <Route path="/termiteblog1" component={TermiteBlog1} />
         <Route
           path="/bedbugp/:location"
           component={FAQSBedBugSpecifiLocation}
@@ -83,7 +85,7 @@ function App() {
           path="/woodborerp/:location"
           component={FAQSWoodBSpecifiLocation}
         />
-        <Route exact path="/blog/:id" component={BlogPage} />
+        <Route path="/termiteblog2" component={TermiteBlog2} />
       </Switch>
       <GlowingIcons />
       <Route

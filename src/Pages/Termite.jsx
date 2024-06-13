@@ -509,7 +509,7 @@ const Termite = () => {
 
         <div className="grid gap-10 mt-10">
           {/* First Blog */}
-          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
               <img
                 src={TermitePhoto6}
@@ -523,7 +523,7 @@ const Termite = () => {
                 <p className="mt-3 text-gray-600">
                   Roaches are more than just a nuisance. These resilient pests can carry diseases, trigger allergies, and generally compromise the cleanliness and comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/termiteblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -531,7 +531,7 @@ const Termite = () => {
           </div>
 
           {/* Second Blog */}
-          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white ">
             <div className="flex flex-col sm:flex-row">
               <img
                 src={TermitePhoto5}
@@ -545,7 +545,7 @@ const Termite = () => {
                 <p className="mt-3 text-gray-600">
                   Termites are often called the “silent destroyers” because of their ability to chew through wood, flooring, and even wallpaper undetected. Each year, termites cause more than $5 billion in property damage in the United States alone – damage not covered…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/termiteblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
