@@ -43,6 +43,8 @@ import MBlog1 from "./Pages/Blogs/Mosquito/MBlog1";
 import MBlog2 from "./Pages/Blogs/Mosquito/MBlog2";
 import MoBlog1 from "./Pages/Blogs/Mouse/MoBlog1";
 import MoBlog2 from "./Pages/Blogs/Mouse/MoBlog2";
+import AntBlog1 from "./Pages/Blogs/Ant/AntBlog1";
+import AntBlog2 from "./Pages/Blogs/Ant/AntBlog2";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -89,6 +91,8 @@ function App() {
         <Route path="/Mosquitoblog2" component={MBlog2} />
         <Route path="/Mouseblog1" component={MoBlog1} />
         <Route path="/Mouseblog2" component={MoBlog2} />
+        <Route path="/antblog1" component={AntBlog1} />
+        <Route path="/antblog2" component={AntBlog2} />
 
         <Route
           path="/bedbugp/:location"

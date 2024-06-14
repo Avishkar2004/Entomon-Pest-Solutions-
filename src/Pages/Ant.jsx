@@ -378,7 +378,7 @@ const Ant = () => {
                 <p className="mt-3 text-gray-600">
                   Ants might be tiny, but they can cause big problems when they invade your living space. From foraging for food in your kitchen to creating unsightly trails across your floors, these pesky insects can be a nuisance. If you've recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/antblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -400,7 +400,7 @@ const Ant = () => {
                 <p className="mt-3 text-gray-600">
                   Ants are often called the "persistent invaders" because of their ability to find their way into your home and create colonies. Dealing with ants can be frustrating, especially when they keep coming back after treatment. To effectively control ants…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/antblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
