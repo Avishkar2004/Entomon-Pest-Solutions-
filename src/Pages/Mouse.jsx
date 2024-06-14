@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Mouses1 from "../assets/Mouse/mouse1.webp";
 import Mouses2 from "../assets/Mouse/mouse2.webp";
 import MouseSafe from "../assets/Mouse/mouse3.webp";
-import MouseControl from "../assets/Mouse/mouse4.webp";
+import MouseControl1 from "../assets/Mouse/mouse4.webp";
 import MouseControl2 from "../assets/Mouse/mouse5.webp";
 
 const locations = [
@@ -300,7 +300,7 @@ const Mouse = () => {
           <div class="max-w-2xl">
             <div class="rounded-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
               <img
-                src={MouseControl}
+                src={MouseControl1}
                 alt="Mouse Pest Control"
                 class="w-full h-auto sm:h-[21rem] md:h-[21rem] lg:h-[21rem] xl:h-[21rem] xxl:h-[21rem] object-cover rounded-lg"
               />
@@ -317,6 +317,7 @@ const Mouse = () => {
           </div>
         </div>
       </div>
+
       {/* Blog section */}
       <div className="container mx-auto mt-10 px-4 sm:px-0">
         <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
@@ -326,17 +327,17 @@ const Mouse = () => {
             <div className="flex flex-col sm:flex-row">
               <img
                 src={MouseControl2}
-                alt="Mosquito Control"
+                alt="Mouse Control"
                 className="w-full h-64 sm:w-72 object-cover"
               />
               <div className="p-6">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                  HOW TO GET RID OF MOSQUITOES?
+                  HOW TO GET RID OF MICE?
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Mosquitoes are more than just a nuisance. These resilient pests can carry diseases, cause itchy bites, and generally compromise the comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
+                  Mice are more than just a nuisance. These resilient pests can carry diseases, cause property damage, and generally compromise the comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/mouseblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -346,18 +347,18 @@ const Mouse = () => {
           <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
             <div className="flex flex-col sm:flex-row">
               <img
-                src={MouseControl}
-                alt="Mosquito Control"
+                src={MouseControl1}
+                alt="Mouse Control"
                 className="w-full h-64 sm:w-72 object-cover"
               />
               <div className="p-6">
                 <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                  WHEN SHOULD I TREAT MY HOUSE FOR MOSQUITOES?
+                  WHEN SHOULD I TREAT MY HOUSE FOR MICE?
                 </h2>
                 <p className="mt-3 text-gray-600">
-                  Mosquitoes are often called the “silent invaders” because of their ability to enter your home undetected and spread diseases such as malaria, dengue, and Zika virus. Each year, mosquitoes cause numerous health issues and discomfort…
+                  Mice are often called the “silent invaders” because of their ability to enter your home undetected and spread diseases such as hantavirus, salmonella, and leptospirosis. Each year, mice cause numerous health issues and discomfort…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/mouseblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -365,6 +366,9 @@ const Mouse = () => {
           </div>
         </div>
       </div>
+
+
+
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Mouse Control FAQs</h1>
 
