@@ -341,7 +341,7 @@ const WoodBorer = () => {
                 <p className="mt-3 text-gray-600">
                   Wood borers might be tiny, but they can cause big problems when they invade your living space. From damaging wooden structures to creating unsightly holes, these pests can be a nuisance. If you've recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/woodborerblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -363,7 +363,7 @@ const WoodBorer = () => {
                 <p className="mt-3 text-gray-600">
                   Wood borers are often called "silent destroyers" because of their ability to cause significant damage to wooden structures. Dealing with wood borers can be frustrating, especially when they keep coming back after treatment. To effectively control wood borers…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/woodborerblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
