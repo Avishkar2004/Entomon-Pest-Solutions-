@@ -722,7 +722,7 @@ const BedBug = () => {
                 <p className="mt-3 text-gray-600">
                   Bed bugs might be tiny, but they can cause big problems when they invade your living space. From causing itchy bites to disrupting your sleep, these pests can be a nuisance. If you've recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/bedbugblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -743,7 +743,7 @@ const BedBug = () => {
                 <p className="mt-3 text-gray-600">
                   Bed bugs are often called "silent invaders" because of their ability to infest your home without immediate detection. Dealing with bed bugs can be frustrating, especially when they keep coming back after treatment. To effectively control bed bugs…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/bedbugblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>

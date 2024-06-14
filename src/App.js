@@ -47,6 +47,8 @@ import AntBlog1 from "./Pages/Blogs/Ant/AntBlog1";
 import AntBlog2 from "./Pages/Blogs/Ant/AntBlog2";
 import WoodBorerBlog1 from "./Pages/Blogs/WoodBorer/WoodBorerBlog1";
 import WoodBorerBlog2 from "./Pages/Blogs/WoodBorer/WoodBorerBlog2";
+import BedBugBlog1 from "./Pages/Blogs/Bed Bug/Bedbugblog1";
+import BedBugBlog2 from "./Pages/Blogs/Bed Bug/Bedbugblog2";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -97,6 +99,9 @@ function App() {
         <Route path="/antblog2" component={AntBlog2} />
         <Route path="/woodborerblog1" component={WoodBorerBlog1} />
         <Route path="/woodborerblog2" component={WoodBorerBlog2} />
+        <Route path="/bedbugblog1" component={BedBugBlog1} />
+        <Route path="/bedbugblog2" component={BedBugBlog2} />
+
 
         <Route
           path="/bedbugp/:location"
