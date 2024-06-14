@@ -442,7 +442,7 @@ const Mosquito = () => {
                 <p className="mt-3 text-gray-600">
                   Mosquitoes are more than just a nuisance. These resilient pests can carry diseases, cause itchy bites, and generally compromise the comfort of your living space. If you’ve recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/Mosquitoblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -464,7 +464,7 @@ const Mosquito = () => {
                 <p className="mt-3 text-gray-600">
                   Mosquitoes are often called the “silent invaders” because of their ability to enter your home undetected and spread diseases such as malaria, dengue, and Zika virus. Each year, mosquitoes cause numerous health issues and discomfort…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/Mosquitoblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
