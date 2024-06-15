@@ -751,6 +751,7 @@ const BedBug = () => {
           </div>
         </div>
       </div>
+      <hr className=" mt-8 border-t border-b border-gray-300" />
 
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Bed Bug Control FAQs</h1>
@@ -778,6 +779,8 @@ const BedBug = () => {
         <div className="faq mb-4">
           <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent bed bug infestation in my home?</h3>
           <p className="text-gray-700 mt-3">To prevent bed bug infestation, regularly inspect and clean your home, especially beds and furniture, avoid bringing second-hand furniture without proper inspection, and maintain cleanliness. Regular inspections and maintenance can also help detect and prevent bed bug problems.</p>
+          <hr className=" mt-8 border-t border-b border-gray-300" />
+
         </div>
         <section>
           <h3 className='text-3xl font-bold text-black mb-6'>Local Bed Bug Control in Pune Near Me :</h3>

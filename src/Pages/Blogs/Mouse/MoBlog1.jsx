@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBroom, FaMouse, FaShieldAlt, FaTools } from 'react-icons/fa';
 import MouseImage from "../../../assets/Mouse/mouse5.webp";
-import { FaMouse, FaShieldAlt, FaTools, FaBroom } from 'react-icons/fa';
 
 const MoBlog1 = () => {
   return (

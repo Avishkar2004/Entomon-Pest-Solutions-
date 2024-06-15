@@ -408,6 +408,9 @@ const Ant = () => {
           </div>
         </div>
       </div>
+
+      <hr className=" mt-8 border-t border-b border-gray-300" />
+
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Ant Control FAQs</h1>
 
@@ -434,7 +437,9 @@ const Ant = () => {
         <div className="faq mb-4">
           <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent ant infestation in my home?</h3>
           <p className="text-gray-700 mt-3">To prevent ant infestation, seal entry points, eliminate food sources, keep your home clean and dry, and address any moisture issues. Regular inspections and maintenance can also help detect and prevent ant problems.</p>
+          <hr className=" mt-8 border-t border-b border-gray-300" />
         </div>
+
         <section>
           <h3 className='text-3xl font-bold text-black mb-6'>Local Ant Control in Pune Near Me :</h3>
           <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>

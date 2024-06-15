@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBug, FaShieldAlt, FaSprayCan, FaTools } from 'react-icons/fa';
 import Ants1 from "../../../assets/Ant/Ant1.webp";
-import { FaBug, FaShieldAlt, FaTools, FaSprayCan } from 'react-icons/fa';
 
 const AntBlog1 = () => {
     return (

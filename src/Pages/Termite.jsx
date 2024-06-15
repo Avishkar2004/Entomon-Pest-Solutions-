@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import TermitePhoto from "../assets/Termite/TermitePhoto.webp";
 import TermitePhoto2 from "../assets/Termite/TermitePhoto2.webp";
-import TermitePhoto5 from "../assets/Termite/termite5.webp";
-import TermitePhoto6 from "../assets/Termite/termite6.webp";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
 import TermiteGlow from "../assets/Termite/glow.jpg";
 import TermiteNormal from "../assets/Termite/normal.jpg";
 import Solution from "../assets/Termite/solutions.png";
+import TermitePhoto5 from "../assets/Termite/termite5.webp";
+import TermitePhoto6 from "../assets/Termite/termite6.webp";
 
 const locations = [
   'Aundh-pune',
@@ -553,7 +553,8 @@ const Termite = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-5xl mx-auto p-6">
+      <hr className=" mt-8 border-t border-b border-gray-300" />
+      <div className="max-w-5xl mx-auto p-6 ">
         <h1 className="text-3xl font-bold text-black mb-6">Important Termite Control FAQs</h1>
 
         <div className="faq mb-4">
@@ -579,6 +580,7 @@ const Termite = () => {
         <div className="faq mb-4">
           <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent termite infestation in my home?</h3>
           <p className="text-gray-700 mt-3">To prevent termite infestation, you can take measures such as eliminating moisture sources, sealing cracks and crevices, removing wood debris around the property, and scheduling regular termite inspections.</p>
+          <hr className=" mt-8 border-t border-b border-gray-300" />
         </div>
         <section>
           <h3 className='text-3xl font-bold text-black mb-6'>Local Termite Control in Pune Near Me :</h3>

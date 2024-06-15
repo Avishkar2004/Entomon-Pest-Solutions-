@@ -366,7 +366,7 @@ const Fly = () => {
                 <p className="mt-3 text-gray-600">
                   Flies might be tiny, but they can cause big problems when they invade your living space. From contaminating food to spreading diseases, these pests can be a nuisance. If you've recently taken the step to reclaim your home from these unwelcome guests…
                 </p>
-                <Link to="/blog/1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/flyblog1" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -388,7 +388,7 @@ const Fly = () => {
                 <p className="mt-3 text-gray-600">
                   Flies are often called "persistent invaders" because of their ability to find their way into your home and create breeding grounds. Dealing with flies can be frustrating, especially when they keep coming back after treatment. To effectively control flies…
                 </p>
-                <Link to="/blog/2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
+                <Link to="/flyblog2" className="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-medium">
                   Read More
                 </Link>
               </div>
@@ -396,6 +396,8 @@ const Fly = () => {
           </div>
         </div>
       </div>
+
+      <hr className=" mt-8 border-t border-b border-gray-300" />
 
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Fly Control FAQs</h1>
@@ -423,6 +425,8 @@ const Fly = () => {
         <div className="faq mb-4">
           <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent fly infestation in my home?</h3>
           <p className="text-gray-700 mt-3">To prevent fly infestation, seal entry points, eliminate food sources, keep your home clean and dry, and address any moisture issues. Regular inspections and maintenance can also help detect and prevent fly problems.</p>
+          <hr className=" mt-8 border-t border-b border-gray-300" />
+
         </div>
         <section>
           <h3 className='text-3xl font-bold text-black mb-6'>Local Fly Control in Pune Near Me :</h3>

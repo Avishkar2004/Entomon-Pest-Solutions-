@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import BedBugSafe from "../../../assets/BedBug/BedBug3.webp";
 
-import { FaBug, FaShieldAlt, FaTools, FaSprayCan } from 'react-icons/fa';
+import { FaBug, FaShieldAlt, FaSprayCan, FaTools } from 'react-icons/fa';
 
 const BedBugBlog2 = () => {
   return (

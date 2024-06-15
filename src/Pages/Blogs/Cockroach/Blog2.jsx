@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBug, FaShieldAlt, FaTint, FaTools } from 'react-icons/fa';
 import CockroachImage from "../../../assets/Cockroach/cockroach2.webp";
-import { FaBug, FaShieldAlt, FaTools, FaTint } from 'react-icons/fa';
 
 const Blog2 = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBug, FaShieldAlt, FaSprayCan, FaTools } from 'react-icons/fa';
 import WoodBorers1 from "../../../assets/WoodBorer/WoodBorer1.webp";
-import { FaBug, FaShieldAlt, FaTools, FaSprayCan } from 'react-icons/fa';
 
 const WoodBorerBlog1 = () => {
   return (

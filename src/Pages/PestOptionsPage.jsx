@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import WaterPurify from "../assets/Option/waterPurify.png";
 import Ant from "../assets/Option/ant.png";
 import BedBug from "../assets/Option/bedbug.png";
 import Cockroach from "../assets/Option/cockroach.png";
@@ -9,6 +8,7 @@ import General from "../assets/Option/general.png";
 import Mosquito from "../assets/Option/mosquito.png";
 import Mouse from "../assets/Option/mouse.png";
 import Termite from "../assets/Option/termite.png";
+import WaterPurify from "../assets/Option/waterPurify.png";
 import WoodBorer from "../assets/Option/wood.png";
 
 const PestOptionsPage = () => {
@@ -198,7 +198,7 @@ const PestOptionsPage = () => {
               alt="General Pest Control"
             />
             <Link
-              to="/general"
+              to="/sanitization"
               className="flex items-center justify-center text-black py-3 px-6 rounded-lg  focus:outline-none focus:ring-blue-400"
             >
               Sanitization

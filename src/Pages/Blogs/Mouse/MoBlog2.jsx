@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBroom, FaMouse, FaShieldAlt, FaTools } from 'react-icons/fa';
 import MouseControl from "../../../assets/Mouse/mouse4.webp";
-import { FaMouse, FaShieldAlt, FaTools, FaBroom } from 'react-icons/fa';
 
 const MoBlog2 = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
+import cus1 from "../assets/WaterPurify/cus1.avif";
+import cus2 from "../assets/WaterPurify/cus2.webp";
 import WaterPurifyImg from "../assets/WaterPurify/waterpuriy.png";
-import cus1 from "../assets/WaterPurify/cus1.avif"
-import cus2 from "../assets/WaterPurify/cus2.webp"
 
 
 function WaterPurify() {

@@ -368,6 +368,7 @@ const Mouse = () => {
       </div>
 
 
+      <hr className=" mt-8 border-t border-b border-gray-300" />
 
       <div className="max-w-5xl mx-auto p-6">
         <h1 className="text-3xl font-bold text-black mb-6">Important Mouse Control FAQs</h1>
@@ -395,6 +396,8 @@ const Mouse = () => {
         <div className="faq mb-4">
           <h3 className="text-xl font-semibold text-green-700">Q. How can I prevent mouse infestation in my home?</h3>
           <p className="text-gray-700 mt-3">To prevent mouse infestation, you can take measures such as sealing entry points, keeping food stored in airtight containers, maintaining cleanliness, and scheduling regular mouse inspections.</p>
+          <hr className=" mt-8 border-t border-b border-gray-300" />
+
         </div>
         <section>
           <h3 className='text-3xl font-bold text-black mb-6'>Local Mouse Control in Pune Near Me :</h3>

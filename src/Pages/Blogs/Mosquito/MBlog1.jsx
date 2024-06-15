@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBug, FaShieldAlt, FaTint, FaTools } from 'react-icons/fa';
 import MosquitoControl from "../../../assets/Mosquito/mosquito1.webp";
-import { FaBug, FaShieldAlt, FaTools, FaTint } from 'react-icons/fa';
 
 const MBlog1 = () => {
     return (

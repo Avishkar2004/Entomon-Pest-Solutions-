@@ -71,7 +71,7 @@ const locations = [
 
 function FAQsPune() {
     return (
-        <div className="max-w-5xl mx-auto p-6">
+        <div className="max-w-5xl mx-auto p-6 border-t border-b border-gray-300">
             <h1 className="text-3xl font-bold text-black mb-6">Important Pest Control FAQs</h1>
             <div className="faq mb-4">
                 <h3 className="text-xl font-semibold text-green-700">Q. Why hiring pest control services in Pune is imperative?</h3>
@@ -109,13 +109,14 @@ function FAQsPune() {
                 <h3 className="text-xl font-semibold text-green-700">Q. What are estimated lizard control charges in Pune near me?</h3>
                 <p className="text-gray-700 mt-3">The estimated lizard control charges in Pune will be in the range of Rs 700 to Rs 2000.</p>
             </div>
-            <div className="faq mb-4">
+            <div className="faq mb-4 ">
                 <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for bird netting services in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">Approximate charges for bird netting services in Pune near you can be in the range of Rs 1000 to Rs 5000 depending on the size of the service area.</p>
+                <p className="text-gray-700 mt-3 ">Approximate charges for bird netting services in Pune near you can be in the range of Rs 1000 to Rs 5000 depending on the size of the service area.</p>
             </div>
+            <hr className='border-t border-b border-gray-300' />
             <section>
                 <h3 className='text-3xl font-bold text-black mb-6'>Local Pest Control in Pune Near Me</h3>
-                <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 '>
                     {locations.map((location) => (
                         <ul key={location}>
                             <Link className="text-blue-700 text-sm" to={`/faq/${location}`}>

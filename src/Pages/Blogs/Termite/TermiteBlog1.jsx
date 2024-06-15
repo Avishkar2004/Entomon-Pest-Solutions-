@@ -1,6 +1,6 @@
 import React from 'react';
+import { FaBug, FaShieldAlt, FaTint, FaTools } from 'react-icons/fa';
 import Termite from "../../../assets/Termite/termite6.webp";
-import { FaBug, FaShieldAlt, FaTools, FaTint } from 'react-icons/fa';
 
 const TermiteBlog1 = () => {
     return (
