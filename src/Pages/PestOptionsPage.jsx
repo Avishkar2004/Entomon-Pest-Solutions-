@@ -30,27 +30,24 @@ const PestOptionsPage = () => {
   const handleRedirect6 = () => {
     window.location.href = "/woodborer";
   };
-
   const handleRedirect7 = () => {
     window.location.href = "/bedbug";
   };
-
   const handleRedirect8 = () => {
     window.location.href = "/sanitization";
   };
   const handleRedirect9 = () => {
     window.location.href = "/fleafly";
   };
-
   const handleRedirect10 = () => {
     window.location.href = "/WaterPurify";
   };
 
   return (
-    <div className="min-h-screen mb-[12rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-15 ssm:mt-[5rem] md:mt-[2rem] flex items-center justify-center">
+    <div className="min-h-screen mb-[12rem] sm:mt-[4rem] lg:mt-[3rem] xl:mt-15 ssm:mt-[2rem] md:mt-[2rem] flex items-center justify-center">
       <div className="p-8 ml-[-12px] w-[70rem] rounded-lg shadow-xl xl:-mt-[20rem] sm:-mt-[8rem] ssm:-mt-[11rem] md:-mt-[12rem] lg:-mt-[12rem] bg-white">
         <h1
-          className="text-3xl font-semibold mb-5 text-center"
+          className="text-3xl font-semibold mb-5 text-center items-center"
           style={{
             color: "green",
             fontSize: "16",
@@ -237,7 +234,7 @@ const PestOptionsPage = () => {
               to="/WaterPurify"
               className="flex items-center justify-center text-black py-3 gap-12 rounded-lg focus:outline-none focus:ring-blue-400"
             >
-              Water Purify
+              Water Proofing
             </Link>
           </div>
         </div>
