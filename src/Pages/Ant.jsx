@@ -364,7 +364,7 @@ const Ant = () => {
 
         <div className="grid gap-10 mt-10">
           {/* First Blog */}
-          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
               <img
                 src={Ants1}
@@ -386,7 +386,7 @@ const Ant = () => {
           </div>
 
           {/* Second Blog */}
-          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
               <img
                 src={AntControl2}

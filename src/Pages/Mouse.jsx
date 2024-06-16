@@ -323,7 +323,7 @@ const Mouse = () => {
         <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
         <div className="grid gap-10 mt-10">
           {/* First Blog */}
-          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
               <img
                 src={MouseControl2}
@@ -344,7 +344,7 @@ const Mouse = () => {
             </div>
           </div>
           {/* Second Blog */}
-          <div className="rounded-lg shadow-lg overflow-hidden bg-white transition-transform transform hover:scale-105">
+          <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
               <img
                 src={MouseControl1}
