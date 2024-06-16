@@ -2,7 +2,7 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <div className="container items-center md:mt-[5rem] xl:mt-[12rem] xxl:mt-[-8rem] lg:mt-[-10rem] sm:mt-12 ssm:-mt-[18rem] xsm:mt-[-9rem] my-24 mx-auto md:px-6">
+    <div className="container items-center md:mt-[5rem] xl:mt-[12rem] xxl:mt-[-8rem] lg:mt-[-10rem] sm:mt-12 ssm:-mt-[7rem] xsm:mt-[-9rem] my-24 mx-auto md:px-6">
       {/* Section: Design Block */}
       <section className="text-center xl:mt-[12rem] mt-32 -ml-12 -mr-12">
         <h2 className="mb-[-1rem] pb-[4rem] text-center text-3xl font-bold">

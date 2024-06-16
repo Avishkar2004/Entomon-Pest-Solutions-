@@ -115,8 +115,8 @@ function FAQsPune() {
             </div>
             <hr className='border-t border-b border-gray-300' />
             <section>
-                <h3 className='text-3xl font-bold text-black mb-6'>Local Pest Control in Pune Near Me</h3>
-                <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4 '>
+                <h3 className='text-3xl font-bold text-black mb-3 mt-3'>Local Pest Control in Pune Near Me</h3>
+                <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-2 '>
                     {locations.map((location) => (
                         <ul key={location}>
                             <Link className="text-blue-700 text-sm" to={`/faq/${location}`}>
