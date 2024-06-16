@@ -13,34 +13,34 @@ import WoodBorer from "../assets/Option/wood.png";
 
 const PestOptionsPage = () => {
   const handleRedirect = () => {
-    window.location.href = "/termite";
+    window.href = "/termite";
   };
   const handleRedirect2 = () => {
-    window.location.href = "/cockroach";
+    window.href = "/cockroach";
   };
   const handleRedirect3 = () => {
-    window.location.href = "/mosquito";
+    window.href = "/mosquito";
   };
   const handleRedirect4 = () => {
-    window.location.href = "/mouse";
+    window.href = "/mouse";
   };
   const handleRedirect5 = () => {
-    window.location.href = "/ant";
+    window.href = "/ant";
   };
   const handleRedirect6 = () => {
-    window.location.href = "/woodborer";
+    window.href = "/woodborer";
   };
   const handleRedirect7 = () => {
-    window.location.href = "/bedbug";
+    window.href = "/bedbug";
   };
   const handleRedirect8 = () => {
-    window.location.href = "/sanitization";
+    window.href = "/sanitization";
   };
   const handleRedirect9 = () => {
-    window.location.href = "/fleafly";
+    window.href = "/fleafly";
   };
-  const handleRedirect10 = () => {
-    window.location.href = "/WaterPurify";
+  const handleRedirect10 = (event) => {
+    window.href = "/waterProffing";
   };
 
   return (
@@ -231,7 +231,7 @@ const PestOptionsPage = () => {
               alt="WaterPurify Service"
             />
             <Link
-              to="/WaterPurify"
+              to="/waterProffing"
               className="flex items-center justify-center text-black py-3 gap-12 rounded-lg focus:outline-none focus:ring-blue-400"
             >
               Water Proofing

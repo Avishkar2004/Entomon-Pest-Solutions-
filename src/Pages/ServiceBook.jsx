@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
-import CallIcon from "@mui/icons-material/Call";
-import EmailIcon from "@mui/icons-material/Email";
-import HomeIcon from "@mui/icons-material/Home";
+import { Call as CallIcon } from "@mui/icons-material";
+import { Email as EmailIcon } from "@mui/icons-material";
+import { Home as HomeIcon } from "@mui/icons-material";
 import React, { useRef, useState } from "react";
 
 const ServiceBook = () => {
@@ -25,7 +25,7 @@ const ServiceBook = () => {
     };
     console.log(emailParams);
     // Create the email message with user's name and phone number
-    const emailMessage = `You received a new message from ${name} (${number}) with the subject: ${selectedService} address: ${address} You have received a inquiry. Best wishes, Thank You.`;
+    const emailMessage = `You received a new message from ${name} (${number}) with the subject: ${selectedService} address: ${address}. You have received an inquiry. Best wishes, Thank You.`;
 
     // Send the email using EmailJS
     emailjs
@@ -33,8 +33,7 @@ const ServiceBook = () => {
         emailServiceID,
         emailTemplateID,
         emailParams,
-        emailUserID,
-        emailMessage
+        emailUserID
       )
       .then((response) => {
         console.log("Email sent successfully!", response);
@@ -59,9 +58,9 @@ const ServiceBook = () => {
   return (
     <div className="flex xsm:mt-[-10rem] xsm:ml-2 xsm:mr-2 xl:mt-[-30rem] md:mt-[-15rem] flex-col lg:mt-[-19rem] sm:mt-[-7rem]  ssm:ml-4 ssm:mr-4 ssm:mt-[-10rem] sm:flex-row items-center justify-center">
       <div className="p-4 gap-10 sm:p-9 rounded-md sm:rounded-md bg-gradient-to-br border border-black w-full sm:w-96 mb-4 sm:mb-0">
-        <h1 className="text-2xl font-semibold p-2">Book a Service</h1>
+        <h1 className="text-2xl font-semibold p-2 text-green-500">Get FREE Quotes</h1>
         <form ref={form} onSubmit={sendEmail}>
-          <label className="block mb-2 font-semibold">Name:</label>
+          <label className="block mb-2 font-semibold text-gray-500">Name:</label>
           <input
             name="user_name"
             required
@@ -72,7 +71,7 @@ const ServiceBook = () => {
             placeholder="Enter Your Name"
           />
 
-          <label className="block mt-1 mb-2 font-semibold">Phone Number:</label>
+          <label className="block mt-1 mb-2 font-semibold text-gray-500">Phone Number:</label>
           <input
             name="user_tal"
             required
@@ -83,9 +82,7 @@ const ServiceBook = () => {
             placeholder="Enter Your Number"
           />
 
-          <label className="block mt-1 mb-2 font-semibold">
-            Select a Service:
-          </label>
+          <label className="block mt-1 mb-2 font-semibold text-gray-500">Select a Service:</label>
           <select
             name="user_selectService"
             required
@@ -101,7 +98,7 @@ const ServiceBook = () => {
             ))}
           </select>
 
-          <label className="block mt-1 mb-2 font-semibold">Address</label>
+          <label className="block mt-1 mb-2 font-semibold text-gray-500">Address</label>
           <input
             name="user_texr"
             required
@@ -114,16 +111,16 @@ const ServiceBook = () => {
 
           <button
             type="submit"
-            className="bg-blue-500 text-white mt-4 py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+            className="bg-green-500 font-extrabold text-white mt-4 py-2 px-4 rounded-md"
           >
-            Book Service
+            Submit
           </button>
         </form>
       </div>
 
       <div className="flex flex-col items-center sm:flex-row justify-center w-full sm:w-auto">
         <div className="p-4 sm:p-9 sm:pt-[0] pt-[-5rem] rounded-lg md:pt-[2rem] lg:pt-[5rem] border border-black ssm:ml-4 ssm:mr-4 bg-white">
-          <h1 className="text-center text-2xl font-semibold mb-4 ">
+          <h1 className="text-center text-2xl font-semibold mb-4">
             Contact Us
           </h1>
           <div className="text-center">
@@ -136,7 +133,7 @@ const ServiceBook = () => {
               <span>
                 <HomeIcon />
               </span>
-              <span className="font-bold ">Address:</span>
+              <span className="font-bold">Address:</span>
               <span className="pl-2 xl:pl-[1px] text-left">
                 Office No-4, Shukdhashree{" "}
                 <p>Apartment, Sr No.422, Narayan Peth,</p>
@@ -166,7 +163,7 @@ const ServiceBook = () => {
                 onClick={() => {
                   window.location.href = "tel:+918010281236";
                 }}
-                className="bg-blue-500 text-white px-4 py-2 mr-8 rounded-md"
+                className="bg-blue-500 font-extrabold text-white px-4 py-2 mr-8 rounded-md"
               >
                 Call Us
               </button>
@@ -177,7 +174,7 @@ const ServiceBook = () => {
                   const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
                   window.open(url, "_blank");
                 }}
-                className="bg-green-500 ml-[-12px] text-white px-4 py-2 mr-8 rounded-md"
+                className="bg-green-500 font-extrabold ml-[-12px] text-white px-4 py-2 mr-8 rounded-md"
               >
                 Whatsapp
               </button>
