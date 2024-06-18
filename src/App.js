@@ -33,8 +33,6 @@ import FAQSMosSpecifiLocation from "./Pages/FAQSMosSpecifiLocation";
 import FAQSMouseSpecifiLocation from "./Pages/FAQSMouseSpecifiLocation";
 import FAQSTermiteSpecificLocation from "./Pages/FAQSTermiteSpecificLocation";
 import FAQSWoodBSpecifiLocation from "./Pages/FAQSWoodBSpecifiLocation";
-import FAQSpecificLocationPune from "./Pages/FAQSpecificLocationPune"; // Import the dynamic FAQ page
-import FAQsPune from "./Pages/FAQsPune";
 import Fly from "./Pages/Fly";
 import Footer from "./Pages/Footer";
 import General from "./Pages/General";
@@ -43,13 +41,17 @@ import Header from "./Pages/Header";
 import HomePage from "./Pages/HomePage";
 import Mosquito from "./Pages/Mosquito";
 import Mouse from "./Pages/Mouse";
+import FAQSpecificLocationMumbai from "./Pages/Mumbai/FAQSpecificLocationMumbai";
+import FAQsMumbai from "./Pages/Mumbai/FAQsMumbai";
 import PestOptionsPage from "./Pages/PestOptionsPage";
+import FAQSpecificLocationPune from "./Pages/Pune/FAQSpecificLocationPune"; // Import the dynamic FAQ page
+import FAQsPune from "./Pages/Pune/FAQsPune";
 import BookService from "./Pages/ServiceBook";
 import Type from "./Pages/ServiceType";
 import Termite from "./Pages/Termite";
 import Testimonial from "./Pages/Testimonial";
 import ThankYou from "./Pages/ThankYou";
-import WaterPurify from "./Pages/WaterPurify";
+import WaterProofing from "./Pages/WaterProofing";
 import WoodBorer from "./Pages/WoodBorer";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
@@ -81,9 +83,11 @@ function App() {
         <Route path="/sanitization" component={General} />
         <Route path="/fleafly" component={Fly} />
         {/* <Route path="/agriculture" component={Agriculture} /> */}
-        <Route path="/waterProffing" component={WaterPurify} />
-        <Route path="/faq/:location" component={FAQSpecificLocationPune} />
+        <Route path="/waterProffing" component={WaterProofing} />
+        <Route path="/pune/:location" component={FAQSpecificLocationPune} />
         {/* <Route path="/nagar/:location" component={FAQSpecificLocationNagar} /> */}
+        <Route path="/mumbai/:location" component={FAQSpecificLocationMumbai} />
+
         <Route path="/ter/:location" component={FAQSTermiteSpecificLocation} />
         <Route path="/cock/:location" component={FAQSCockSpecifiLocation} />
         <Route path="/mos/:location" component={FAQSMosSpecifiLocation} />
@@ -130,6 +134,7 @@ function App() {
                 <HomePage />
                 <FAQsPune />
                 {/* <FAQsNagar /> */}
+                <FAQsMumbai />
                 <Testimonial />
                 <Client />
                 <GlowingIcons />

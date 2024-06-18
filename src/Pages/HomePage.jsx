@@ -32,7 +32,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen xl:mb-[-18rem] lg:mb-[-8rem] md:mb-[-7rem] sm:mb-[-50rem]  ssm:mb-[-9rem] ">
+    <div className="bg-white min-h-screen xl:mb-[-22rem] lg:mb-[-8rem] md:mb-[-7rem] sm:mb-[-50rem]  ssm:mb-[-9rem] ">
       <section className="py-16">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-4">Why Choose Us?</h2>
