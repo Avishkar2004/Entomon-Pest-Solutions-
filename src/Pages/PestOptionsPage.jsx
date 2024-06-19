@@ -10,41 +10,37 @@ import Mouse from "../assets/Option/mouse.png";
 import Termite from "../assets/Option/termite.png";
 import WaterPurify from "../assets/Option/waterPurify.png";
 import WoodBorer from "../assets/Option/wood.png";
-import { useHistory } from 'react-router-dom';
-
 
 const PestOptionsPage = () => {
-  let history = useHistory();
-
   const handleRedirect = () => {
-    history.push("/termite");
+    window.href = "/termite";
   };
   const handleRedirect2 = () => {
-    history.push("/cockroach")
+    window.href = "/cockroach";
   };
   const handleRedirect3 = () => {
-    history.push("/mosquito")
+    window.href = "/mosquito";
   };
   const handleRedirect4 = () => {
-    history.push("/mouse")
+    window.href = "/mouse";
   };
   const handleRedirect5 = () => {
-    history.push("/ant")
+    window.href = "/ant";
   };
   const handleRedirect6 = () => {
-    history.push("/woodborer")
+    window.href = "/woodborer";
   };
   const handleRedirect7 = () => {
-    history.push("/bedbug")
+    window.href = "/bedbug";
   };
   const handleRedirect8 = () => {
-    history.push("/sanitization")
+    window.href = "/sanitization";
   };
   const handleRedirect9 = () => {
-    history.push("/fleafly")
+    window.href = "/fleafly";
   };
-  const handleRedirect10 = () => {
-    history.push("/waterProffing")
+  const handleRedirect10 = (event) => {
+    window.href = "/waterProffing";
   };
 
   return (
