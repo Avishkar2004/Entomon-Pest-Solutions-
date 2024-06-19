@@ -68,7 +68,6 @@ const locations = [
     'dapodi-pune'
 ];
 
-const city = ["pune"]
 
 
 function FAQsPune() {
@@ -76,44 +75,49 @@ function FAQsPune() {
         <div className="max-w-5xl mx-auto p-6 border-t border-b border-gray-300">
             <h1 className="text-3xl font-bold text-black mb-6">Important Pest Control FAQs</h1>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. Why hiring pest control services in Pune is imperative?</h3>
-                <p className="text-gray-700 mt-3">We at Get Pest Control are in the niche for several years. Hence, we completely understand the needs of professional pest control services. We understand well that pests and insects are nuisance. No one likes a place where mosquitoes are in search of human blood, cockroaches are frightening ladies, rats are making damages and termites are feeding on furniture. That’s not all. Pests and insects are also a great threat to health. They are noted for damaging properties and spreading some of fatal diseases. So, it is imperative to hire professional pest control services in Pune in order to get rid of life threatening pests and insects.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: What types of pests are common in Pune?</h3>
+                <p className="text-gray-700 mt-3">Common pests in Pune include termites, mosquitoes, cockroaches, rats, ants, bedbugs, and spiders. The humid climate and urban setting contribute to these pest infestations.</p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are charges for termite control services in Pune?</h3>
-                <p className="text-gray-700 mt-3">Estimated charges for termite control services in Pune can be in the range of Rs 1200 to Rs 8200 depending upon the size of property and level of infestations.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: How often should pest control be done in Pune?</h3>
+                <p className="text-gray-700 mt-3">It's recommended to have pest control treatments every 3-6 months. However, the frequency may vary depending on the severity of the infestation and the type of pest.
+                </p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are estimated bedbug control charges in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">The estimated charges for bedbug control services in Pune will be in the range of Rs 1500 to Rs 4000 depending on the size of the treatment area and the level of infestation.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q. Are pest control treatments safe for children and pets?</h3>
+                <p className="text-gray-700 mt-3">Professional pest control services use chemicals that are safe for children and pets when used as directed. It’s important to follow the instructions provided by the pest control company, such as vacating the premises for a few hours if necessary.</p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are estimated cockroach control charges in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">Estimated charges for cockroach control services in Pune can be the in the range of Rs 799 to Rs 1599 depending on the size of the treatment area and the level of infestation.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: What should I do to prepare my home for pest control treatment?</h3>
+                <p className="text-gray-700 mt-3">Preparations may include cleaning the house, storing food properly, covering or removing pets, and vacating the premises if advised. Specific instructions will be provided by the pest control service.
+                </p>
             </div>
             <div className="faq mb-4">
                 <h3 className="text-xl font-semibold text-green-700">Q. What are the approximate charges for rodents or rates control services in Pune near me?</h3>
                 <p className="text-gray-700 mt-3">Approximate charges for rodent or rat control services in Pune can be in the range of Rs 749 to Rs 1399 depending on the size of the treatment area and the level of infestation.</p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are estimated ant control charges in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">Approximate ant pest control charges in Pune can be in the range of Rs 749 to Rs 1399 depending on the size of the treatment area and the level of infestation.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: How can I prevent pests from entering my home in Pune?</h3>
+                <p className="text-gray-700 mt-3">Regularly clean your home, seal cracks and openings, store food in airtight containers, dispose of garbage properly, and eliminate standing water to prevent pests from breeding.
+                </p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are estimated mosquito control charges in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">Approximate mosquito control charges in Pune will be in the range of Rs 1700 to Rs 2800 depending on the size of the treatment area and the level of infestation.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: What should I do if I see pests after a pest control treatment?</h3>
+                <p className="text-gray-700 mt-3">It's normal to see an increase in pest activity immediately after treatment as pests are driven out of hiding. If pests are still present after a week or two, contact your pest control provider for a follow-up treatment.
+                </p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are approximate bees control charges in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">Approximate bees control charges in Pune will be in the range of Rs 1000 to Rs 2000.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: Are there eco-friendly pest control options available in Pune?</h3>
+                <p className="text-gray-700 mt-3">A: Yes, many pest control companies in Pune offer eco-friendly or organic pest control solutions that use natural ingredients to eliminate pests without harming the environment.</p>
             </div>
             <div className="faq mb-4">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are estimated lizard control charges in Pune near me?</h3>
-                <p className="text-gray-700 mt-3">The estimated lizard control charges in Pune will be in the range of Rs 700 to Rs 2000.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: How much does pest control service cost in Pune?</h3>
+                <p className="text-gray-700 mt-3">The cost varies depending on the size of the property, type of pest, severity of the infestation, and the treatment method used. On average, it can range from INR 1,000 to INR 5,000 for standard services.</p>
             </div>
             <div className="faq mb-4 ">
-                <h3 className="text-xl font-semibold text-green-700">Q. What are estimated charges for bird netting services in Pune near me?</h3>
-                <p className="text-gray-700 mt-3 ">Approximate charges for bird netting services in Pune near you can be in the range of Rs 1000 to Rs 5000 depending on the size of the service area.</p>
+                <h3 className="text-xl font-semibold text-green-700">Q: Can I do pest control myself, or should I hire a professional?</h3>
+                <p className="text-gray-700 mt-3 ">While DIY pest control methods can be effective for minor infestations, professional pest control services are recommended for severe or persistent infestations. Professionals have the expertise, equipment, and chemicals to handle pests effectively and safely.
+                </p>
             </div>
             <hr className='border-t border-b border-gray-300' />
             <section>

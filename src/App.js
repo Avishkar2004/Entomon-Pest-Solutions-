@@ -134,7 +134,7 @@ function App() {
                 <HomePage />
                 <FAQsPune />
                 {/* <FAQsNagar /> */}
-                <FAQsMumbai />
+                {/* <FAQsMumbai /> */}
                 <Testimonial />
                 <Client />
                 <GlowingIcons />
