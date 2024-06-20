@@ -788,23 +788,10 @@ Fly
         </div>
       </div>
 
+=====================================
+HEADER WITH Cities :-
 
-
-
-
-
-
-
-
-
-
-
-
-      =====================
-
-      citie :-
-
-      import {
+import {
   IconButton,
   MobileNav,
   Navbar,
@@ -817,7 +804,8 @@ Fly
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import LocationCityIcon from "@mui/icons-material/LocationCity"; // Import City icon
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Logo from "../assets/Navbar/Logo.png";
@@ -832,10 +820,8 @@ const Header = () => {
     );
   }, []);
 
-  const cities = ["Pune", "Mumbai", "Delhi", "Bangalore"];
-
   const navList = (
-    <li className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-2 lg:flex-row lg:items-center lg:gap-20 xxl:gap-28">
+    <li className="mb-4 mt-2 flex flex-col gap-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-12">
       <Typography
         as="li"
         variant="small"
@@ -844,7 +830,7 @@ const Header = () => {
       >
         <a
           href="tel:+918010281236"
-          className="flex items-center text-lg pr-[8rem] xl:pr-[12rem] lg:pl-[2rem] xxl:pl-12 text-green-500 font-bold"
+          className="flex items-center text-lg text-green-500 font-bold"
         >
           <CallIcon style={{ marginRight: "8px" }} />
           +918010281236
@@ -858,7 +844,7 @@ const Header = () => {
       >
         <a
           href="mailto:entomon.pestsolution@gmail.com"
-          className="flex items-center mr-6 xl:ml-[-8.5rem] lg:-ml-32 xl:text-lg lg:text-lg text-black font-bold"
+          className="flex items-center text-lg text-black font-bold"
         >
           <EmailIcon style={{ marginRight: "8px" }} />
           entomon.pestsolution@gmail.com
@@ -874,39 +860,46 @@ const Header = () => {
           target="_blank"
           href="https://api.whatsapp.com/send?phone=918010281236"
           rel="noreferrer"
-          className="flex items-center pl-9 xl:pl-2 xl:text-lg text-green-500 font-bold xsm:pl-1"
+          className="flex items-center text-lg text-green-500 font-bold"
         >
           <WhatsAppIcon style={{ marginRight: "8px" }} />
           WhatsApp
         </a>
       </Typography>
-      <Menu>
-        <MenuHandler>
-          <Typography
-            as="li"
-            variant="small"
-            color="blue-gray"
-            className="p-1 font-normal cursor-pointer flex items-center text-lg text-black font-bold"
-          >
-            Cities
-            <ArrowDropDownIcon style={{ marginLeft: "8px" }} />
-          </Typography>
-        </MenuHandler>
-        <MenuList>
-          {cities.map((city, index) => (
-            <MenuItem key={index} className="text-black">
-              {city}
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Menu>
+          <MenuHandler>
+            <span className="flex items-center text-lg text-blue-500 font-bold cursor-pointer">
+              <LocationCityIcon style={{ marginRight: "4px" }} /> Cities 
+              <ArrowDropDownIcon />
+            </span>
+          </MenuHandler>
+          <MenuList>
+            <MenuItem>
+              <Link to="/city/mumbai">Mumbai</Link>
             </MenuItem>
-          ))}
-        </MenuList>
-      </Menu>
+            <MenuItem>
+              <Link to="/city/delhi">Delhi</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link to="/city/bangalore">Bangalore</Link>
+            </MenuItem>
+            {/* Add more cities as needed */}
+          </MenuList>
+        </Menu>
+      </Typography>
     </li>
   );
 
   return (
     <Navbar
       className="mx-auto max-w-screen-xxl py-2 px-4 lg:px-8 lg:py-4"
-      style={{ boxShadow: "-moz-initial" }}
+      style={{ boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)" }}
     >
       <div className="mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
@@ -915,7 +908,7 @@ const Header = () => {
           className="mr-4 cursor-pointer py-1.5 font-medium"
         >
           <img
-            className="mx-auto flex h-[5rem] w-auto max-w-screen-xl"
+            className="h-[5rem] w-auto"
             src={Logo}
             alt="Pest Control In Pune"
           />
@@ -926,7 +919,7 @@ const Header = () => {
           to="/contact"
           variant="gradient"
           size="sm"
-          className="hidden text-base lg:inline-block text-black font-bold ml-12 lg:mr-28 xxl:ml-32"
+          className="hidden lg:inline-block text-base text-black font-bold ml-12 lg:mr-16 bg-gray-200 py-2 px-4 rounded-md hover:bg-gray-300 transition duration-300"
         >
           <span>Contact Us</span>
         </Link>
@@ -975,7 +968,7 @@ const Header = () => {
             to="/contact"
             variant="gradient"
             size="sm"
-            className="mb-2 ml-2 text-black bg-white font-bold"
+            className="mb-2 ml-2 text-black bg-gray-200 py-2 px-4 rounded-md font-bold hover:bg-gray-300 transition duration-300"
           >
             <span>Contact Us</span>
           </Link>

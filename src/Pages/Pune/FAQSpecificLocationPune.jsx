@@ -1,9 +1,9 @@
+//! It is done so far, Bibvewadi."
+import React, { useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
-import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
-
 
 const locations = [
     'Aundh-pune',
@@ -71,6 +71,7 @@ const locations = [
     'chakan-pune',
     'dapodi-pune'
 ];
+
 const faqData = {
     'Aundh-pune': {
         title: 'FAQ – Pest Control in Aundh, Pune',
@@ -1677,7 +1678,7 @@ const faqData = {
                 "answer": "To find a good and affordable pest control company in Sus, you should search the internet. You can find many options there. You can also find affordable and professional companies on the Get Pest Control website."
             }
         ]
-        
+
     },
     'balewadi-pune': {
         title: 'FAQ – Pest Control in Balewadi, Pune',
@@ -1711,7 +1712,7 @@ const faqData = {
                 "answer": "The main advantage of availing pest control service in Balewadi, Pune is the reduced chance of getting health related issues. You will get a healthier and pest-free environment which will eventually provide you better sleep."
             }
         ]
-        
+
     },
     'warje-pune': {
         title: 'FAQ – Pest Control in Warje, Pune',
@@ -1729,7 +1730,7 @@ const faqData = {
                 "answer": "Yes, mostly every pest control company will offer you pest control services in Warje, Pune. But be sure to ask all your questions while consulting them."
             }
         ]
-        
+
     },
     'bhosari-pune': {
         title: 'FAQ – Pest Control in Bhosari, Pune',
@@ -1747,7 +1748,7 @@ const faqData = {
                 "answer": "Yes, you can easily find a pest control company in Bhosari, Pune, for bed bug control. Search the internet or visit the online website of Get Pest Control."
             }
         ]
-        
+
     },
     'chakan-pune': {
         title: 'FAQ – Pest Control in Chakan, Pune',
@@ -1765,7 +1766,7 @@ const faqData = {
                 "answer": "If you are dealing with a pest infestation in Chakan, Pune, you should consult a pest control company. They will inspect your place and then guide you on whether pest control is needed or not."
             }
         ]
-        
+
     },
     'dapodi-pune': {
         title: 'FAQ – Pest Control in Dapodi, Pune',
@@ -1783,26 +1784,414 @@ const faqData = {
                 "answer": "Yes, hiring a pest control company in Dapodi, Pune, is very much needed. Because pests are very harmful to the property and also to health."
             }
         ]
-        
+
     },
 
 };
 
+const reviewData = {
+    "Aundh-pune": [
+        {
+            "name": "Avishkar",
+            "date": "1 March 2024",
+            "review": "I recently hired pest control services in Aundh, Pune from a highly recommended company. The service was outstanding. They were prompt, thorough, and incredibly knowledgeable. The team not only eradicated the pest problem but also provided useful tips to prevent future infestations. I highly recommend their services to anyone dealing with pests."
+        },
+        {
+            "name": "Priya Deshmukh",
+            "date": "5 March 2024",
+            "review": "Choosing a pest control service in Aundh, Pune was a daunting task, but I'm so glad I found this company. From the initial consultation to the final treatment, their professionalism and efficiency were evident. They used eco-friendly solutions that were safe for my family and pets. I'm impressed with their dedication to customer satisfaction and would definitely hire them again."
+        },
+        {
+            "name": "Rahul Joshi",
+            "date": "10 March 2024",
+            "review": "After struggling with a persistent pest problem in Aundh, Pune, I decided to hire professional pest control services. This company came highly recommended, and they exceeded my expectations. Their comprehensive approach and attention to detail were impressive. The technicians were courteous and knowledgeable, explaining each step of the process. Thanks to them, my home is now pest-free."
+        },
+        {
+            "name": "Meera Sharma",
+            "date": "15 March 2024",
+            "review": "I had a fantastic experience with pest control services in Aundh, Pune. They were responsive, professional, and thorough. The technicians arrived on time and conducted a detailed inspection before starting the treatment. They addressed all my concerns and provided effective solutions. I'm relieved to have found such a reliable service and would recommend them without hesitation."
+        },
+        {
+            "name": "Vikram Patil",
+            "date": "20 March 2024",
+            "review": "I am thoroughly impressed with the pest control service I received in Aundh, Pune. The team was incredibly knowledgeable and thorough in their approach. They not only eradicated the pests but also provided valuable advice on preventing future infestations. The entire process was smooth, and the results were outstanding. I would highly recommend their services to anyone in need."
+        }
+    ],
+    "hinjewadi-pune": [
+        {
+            "name": "Rohit",
+            "date": "15 March 2024",
+            "review": "I recently used pest control services in Hinjewadi, Pune, and I must say, I'm impressed. They were professional and efficient, addressing my pest problem swiftly. The team was well-equipped and used safe, effective methods. They also followed up to ensure the pests were completely eliminated. I'm pleased with their service and would recommend them for anyone dealing with pests."
+        },
+        {
+            "name": "Sneha Kulkarni",
+            "date": "18 March 2024",
+            "review": "Dealing with pests in Hinjewadi, Pune was stressful until I hired this pest control service. They were thorough and systematic in their approach, explaining each step of the process. The technicians were courteous and respectful of my home. The treatment was effective, and I haven't seen a pest since. I'm grateful for their expertise and would use their services again."
+        },
+        {
+            "name": "Ajay Khare",
+            "date": "22 March 2024",
+            "review": "I had an excellent experience with pest control services in Hinjewadi, Pune. The team was professional and knowledgeable, providing a comprehensive solution to my pest problem. They used eco-friendly products that were safe for my family and pets. The service was prompt, and the results were impressive. I highly recommend their services to anyone in need of pest control."
+        },
+        {
+            "name": "Neha Singh",
+            "date": "25 March 2024",
+            "review": "Choosing a pest control service in Hinjewadi, Pune was a crucial decision, and I'm glad I chose this company. They were responsive and thorough, addressing all my concerns. The technicians were punctual and conducted a detailed inspection before proceeding with the treatment. They provided valuable advice on pest prevention. Overall, it was a positive experience, and I would recommend them."
+        },
+        {
+            "name": "Anand Patil",
+            "date": "30 March 2024",
+            "review": "I had an exceptional experience with pest control services in Hinjewadi, Pune. The technicians were professional and diligent in their work. They used effective treatments that eliminated the pests without causing any inconvenience. They also offered tips on maintaining a pest-free environment. I'm impressed with their service and would confidently recommend them to others."
+        }
+    ],
+    "wakad-pune": [
+        {
+            "name": "Mukesh Rajput",
+            "date": "15 March 2024",
+            "review": "I recently used pest control services in Wakad, Pune, and I'm pleased with the results. The team was knowledgeable and efficient, explaining each step of the process. They used safe and effective methods to eliminate the pests without causing any harm. The service was prompt, and they followed up to ensure my satisfaction. I would recommend their services without hesitation."
+        },
+        {
+            "name": "Pooja Gupta",
+            "date": "20 March 2024",
+            "review": "Dealing with pests in Wakad, Pune was challenging until I hired this pest control service. They were thorough in their inspection and used eco-friendly products. The technicians were courteous and respectful, ensuring minimal disruption. The treatment was effective, and I haven't seen any pests since. I'm grateful for their expertise and would use their services again."
+        },
+        {
+            "name": "Alok Verma",
+            "date": "25 March 2024",
+            "review": "I had a positive experience with pest control services in Wakad, Pune. The team was professional and efficient, addressing my pest problem effectively. They provided detailed information about the treatment process and answered all my questions patiently. The service was prompt, and the results exceeded my expectations. I would recommend them for their excellent service."
+        },
+        {
+            "name": "Kiran Shah",
+            "date": "28 March 2024",
+            "review": "Choosing pest control services in Wakad, Pune was easy with this company. They were responsive and thorough in their approach, ensuring all pests were eliminated. The technicians were skilled and used safe methods that didn't harm my family or pets. The service was reasonably priced, and the results were outstanding. I'm impressed and would use their services again."
+        },
+        {
+            "name": "Shilpa Patil",
+            "date": "1 April 2024",
+            "review": "I recently hired pest control services in Wakad, Pune, and I'm delighted with the outcome. The team was professional and knowledgeable, providing effective solutions to my pest problem. They were punctual and conducted a thorough inspection before starting the treatment. The service was efficient, and I haven't had any issues since. I would recommend them for their excellent service."
+        }
+    ],
+    "hadapsar-pune": [
+        {
+            "name": "Neha Patel",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Hadapsar, Pune, and I'm very satisfied with the service. The team was professional and knowledgeable, providing a thorough inspection and effective treatment. They used safe products that didn't harm my pets. The service was prompt, and the technicians were courteous. I highly recommend their services for anyone dealing with pest issues."
+        },
+        {
+            "name": "Suresh Kumar",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Hadapsar, Pune was stressful until I hired this pest control service. They were responsive and efficient, addressing the problem effectively. The technicians were skilled and used eco-friendly solutions. They explained the treatment process clearly and provided tips for prevention. I'm pleased with their service and would hire them again without hesitation."
+        },
+        {
+            "name": "Rajesh Singh",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Hadapsar, Pune. The team was thorough in their approach, conducting a detailed inspection before starting the treatment. They used effective methods to eliminate the pests without causing any inconvenience. The service was reasonably priced, and the results were outstanding. I would recommend them for their professionalism and expertise."
+        },
+        {
+            "name": "Deepika Desai",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Hadapsar, Pune was a wise decision with this company. They were prompt and efficient, providing a comprehensive solution to my pest problem. The technicians were courteous and knowledgeable, explaining each step of the process. The service was effective, and I haven't seen any pests since. I'm impressed and would use their services again."
+        },
+        {
+            "name": "Ankit Sharma",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Hadapsar, Pune, and I'm impressed with the results. The team was professional and diligent, ensuring all pests were eliminated. They used safe methods that didn't harm my family or pets. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        }
+    ],
+    "pimpri-chinchwad-pune": [
+        {
+            "name": "Manoj Kumar",
+            "date": "20 June 2024",
+            "review": "I had a great experience with pest control services in Pimpri-Chinchwad, Pune. The team was knowledgeable and thorough, conducting a detailed inspection and providing effective treatment. They used eco-friendly products that were safe for my family and pets. The service was prompt, and the technicians were professional. I'm pleased with the results and would recommend their services."
+        },
+        {
+            "name": "Priya Sharma",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Pimpri-Chinchwad, Pune was challenging until I hired this pest control service. They were responsive and reliable, addressing the issue promptly. The technicians were skilled and used effective methods to eliminate the pests. They provided valuable advice on prevention. I'm impressed with their professionalism and would use their services again."
+        },
+        {
+            "name": "Gaurav Singh",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Pimpri-Chinchwad, Pune, and I'm delighted with the service. The team was thorough and attentive, explaining the treatment process and addressing all my concerns. They used safe products and ensured minimal disruption. The service was reasonably priced, and the results were excellent. I would recommend them for their expertise."
+        },
+        {
+            "name": "Aishwarya Joshi",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Pimpri-Chinchwad, Pune was a positive experience with this company. They were efficient and professional, providing a comprehensive solution to my pest problem. The technicians were friendly and knowledgeable, ensuring all pests were eliminated. The service was prompt, and I'm satisfied with the outcome. I would use their services again."
+        },
+        {
+            "name": "Amit Gupta",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Pimpri-Chinchwad, Pune. The team was responsive and thorough, using effective treatments to eradicate the pests. They provided detailed information about the products used and offered tips for prevention. The service was reasonably priced, and the technicians were courteous. I would recommend them without hesitation."
+        }
+    ],
+    "bavdhan-pune": [
+        {
+            "name": "Shalini Deshpande",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Bavdhan, Pune, and I'm very impressed with the results. The team was professional and efficient, addressing my pest problem effectively. They conducted a thorough inspection and used safe methods that didn't harm my pets. The service was prompt, and the technicians were knowledgeable. I would highly recommend their services."
+        },
+        {
+            "name": "Kunal Mehta",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Bavdhan, Pune was frustrating until I hired this pest control service. They were thorough in their approach, using eco-friendly products and ensuring minimal disruption. The technicians were courteous and explained the treatment process clearly. The service was effective, and I haven't had any issues since. I'm grateful for their expertise."
+        },
+        {
+            "name": "Renuka Shah",
+            "date": "20 June 2024",
+            "review": "I had a positive experience with pest control services in Bavdhan, Pune. The team was prompt and professional, providing a comprehensive solution to my pest problem. They used safe methods that were effective in eliminating the pests. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        },
+        {
+            "name": "Rajesh Khanna",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Bavdhan, Pune was easy with this company. They were responsive and thorough, conducting a detailed inspection before starting the treatment. The technicians were knowledgeable and provided valuable advice on prevention. The service was prompt, and the results were impressive. I'm satisfied with their service and would use them again."
+        },
+        {
+            "name": "Anjali Patil",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Bavdhan, Pune, and I'm pleased with the outcome. The team was professional and diligent, ensuring all pests were eliminated. They used effective treatments and provided tips for maintaining a pest-free environment. The service was reasonably priced, and the technicians were courteous. I would recommend them without hesitation."
+        }
+    ],
+    "chandan-nagar-pune": [
+        {
+            "name": "Vikram Singh",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Chandan Nagar, Pune. The team was thorough and professional, conducting a detailed inspection and providing effective treatment. They used safe products that were eco-friendly. The service was prompt, and the technicians were courteous. I'm satisfied with the results and would recommend their services."
+        },
+        {
+            "name": "Kavita Sharma",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Chandan Nagar, Pune was challenging until I hired this pest control service. They were responsive and efficient, addressing the problem effectively. The technicians were knowledgeable and used effective methods to eliminate the pests. They provided valuable advice on prevention. I'm impressed with their professionalism and would use their services again."
+        },
+        {
+            "name": "Aniket Desai",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Chandan Nagar, Pune, and I'm very satisfied with the service. The team was prompt and thorough, ensuring all pests were eliminated. They used safe products and provided tips for prevention. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        },
+        {
+            "name": "Smita Rao",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Chandan Nagar, Pune was a positive experience with this company. They were professional and efficient, providing a comprehensive solution to my pest problem. The technicians were courteous and explained the treatment process clearly. The service was prompt, and I'm satisfied with the outcome. I would use their services again."
+        },
+        {
+            "name": "Rahul Gupta",
+            "date": "20 June 2024",
+            "review": "I had a great experience with pest control services in Chandan Nagar, Pune. The team was responsive and thorough, using effective treatments to eradicate the pests. They provided detailed information about the products used and offered tips for prevention. The service was reasonably priced, and the technicians were friendly and courteous. I would recommend them without hesitation."
+        }
+    ],
+    "boat-club-road-pune": [
+        {
+            "name": "Neha Patel",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Boat Club Road, Pune, from Entomon Pest Solutions, and I'm very satisfied with the service. The team was professional and knowledgeable, providing a thorough inspection and effective treatment. They used safe products that didn't harm my pets. The service was prompt, and the technicians were courteous. I highly recommend their services."
+        },
+        {
+            "name": "Suresh Kumar",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Boat Club Road, Pune, was stressful until I hired Entomon Pest Solutions. They were responsive and efficient, addressing the problem effectively. The technicians were skilled and used eco-friendly solutions. They explained the treatment process clearly and provided tips for prevention. I'm pleased with their service and would hire them again without hesitation."
+        },
+        {
+            "name": "Rajesh Singh",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Boat Club Road, Pune, from Entomon Pest Solutions. The team was thorough in their approach, conducting a detailed inspection before starting the treatment. They used effective methods to eliminate the pests without causing any inconvenience. The service was reasonably priced, and the results were outstanding. I would recommend them for their professionalism and expertise."
+        },
+        {
+            "name": "Deepika Desai",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Boat Club Road, Pune, from Entomon Pest Solutions was a wise decision. They were prompt and efficient, providing a comprehensive solution to my pest problem. The technicians were courteous and knowledgeable, explaining each step of the process. The service was effective, and I haven't seen any pests since. I'm impressed and would use their services again."
+        },
+        {
+            "name": "Ankit Sharma",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Boat Club Road, Pune, from Entomon Pest Solutions, and I'm impressed with the results. The team was professional and diligent, ensuring all pests were eliminated. They used safe methods that didn't harm my family or pets. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        }
+    ],
+    "shivajinagar-pune": [
+        {
+            "name": "Manoj Kumar",
+            "date": "20 June 2024",
+            "review": "I had a great experience with pest control services in Shivajinagar, Pune, from Entomon Pest Solutions. The team was knowledgeable and thorough, conducting a detailed inspection and providing effective treatment. They used eco-friendly products that were safe for my family and pets. The service was prompt, and the technicians were professional. I'm pleased with the results and would recommend their services."
+        },
+        {
+            "name": "Priya Sharma",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Shivajinagar, Pune, was challenging until I hired Entomon Pest Solutions. They were responsive and reliable, addressing the issue promptly. The technicians were skilled and used effective methods to eliminate the pests. They provided valuable advice on prevention. I'm impressed with their professionalism and would use their services again."
+        },
+        {
+            "name": "Gaurav Singh",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Shivajinagar, Pune, from Entomon Pest Solutions, and I'm delighted with the service. The team was thorough and attentive, explaining the treatment process and addressing all my concerns. They used safe products and ensured minimal disruption. The service was reasonably priced, and the results were excellent. I would recommend them for their expertise."
+        },
+        {
+            "name": "Aishwarya Joshi",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Shivajinagar, Pune, from Entomon Pest Solutions was a positive experience. They were efficient and professional, providing a comprehensive solution to my pest problem. The technicians were friendly and knowledgeable, ensuring all pests were eliminated. The service was prompt, and I'm satisfied with the outcome. I would use their services again."
+        },
+        {
+            "name": "Amit Gupta",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Shivajinagar, Pune, from Entomon Pest Solutions. The team was responsive and thorough, using effective treatments to eradicate the pests. They provided detailed information about the products used and offered tips for prevention. The service was reasonably priced, and the technicians were courteous. I would recommend them without hesitation."
+        }
+    ],
+    "sangvi-pune": [
+        {
+            "name": "Shalini Deshpande",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Sangvi, Pune, from Entomon Pest Solutions, and I'm very impressed with the results. The team was professional and efficient, addressing my pest problem effectively. They conducted a thorough inspection and used safe methods that didn't harm my pets. The service was prompt, and the technicians were knowledgeable. I would highly recommend their services."
+        },
+        {
+            "name": "Kunal Mehta",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Sangvi, Pune, was frustrating until I hired Entomon Pest Solutions. They were thorough in their approach, using eco-friendly products and ensuring minimal disruption. The technicians were courteous and explained the treatment process clearly. The service was effective, and I haven't had any issues since. I'm grateful for their expertise."
+        },
+        {
+            "name": "Renuka Shah",
+            "date": "20 June 2024",
+            "review": "I had a positive experience with pest control services in Sangvi, Pune, from Entomon Pest Solutions. The team was prompt and professional, providing a comprehensive solution to my pest problem. They used safe methods that were effective in eliminating the pests. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        },
+        {
+            "name": "Rajesh Khanna",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Sangvi, Pune, from Entomon Pest Solutions was easy. They were responsive and thorough, conducting a detailed inspection before starting the treatment. The technicians were knowledgeable and provided valuable advice on prevention. The service was prompt, and the results were impressive. I'm satisfied with their service and would use them again."
+        },
+        {
+            "name": "Anjali Patil",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Sangvi, Pune, from Entomon Pest Solutions, and I'm pleased with the outcome. The team was professional and diligent, ensuring all pests were eliminated. They used effective treatments and provided tips for maintaining a pest-free environment. The service was reasonably priced, and the technicians were courteous. I would recommend them without hesitation."
+        }
+    ],
+    "nigdi-pune": [
+        {
+            "name": "Vikram Singh",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Nigdi, Pune, from Entomon Pest Solutions. The team was thorough and professional, conducting a detailed inspection and providing effective treatment. They used safe products that were eco-friendly. The service was prompt, and the technicians were courteous. I'm satisfied with the results and would recommend their services."
+        },
+        {
+            "name": "Kavita Sharma",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Nigdi, Pune, was challenging until I hired Entomon Pest Solutions. They were responsive and efficient, addressing the problem effectively. The technicians were knowledgeable and used effective methods to eliminate the pests. They provided valuable advice on prevention. I'm impressed with their professionalism and would use their services again."
+        },
+        {
+            "name": "Aniket Desai",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Nigdi, Pune, from Entomon Pest Solutions, and I'm very satisfied with the service. The team was prompt and thorough, ensuring all pests were eliminated. They used safe products and provided tips for prevention. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        },
+        {
+            "name": "Smita Rao",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Nigdi, Pune, from Entomon Pest Solutions was a positive experience. They were professional and efficient, providing a comprehensive solution to my pest problem. The technicians were courteous and explained the treatment process clearly. The service was prompt, and I'm satisfied with the outcome. I would use their services again."
+        },
+        {
+            "name": "Rahul Deshmukh",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Nigdi, Pune, from Entomon Pest Solutions, and I'm impressed with the results. The team was knowledgeable and thorough, using effective treatments to eradicate the pests. They provided excellent customer service and ensured minimal disruption. The service was reasonably priced, and I would recommend them without hesitation."
+        }
+    ],
+    "koregaon-park-pune": [
+        {
+            "name": "Priya Gupta",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Koregaon Park, Pune, from Entomon Pest Solutions, and I'm very satisfied with the service. The team was professional and efficient, conducting a thorough inspection and providing effective treatment. They used eco-friendly products that were safe for my family and pets. The service was prompt, and the technicians were courteous. I highly recommend their services."
+        },
+        {
+            "name": "Rahul Shah",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Koregaon Park, Pune, was stressful until I hired Entomon Pest Solutions. They were responsive and reliable, addressing the problem effectively. The technicians were skilled and used eco-friendly methods to eliminate the pests. They provided valuable advice on prevention. I'm impressed with their professionalism and would use their services again."
+        },
+        {
+            "name": "Anjali Verma",
+            "date": "20 June 2024",
+            "review": "I had an excellent experience with pest control services in Koregaon Park, Pune, from Entomon Pest Solutions. The team was prompt and thorough, ensuring all pests were eliminated. They used safe products and provided tips for maintaining a pest-free environment. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them without hesitation."
+        },
+        {
+            "name": "Manish Kumar",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Koregaon Park, Pune, from Entomon Pest Solutions was a wise decision. They were professional and efficient, providing a comprehensive solution to my pest problem. The technicians were knowledgeable and courteous, explaining each step of the process. The service was prompt, and I'm satisfied with the outcome. I would use their services again."
+        },
+        {
+            "name": "Sneha Patil",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Koregaon Park, Pune, from Entomon Pest Solutions, and I'm impressed with the results. The team was thorough and diligent, using effective treatments to eradicate the pests. They provided excellent customer service and ensured minimal disruption. The service was reasonably priced, and I would recommend them without hesitation."
+        }
+    ],
+    "bibvewadi-pune": [
+        {
+            "name": "Akshay Joshi",
+            "date": "20 June 2024",
+            "review": "I had a positive experience with pest control services in Bibvewadi, Pune, from Entomon Pest Solutions. The team was professional and efficient, providing effective treatment for my pest problem. They used eco-friendly products that were safe for my family and pets. The service was prompt, and the technicians were courteous. I'm satisfied with their service and would use them again."
+        },
+        {
+            "name": "Renuka Patil",
+            "date": "20 June 2024",
+            "review": "Dealing with pests in Bibvewadi, Pune, was challenging until I hired Entomon Pest Solutions. They were responsive and reliable, addressing the issue promptly. The technicians were knowledgeable and used effective methods to eliminate the pests. They provided valuable advice on prevention. I'm impressed with their professionalism and would use their services again."
+        },
+        {
+            "name": "Sanjay Deshmukh",
+            "date": "20 June 2024",
+            "review": "I recently hired pest control services in Bibvewadi, Pune, from Entomon Pest Solutions, and I'm very satisfied with the service. The team was prompt and thorough, ensuring all pests were eliminated. They used safe products and provided tips for prevention. The service was reasonably priced, and the technicians were friendly and helpful. I would recommend them for their excellent service."
+        },
+        {
+            "name": "Smita Rao",
+            "date": "20 June 2024",
+            "review": "Choosing pest control services in Bibvewadi, Pune, from Entomon Pest Solutions was a positive experience. They were professional and efficient, providing a comprehensive solution to my pest problem. The technicians were courteous and explained the treatment process clearly. The service was prompt, and I'm satisfied with the outcome. I would use their services again."
+        },
+        {
+            "name": "Rahul Desai",
+            "date": "20 June 2024",
+            "review": "I recently used pest control services in Bibvewadi, Pune, from Entomon Pest Solutions, and I'm impressed with the results. The team was knowledgeable and thorough, using effective treatments to eradicate the pests. They provided excellent customer service and ensured minimal disruption. The service was reasonably priced, and I would recommend them without hesitation."
+        }
+    ],
+
+}
+
+
+
 function FAQSpecificLocationPune() {
     const { location } = useParams();
-    const faq = faqData[location];
-    const [openFaqIndex, setOpenFaqIndex] = useState(null)
-
+    const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
     const toggleFaq = (index) => {
-        setOpenFaqIndex(openFaqIndex === index ? null : index)
-    }
+        setOpenFaqIndex(openFaqIndex === index ? null : index);
+    };
+
+    const faq = faqData[location];
+    const reviews = reviewData[location];
 
     return (
         <div className="max-w-5xl mx-auto p-6">
-            <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
+
+            <section className="mb-8">
+                <div className="border-b-2 border-gray-300 pb-4">
+                    <h1 className="text-xl font-bold text-black mb-4">
+                        Pest Control Reviews In {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
+                    </h1>
+                    {reviews && reviews.length > 0 ? (
+                        <div>
+                            {reviews.map((review, index) => (
+                                <div key={index} className="bg-white shadow-md rounded-md p-4 mb-4">
+                                    <p className="text-lg font-semibold">Name: {review.name}</p>
+                                    <p className="text-sm font-medium">Date: {review.date}</p>
+                                    <p className="text-sm font-medium">Review {index + 1}:</p>
+                                    <p className="text-gray-600 mb-2">{review.review}</p>
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    ) : (
+                        <div className="bg-white shadow-md rounded-md p-4">
+                            <p className="text-lg font-semibold">No reviews available for this location.</p>
+                        </div>
+                    )}
+                </div>
+            </section>
+
+
+            <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq?.title}</h1>
             <div />
-            {faq.faqs.map((faqItem, index) => (
+            {faq?.faqs.map((faqItem, index) => (
                 <div className="faq mb-4 border rounded-md" key={index}>
                     <div
                         className="flex justify-between items-center cursor-pointer p-4"
@@ -1822,10 +2211,10 @@ function FAQSpecificLocationPune() {
             <section>
                 <h3 className='text-3xl font-bold text-black mb-6'>Local Pest Control in Pune Near Me</h3>
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
-                    {locations.map((location) => (
-                        <ul key={location}>
-                            <Link className="text-blue-700" to={`/pune/${location}`}>
-                                Pest Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
+                    {locations.map((loc) => (
+                        <ul key={loc}>
+                            <Link className="text-blue-700" to={`/pune/${loc}`}>
+                                Pest Control in {loc.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
                             </Link>
                         </ul>
                     ))}
