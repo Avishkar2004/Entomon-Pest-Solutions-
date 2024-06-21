@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import Ant from "../assets/Option/ant.png";
 import BedBug from "../assets/Option/bedbug.png";
 import Cockroach from "../assets/Option/cockroach.png";
@@ -10,7 +10,6 @@ import Mouse from "../assets/Option/mouse.png";
 import Termite from "../assets/Option/termite.png";
 import WaterPurify from "../assets/Option/waterPurify.png";
 import WoodBorer from "../assets/Option/wood.png";
-import { useHistory } from 'react-router-dom';
 
 const PestOptionsPage = () => {
   let history = useHistory();

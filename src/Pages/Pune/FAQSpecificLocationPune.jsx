@@ -3,7 +3,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-
+import PestOptions2 from '../PestOptions2';
 const locations = [
     'Aundh-pune',
     'hinjewadi-pune',
@@ -3532,9 +3532,12 @@ function FAQSpecificLocationPune() {
     const faq = faqData[location];
     const reviews = reviewData[location];
 
-
     return (
         <div className="max-w-5xl mx-auto p-6">
+
+            <PestOptions2 />
+
+            <div className='border-b-2 border-gray-300 mt-4 mb-4' />
             <section className="mb-8">
                 <div className="border-b-2 border-gray-300 pb-4">
                     <h1 className="text-xl font-bold text-black mb-4">
@@ -3600,3 +3603,4 @@ function FAQSpecificLocationPune() {
 }
 
 export default FAQSpecificLocationPune;
+
