@@ -79,7 +79,7 @@ const Cockroach = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 500,
+      top: 550,
       behavior: "smooth",
     });
   };
