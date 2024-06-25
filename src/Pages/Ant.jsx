@@ -84,6 +84,13 @@ const Ant = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
+      top: 550,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollToTopBook = () => {
+    window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
@@ -190,7 +197,7 @@ const Ant = () => {
           <div className="lg:w-1/2 p-8 lg:p-12 text-center lg:text-center">
             <Link
               to="/contact"
-              onClick={scrollToTop}
+              onClick={scrollToTopBook}
               className="bg-indigo-600 hover:bg-indigo-700 text-white text-lg py-3 px-8 rounded-xl focus:outline-none focus:ring focus:ring-indigo-300 transition duration-300"
             >
               Book Now
@@ -327,9 +334,9 @@ const Ant = () => {
             >
               For further details or to schedule an inspection, please contact
               us today. We are here to help.{" "}
-              <a href="/" className="text-blue-300 underline">
+              <Link onClick={scrollToTop} to="" className="text-blue-300 underline">
                 call us
-              </a>
+              </Link>
             </p>
           </div>
         </div>
