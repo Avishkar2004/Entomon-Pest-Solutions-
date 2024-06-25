@@ -68,9 +68,14 @@ const locations = [
     'dapodi-pune'
 ];
 
-
-
 function FAQsPune() {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
     return (
         <div className="max-w-5xl mx-auto p-6 border-t border-b border-gray-300">
             <h1 className="text-3xl font-bold text-black mb-6">Important Pest Control FAQs</h1>
@@ -125,8 +130,8 @@ function FAQsPune() {
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-2 '>
                     {locations.map((location) => (
                         <ul key={location}>
-                            <Link className="text-blue-700 text-sm" to={`/pune/${location}`}>
-                                Pest Control in {location.split('-').map(word => word.charAt(0, 2).toUpperCase() + word.slice(1)).join(", ")}
+                            <Link onClick={scrollToTop} className="text-blue-700 text-sm" to={`/pune/${location}`}>
+                                Pest Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
                             </Link>
                         </ul>
                     ))}

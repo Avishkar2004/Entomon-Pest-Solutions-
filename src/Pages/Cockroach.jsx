@@ -76,9 +76,10 @@ const locations = [
 
 const Cockroach = () => {
   const [isExpanded, setIsExpanded] = useState(false)
+
   const scrollToTop = () => {
     window.scrollTo({
-      top: 0,
+      top: 500,
       behavior: "smooth",
     });
   };
@@ -325,9 +326,9 @@ const Cockroach = () => {
             >
               For further details or to schedule an inspection, please contact
               us today. We are here to help.{" "}
-              <a href="/" className="text-blue-300 underline">
+              <Link onClick={scrollToTop} to="" className="text-blue-300 underline">
                 call us
-              </a>
+              </Link>
             </p>
           </div>
         </div>
