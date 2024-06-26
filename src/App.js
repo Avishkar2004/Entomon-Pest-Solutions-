@@ -42,7 +42,7 @@ import HomePage from "./Pages/HomePage";
 import Mosquito from "./Pages/Mosquito";
 import Mouse from "./Pages/Mouse";
 import FAQSpecificLocationMumbai from "./Pages/Mumbai/FAQSpecificLocationMumbai";
-import FAQsMumbai from "./Pages/Mumbai/FAQsMumbai";
+// import FAQsMumbai from "./Pages/Mumbai/FAQsMumbai";
 import PestOptionsPage from "./Pages/PestOptionsPage";
 import FAQSpecificLocationPune from "./Pages/Pune/FAQSpecificLocationPune"; // Import the dynamic FAQ page
 import FAQsPune from "./Pages/Pune/FAQsPune";
