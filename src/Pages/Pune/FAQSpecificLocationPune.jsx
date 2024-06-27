@@ -3532,6 +3532,13 @@ function FAQSpecificLocationPune() {
     const faq = faqData[location];
     const reviews = reviewData[location];
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <div className="max-w-5xl mx-auto p-6">
 
@@ -3591,7 +3598,7 @@ function FAQSpecificLocationPune() {
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
                     {locations.map((loc) => (
                         <ul key={loc}>
-                            <Link className="text-blue-700" to={`/pune/${loc}`}>
+                            <Link onClick={scrollToTop} className="text-blue-700" to={`/pune/${loc}`}>
                                 Pest Control in {loc.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
                             </Link>
                         </ul>

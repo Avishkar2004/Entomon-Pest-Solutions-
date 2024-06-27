@@ -76,6 +76,7 @@ function FAQsPune() {
             behavior: "smooth",
         });
     };
+
     return (
         <div className="max-w-5xl mx-auto p-6 border-t border-b border-gray-300">
             <h1 className="text-3xl font-bold text-black mb-6">Important Pest Control FAQs</h1>
