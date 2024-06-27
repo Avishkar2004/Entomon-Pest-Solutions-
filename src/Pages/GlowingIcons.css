@@ -1,31 +1,58 @@
 /* GlowingIcons.css */
+
+/* Base styles for glowing icons */
 .glow-icon {
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .glow-icon:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Add specific animations for WhatsApp and Phone icons */
+/* Specific animations for WhatsApp, Phone, and Email icons */
 .glow-icon-whatsapp {
-  animation: bounce 0.5s infinite alternate;
+  animation: bounce-whatsapp 1s infinite alternate;
+  color: #25d366;
+  text-shadow: 0 0 10px #25d366;
 }
 
 .glow-icon-phone {
-  animation: bounce 0.5s infinite alternate-reverse;
+  animation: bounce-phone 1s infinite alternate-reverse;
+  color: #34b7f1;
+  text-shadow: 0 0 10px #34b7f1;
 }
 
-@keyframes bounce {
+.glow-icon-email {
+  animation: bounce-email 1s infinite alternate;
+  color: #ea4335;
+  text-shadow: 0 0 10px #ea4335;
+}
+
+/* Keyframes for bounce animations */
+@keyframes bounce-whatsapp {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
   }
 }
 
-/* GlowingIcons.css */
-.glow-icon-email {
-  animation: bounce 0.5s infinite alternate;
+@keyframes bounce-phone {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes bounce-email {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
 }
