@@ -449,7 +449,7 @@ const Cockroach = () => {
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4">
             {locations.map((location) => (
               <ul key={location}>
-                <Link className="text-blue-700 text-sm" to={`/cock/${location}`}>
+                <Link onClick={scrollToTopBook} className="text-blue-700 text-sm" to={`/cock/${location}`}>
                   Cockroach Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}
                 </Link>
               </ul>
