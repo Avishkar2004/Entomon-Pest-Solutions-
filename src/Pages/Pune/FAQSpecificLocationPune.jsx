@@ -3541,9 +3541,7 @@ function FAQSpecificLocationPune() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
-
             <PestOptions2 />
-
             <div className='border-b-2 border-gray-300 mt-4 mb-4' />
             <section className="mb-8">
                 <div className="border-b-2 border-gray-300 pb-4">

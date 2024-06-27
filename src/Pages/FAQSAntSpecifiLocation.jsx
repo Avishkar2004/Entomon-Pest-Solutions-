@@ -3,6 +3,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import PestOptions2 from "./PestOptions2";
 
 
 const locations = [
@@ -1829,6 +1830,7 @@ function FAQSAntSpecifiLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />
             {faq.faqs.map((faqItem, index) => (
@@ -1854,7 +1856,7 @@ function FAQSAntSpecifiLocation() {
                     {locations.map((location) => (
                         <ul key={location}>
                             <Link onClick={scrollToTop} className="text-blue-700 text-sm" to={`/antp/${location}`}>
-                                Ant Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
+                                Ant Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(", ")}
                             </Link>
                         </ul>
                     ))}
