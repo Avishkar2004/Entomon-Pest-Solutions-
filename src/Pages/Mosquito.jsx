@@ -527,8 +527,6 @@ const Mosquito = () => {
           </div>
         </section>
       </div>
-
-
     </main>
   );
 };

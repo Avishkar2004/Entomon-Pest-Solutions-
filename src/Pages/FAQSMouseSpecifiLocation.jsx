@@ -1820,6 +1820,13 @@ function FAQSMosSpecifiLocation() {
         setOpenFaqIndex(openFaqIndex === index ? null : index)
     }
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <div className="max-w-5xl mx-auto p-6">
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
@@ -1846,7 +1853,7 @@ function FAQSMosSpecifiLocation() {
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
                     {locations.map((location) => (
                         <ul key={location}>
-                            <Link className="text-blue-700" to={`/mousep/${location}`}>
+                            <Link onClick={scrollToTop} className="text-blue-700 text-sm" to={`/mousep/${location}`}>
                                 Mouse Control in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}
                             </Link>
                         </ul>
