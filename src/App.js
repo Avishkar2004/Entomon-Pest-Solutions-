@@ -4,7 +4,8 @@ import React, { useEffect } from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 // import Agriculture from "./Pages/Agriculture";
 import Ant from "./Pages/Ant";
-import Banner from "./Pages/Banner";
+// import Banner from "./Pages/Banner";
+import HowItsWork from "./Pages/HowItsWork";
 import BedBug from "./Pages/BedBug";
 import AntBlog1 from "./Pages/Blogs/Ant/AntBlog1";
 import AntBlog2 from "./Pages/Blogs/Ant/AntBlog2";
@@ -47,7 +48,7 @@ import PestOptionsPage from "./Pages/PestOptionsPage";
 import FAQSpecificLocationPune from "./Pages/Pune/FAQSpecificLocationPune"; // Import the dynamic FAQ page
 import FAQsPune from "./Pages/Pune/FAQsPune";
 import BookService from "./Pages/ServiceBook";
-import Type from "./Pages/ServiceType";
+// import Type from "./Pages/ServiceType";
 import Termite from "./Pages/Termite";
 import Testimonial from "./Pages/Testimonial";
 import ThankYou from "./Pages/ThankYou";
@@ -129,8 +130,9 @@ function App() {
               <>
                 <BookService />
                 {/* <CheckService /> */}
-                <Type />
-                <Banner />
+                {/* <Type /> */}
+                {/* <Banner /> */}
+                <HowItsWork />
                 <HomePage />
                 <FAQsPune />
                 {/* <FAQsNagar /> */}
