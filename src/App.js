@@ -54,6 +54,7 @@ import Testimonial from "./Pages/Testimonial";
 import ThankYou from "./Pages/ThankYou";
 import WaterProofing from "./Pages/WaterProofing";
 import WoodBorer from "./Pages/WoodBorer";
+import Rate from "./Pages/Rate";
 // import FAQsNagar from "./Pages/FAQsNagar";
 // import FAQSpecificLocationNagar from "./Pages/FAQSpecificLocationNagar";
 
@@ -134,6 +135,7 @@ function App() {
                 {/* <Banner /> */}
                 <HowItsWork />
                 <HomePage />
+                <Rate />
                 <FAQsPune />
                 {/* <FAQsNagar /> */}
                 {/* <FAQsMumbai /> */}
