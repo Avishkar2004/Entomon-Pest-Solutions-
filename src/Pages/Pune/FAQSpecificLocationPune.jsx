@@ -4,6 +4,8 @@ import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from '../PestOptions2';
+import RatesDatapune from './RatesDatapune';
+
 const locations = [
     'Aundh-pune',
     'hinjewadi-pune',
@@ -3519,8 +3521,6 @@ const reviewData = {
     ]
 }
 
-
-
 function FAQSpecificLocationPune() {
     const { location } = useParams();
     const [openFaqIndex, setOpenFaqIndex] = useState(null);
@@ -3536,14 +3536,18 @@ function FAQSpecificLocationPune() {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
-        })
-    }
+        });
+    };
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            {/* This Components Shows Pest Control Options */}
             <PestOptions2 />
             <div className='border-b-2 border-gray-300 mt-4 mb-4' />
-            <section className="mb-8">
+            {/* This Components Shows Rates in Pune */}
+            <RatesDatapune />
+            <div className='border-b-2 border-gray-300 mt-10 mb-4' />
+            <section className="mb-8 mt-7">
                 <div className="border-b-2 border-gray-300 pb-4">
                     <h1 className="text-xl font-bold text-black mb-4">
                         Pest Control Reviews In {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} :
@@ -3557,8 +3561,7 @@ function FAQSpecificLocationPune() {
                                     <p className="text-sm font-medium">Review {index + 1}:</p>
                                     <p className="text-gray-600 mb-2">{review.review}</p>
                                     <div className="flex items-center justify-between">
-                                        <div>
-                                        </div>
+                                        <div></div>
                                     </div>
                                 </div>
                             ))}
@@ -3571,9 +3574,9 @@ function FAQSpecificLocationPune() {
                 </div>
             </section>
 
-
-            <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq?.title}</h1>
-            <div />
+            <h1 className="text-3xl font-bold text-center text-black mb-6  pb-4">
+                {faq?.title}
+            </h1>
             {faq?.faqs.map((faqItem, index) => (
                 <div className="faq mb-4 border rounded-md" key={index}>
                     <div
@@ -3591,6 +3594,8 @@ function FAQSpecificLocationPune() {
                     </Collapse>
                 </div>
             ))}
+            <div className='border-b-2 border-gray-300 mt-11 mb-4' />
+
             <section>
                 <h3 className='text-3xl font-bold text-black mb-6'>Local Pest Control in Pune Near Me</h3>
                 <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
@@ -3608,4 +3613,3 @@ function FAQSpecificLocationPune() {
 }
 
 export default FAQSpecificLocationPune;
-
