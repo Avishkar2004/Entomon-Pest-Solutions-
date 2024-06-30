@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import getQuoto from "../assets/HowitsWork/1.png"
 import Schedule from "../assets/HowitsWork/2.png"
-import HaveFun from "../assets/HowitsWork/3.avif"
+import HaveFun from "../assets/HowitsWork/havefun.jpg"
 
 function HowItsWork() {
   return (
