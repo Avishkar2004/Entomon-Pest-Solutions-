@@ -6,7 +6,8 @@ function RatesDatapune() {
     const { location } = useParams();
     return (
         <section>
-            <h3 className="text-3xl font-bold text-black mb-6 mt-6">Pest Control Rates in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} :-</h3>
+            <h3 className="text-3xl font-bold text-black mb-6 mt-6 text-center">Pest Control Rates in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} :-</h3>
+            <h1 className='text-black mb-6 mt-6'>Welcome to Entomon Pest Control, your reliable source for hiring top-notch pest control services. We provide cost-effective pest control solutions in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}, ensuring affordability and excellent value for money.</h1>
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white border">
                     <thead>
