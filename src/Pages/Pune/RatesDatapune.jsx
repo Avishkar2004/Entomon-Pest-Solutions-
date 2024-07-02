@@ -1,13 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import RatesInPune from './RatesinPune';
-
+import HowItsWork from "../HowItsWork"
 function RatesDatapune() {
     const { location } = useParams();
     return (
         <section>
-            <h3 className="text-3xl font-bold text-black mb-6 mt-6 text-center">Pest Control Rates in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} :-</h3>
-            <h1 className='text-black mb-6 mt-6'>Welcome to Entomon Pest Solutions, your reliable source for hiring top-notch pest control services. We provide cost-effective pest control solutions in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}, ensuring affordability and excellent value for money.</h1>
+            <h3 className="text-3xl font-bold text-gray-700 mb-6 mt-6 text-center">Pest Control Rates in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} :-</h3>
+            <h1 className='text-gray-700 mb-6 mt-6'>Welcome to Entomon Pest Solutions, your reliable source for hiring top-notch pest control services. We provide cost-effective pest control solutions in {location.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}, ensuring affordability and excellent value for money.</h1>
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white border">
                     <thead>
@@ -22,7 +22,7 @@ function RatesDatapune() {
                     </thead>
                     <tbody>
                         {RatesInPune.map((rate, index) => (
-                            <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
+                            <tr key={index} className={index % 2 === 0 ? 'bg-gray-100 text-gray-700' : 'bg-white text-gray-700'}>
                                 <td className="py-2 px-4 border-b pt-4">{rate.treatmentType}</td>
                                 <td className="py-2 px-4 border-b text-center">{rate["1BHK"]}</td>
                                 <td className="py-2 px-4 border-b text-center">{rate["2BHK"]}</td>
@@ -34,7 +34,8 @@ function RatesDatapune() {
                     </tbody>
                 </table>
             </div>
-        </section>    
+            <p className='text-sm text-center text-gray-700 -mb-8 mt-4'>Estimated Pest Control Charges | *Prices exclusive of GST at 18%</p>
+        </section>
     )
 }
 

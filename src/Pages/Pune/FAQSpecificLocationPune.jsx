@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from '../PestOptions2';
 import RatesDatapune from './RatesDatapune';
+import HowItsWork from '../HowItsWork';
+import Note from './Note';
 
 const locations = [
     'Aundh-pune',
@@ -3547,6 +3549,8 @@ function FAQSpecificLocationPune() {
             {/* This Components Shows Rates in Pune */}
             <RatesDatapune />
             <div className='border-b-2 border-gray-300 mt-10 mb-4' />
+            <HowItsWork />
+            <Note />
             <section className="mb-8 mt-7">
                 <div className="border-b-2 border-gray-300 pb-4">
                     <h1 className="text-xl font-bold text-black mb-4">
