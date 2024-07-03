@@ -5,7 +5,6 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 850" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 1000" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 1200" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 1400" },
     ],
   },
   cockroach: {
@@ -14,7 +13,6 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 900" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 1100" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 1300" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 1500" },
     ],
   },
   BedBug: {
@@ -23,7 +21,6 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 1450" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 1700" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 2100" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 2500" },
     ],
   },
   Rodent: {
@@ -32,7 +29,6 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 800" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 9500" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 1150" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 1400" },
     ],
   },
   Ant: {
@@ -41,7 +37,6 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 750" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 900" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 1100" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 1300" },
     ],
   },
   Mosquito: {
@@ -50,7 +45,6 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 1400" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 1700" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 2100" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 2500" },
     ],
   },
   Lizard: {
@@ -59,20 +53,14 @@ const ratesData = {
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 750" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 900" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 1100" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 1300" },
     ],
   },
   Termite: {
     title: "Termite Control Rates: Rs. 750 Onwards",
     rates: [
-      { type: "1 Bedroom", area: "150 – 170 Sq. Ft.	", price: "Rs. 1500" },
-      { type: "1 Living Room", area: "170 – 200 Sq. Ft.", price: "Rs. 2000" },
-      { type: "1 Kitchen", area: "70 – 100 Sq. Ft.", price: "Rs. 1200" },
-      { type: "1 Washroom", area: "70 – 100 Sq. Ft.", price: "Rs. 1200" },
       { type: "1 BHK", area: "400 – 700 Sq. Ft.", price: "Rs. 4500" },
       { type: "2 BHK", area: "700 – 1000 Sq. Ft.", price: "Rs. 6000" },
       { type: "3 BHK", area: "1000 – 1600 Sq. Ft.", price: "Rs. 7000" },
-      { type: "4 BHK", area: "1600 – 2400 Sq. Ft.", price: "Rs. 8000" },
     ],
   },
 };

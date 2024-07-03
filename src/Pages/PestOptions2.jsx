@@ -16,6 +16,8 @@ function PestOptions2() {
         history.push(path);
     };
 
+
+
     return (
         <section className="container mx-auto px-6 py-12">
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Explore Pest Control Options</h2>
@@ -82,7 +84,7 @@ function PestOptions2() {
 }
 
 const OptionCard = ({ image, alt, title, description, onClick }) => (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg text-center transition duration-300 cursor-pointer">
+    <div onClick={onClick} className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg text-center transition duration-300 cursor-pointer">
         <img src={image} alt={alt} className="object-cover mx-auto" />
         <div className="p-4">
             <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>

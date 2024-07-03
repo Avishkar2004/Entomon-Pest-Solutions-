@@ -1850,7 +1850,7 @@ function FAQSWoodBSpecifiLocation() {
             ))}
             <section>
                 <h3 className='text-3xl font-bold text-black mb-6'>Wood Borer Control in Pune Near Me</h3>
-                <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-2'>
                     {locations.map((location) => (
                         <ul key={location}>
                             <Link onClick={scrollToTop} className="text-blue-700 text-sm" to={`/woodborerp/${location}`}>
