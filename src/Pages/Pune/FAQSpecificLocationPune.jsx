@@ -3,10 +3,10 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import PestOptions2 from '../PestOptions2';
-import RatesDatapune from './RatesDatapune';
 import HowItsWork from '../HowItsWork';
+import PestOptions2 from '../PestOptions2';
 import Note from './Note';
+import RatesDatapune from './RatesDatapune';
 
 const locations = [
     'Aundh-pune',
@@ -3549,6 +3549,7 @@ function FAQSpecificLocationPune() {
             {/* This Components Shows Rates in Pune */}
             <RatesDatapune />
             <div className='border-b-2 border-gray-300 mt-10 mb-4' />
+            {/* This Components Shows How it's work */}
             <HowItsWork />
             <Note />
             <section className="mb-8 mt-7">

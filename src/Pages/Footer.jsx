@@ -8,6 +8,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Payment from "../assets/Footer/payment.png";
+import { Helmet } from "react-helmet";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -19,6 +20,11 @@ const Footer = () => {
 
   return (
     <footer className="p-1 mb-12 px-12 xsm:mt-[-5rem]">
+      <Helmet>
+        <title>Contact Us for Professional Pest Control Services | Get a Free Quote</title>
+        <meta name="description" content="Contact us today for a free quote on our professional pest control services. Our experts are ready to assist with bed bug treatment, termite control, rodent removal, and more. Reach out to us now for affordable pest solutions." />
+        <meta name="keywords" content="contact pest control, pest control quote, pest control services, pest control experts, free pest control quote, pest control contact, bed bug treatment, termite control, rodent removal, pest control consultation, pest control inquiry, schedule pest control, pest control near me, pest solutions, local pest control, pest control assistance, pest control help, contact exterminator, pest management, pest control appointment, affordable pest control, professional pest control, pest control advice, best pest control, pest control service near me, pest control companies, exterminator contact, pest control information, pest control customer service, pest control support, pest control service request, pest control free estimate, termite treatment, mosquito control, ant exterminator, roach killer, pest control pricing, pest control customer care, emergency pest control, pest control hotline, pest control team, pest control specialists, pest removal services, pest control experts near me, pest control inspection, contact exterminator near me, reliable pest control, pest control contact number, pest control email, pest control service number, pest control hotline number, pest control phone number, pest control booking, pest control scheduling, pest control consultation services, pest control customer support, pest control company contact" />
+      </Helmet>
       <p className="bg-[#d3b76f] mt-28 mb-5 pb-3 p-[1rem] h-3 "></p>
       <div className="container mx-auto flex flex-col md:flex-row justify-between">
         <div className="mb-6 md:w-1/4">

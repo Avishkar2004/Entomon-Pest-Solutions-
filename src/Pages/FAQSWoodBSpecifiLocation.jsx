@@ -4,6 +4,7 @@ import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from './PestOptions2';
+import { Helmet } from 'react-helmet';
 
 
 const locations = [
@@ -1828,6 +1829,12 @@ function FAQSWoodBSpecifiLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            <Helmet>
+                <title>Expert Woodborer Treatment and Pest Control Services</title>
+                <meta name="description" content="Professional woodborer treatment and pest control services near you. Protect your property from woodborer damage with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+                <meta name="keywords" content="woodborer treatment, woodborer control, woodborer inspection, woodborer removal, woodborer infestation, woodborer exterminator near me, woodborer control near me, woodborer treatment near me, professional woodborer services, local woodborer control, residential woodborer treatment, commercial woodborer treatment, affordable woodborer control, pest control, pest control near me, exterminator near me, exterminator, woodborers, woodborer pest control, woodborer prevention, woodborer damage repair, woodborer solutions, woodborer management, pest control services, woodborer control services, woodborer extermination near me" />
+            </Helmet>
+
             <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />

@@ -5,6 +5,7 @@ import Cockroach1 from "../assets/Cockroach/cockroach1.webp";
 import Cockroach2 from "../assets/Cockroach/cockroach2.webp";
 import Cockroachs from "../assets/Cockroach/safe.png";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
+import { Helmet } from "react-helmet"
 
 const locations = [
   'Aundh-pune',
@@ -97,6 +98,12 @@ const Cockroach = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
+      <Helmet>
+        <title>Effective Cockroach Extermination and Pest Control Services</title>
+        <meta name="description" content="Professional cockroach extermination and pest control services near you. Get rid of cockroaches with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+        <meta name="keywords" content="cockroach extermination, cockroach control, cockroach inspection, cockroach removal, cockroach infestation, cockroach exterminator near me, roach exterminator, roach control, roach killer, professional cockroach services, local cockroach control, residential cockroach treatment, commercial cockroach treatment, affordable cockroach control, pest control, pest control near me, exterminator near me, exterminator, cockroaches, roach pest control, cockroach pest control, cockroach treatment, cockroach exterminator cost, pest control services, cockroach control near me, cockroach extermination near me" />
+      </Helmet>
+
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">

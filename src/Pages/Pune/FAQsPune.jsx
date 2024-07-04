@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 
 const locations = [
@@ -79,6 +80,12 @@ function FAQsPune() {
 
     return (
         <div className="max-w-5xl mx-auto p-6 border-t border-b border-gray-300">
+            <Helmet>
+                <title>FAQs about Pest Control | Your Questions Answered</title>
+                <meta name="description" content="Find answers to frequently asked questions about pest control. Learn about bed bug treatment, termite control, rodent removal, pest prevention, and more from our expert exterminators." />
+                <meta name="keywords" content="pest control FAQs, pest control questions, pest control answers, pest control frequently asked questions, bed bug treatment FAQ, termite control FAQ, rodent removal FAQ, pest prevention FAQ, pest control tips, pest control advice, common pest control questions, pest control information, pest control help, pest control knowledge, pest control guide, pest control solutions, pest control consultation, pest control expert advice, pest control services FAQ, pest control concerns, pest control problems, pest control troubleshooting, pest control guidebook, pest control customer questions, pest control resources, pest control inquiry, pest control service answers, pest control company FAQ, pest control support, pest control guidance, bed bug extermination FAQ, termite treatment FAQ, mosquito control FAQ, ant extermination FAQ, cockroach control FAQ, pest control company, pest control support center, pest control information hub, pest control help desk, pest control service queries, common pest problems, pest management FAQ, pest control issues, pest control tips and tricks, pest control recommendations" />
+            </Helmet>
+
             <h1 className="text-3xl font-bold text-black mb-6">Important Pest Control FAQs</h1>
             <div className="faq mb-4">
                 <h3 className="text-xl font-semibold text-green-700">Q: What types of pests are common in Pune?</h3>

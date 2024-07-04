@@ -4,6 +4,7 @@ import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from './PestOptions2';
+import { Helmet } from 'react-helmet';
 
 
 const locations = [
@@ -1828,6 +1829,12 @@ function FAQSBedBugSpecifiLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            <Helmet>
+                <title>Professional Bed Bug Extermination and Pest Control Services</title>
+                <meta name="description" content="Effective bed bug extermination and pest control services near you. Get rid of bed bugs with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+                <meta name="keywords" content="bed bug extermination, bed bug control, bed bug treatment, bed bug removal, bed bug infestation, bed bug exterminator near me, bed bug control near me, bed bug treatment near me, professional bed bug services, local bed bug control, residential bed bug treatment, commercial bed bug treatment, affordable bed bug control, pest control, pest control near me, exterminator near me, exterminator, bed bugs, bed bug pest control, bed bug problem, bed bug control services, bed bug exterminator cost, pest control services, bed bug heat treatment, bed bug fumigation, bed bug prevention, bed bug solutions, bed bug management, pest control for bed bugs, best bed bug treatment, bed bug extermination near me" />
+            </Helmet>
+
             <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />

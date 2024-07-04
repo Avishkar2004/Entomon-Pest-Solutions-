@@ -8,7 +8,7 @@ import TermiteNormal from "../assets/Termite/normal.jpg";
 import Solution from "../assets/Termite/solutions.png";
 import TermitePhoto5 from "../assets/Termite/termite5.webp";
 import TermitePhoto6 from "../assets/Termite/termite6.webp";
-
+import { Helmet } from "react-helmet"
 const locations = [
   'Aundh-pune',
   'hinjewadi-pune',
@@ -100,6 +100,12 @@ const Termite = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
+      <Helmet>
+        <title>Expert Termite Treatment and Pest Control Services</title>
+        <meta name="description" content="Professional termite treatment and pest control services near you. Affordable and efficient solutions for termite control, termite inspection, and extermination. Contact us for a free quote and schedule your home inspection today." />
+        <meta name="keywords" content="termite treatment, termite control, termite inspection, termite extermination, termite removal, termite damage repair, termite prevention, termite infestation, termite protection, termite services, termite specialist, termite solutions, termite management, termite bait systems, termite barriers, professional termite services, local termite control, residential termite treatment, commercial termite treatment, affordable termite control, pest control, pest control near me, exterminator near me, exterminator, termites, termite companies near me, termite pest control, termite exterminator, termite treatment cost, pest control services, termite control near me, termite treatment near me, termite extermination near me" />
+      </Helmet>
+
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">

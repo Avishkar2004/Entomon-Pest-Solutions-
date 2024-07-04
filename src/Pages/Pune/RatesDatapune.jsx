@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import RatesInPune from './RatesinPune';
-import HowItsWork from "../HowItsWork"
 function RatesDatapune() {
     const { location } = useParams();
     return (

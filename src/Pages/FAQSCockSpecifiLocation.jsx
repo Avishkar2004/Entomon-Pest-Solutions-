@@ -4,6 +4,7 @@ import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from './PestOptions2';
+import { Helmet } from 'react-helmet';
 
 
 const locations = [
@@ -1830,6 +1831,11 @@ function FAQSCockSpecifiLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            <Helmet>
+                <title>Effective Cockroach Extermination and Pest Control Services</title>
+                <meta name="description" content="Professional cockroach extermination and pest control services near you. Get rid of cockroaches with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+                <meta name="keywords" content="cockroach extermination, cockroach control, cockroach inspection, cockroach removal, cockroach infestation, cockroach exterminator near me, roach exterminator, roach control, roach killer, professional cockroach services, local cockroach control, residential cockroach treatment, commercial cockroach treatment, affordable cockroach control, pest control, pest control near me, exterminator near me, exterminator, cockroaches, roach pest control, cockroach pest control, cockroach treatment, cockroach exterminator cost, pest control services, cockroach control near me, cockroach extermination near me" />
+            </Helmet>
 
             <PestOptions2 />
 

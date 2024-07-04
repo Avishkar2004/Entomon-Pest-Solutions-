@@ -5,6 +5,7 @@ import Flys2 from "../assets/Fly/Fly2.avif";
 import FlySafe from "../assets/Fly/Fly3.avif";
 import FlyControl from "../assets/Fly/Fly4.webp";
 import FlyControl2 from "../assets/Fly/Fly5.webp";
+import { Helmet } from "react-helmet";
 
 
 const locations = [
@@ -99,6 +100,12 @@ const Fly = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
+      <Helmet>
+    <title>Professional Fly Control and Extermination Services</title>
+    <meta name="description" content="Effective fly control and extermination services near you. Get rid of flies with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+    <meta name="keywords" content="fly control, fly extermination, fly treatment, fly removal, fly infestation, fly exterminator near me, fly control near me, fly treatment near me, professional fly services, local fly control, residential fly treatment, commercial fly treatment, affordable fly control, pest control, pest control near me, exterminator near me, exterminator, flies, fly pest control, fly prevention, fly solutions, fly management, pest control services, fly control services, fly extermination near me, get rid of flies, best fly control, indoor fly control, outdoor fly control, house fly control, fruit fly control, fly killer, fly traps, fly repellent" />
+</Helmet>
+
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">

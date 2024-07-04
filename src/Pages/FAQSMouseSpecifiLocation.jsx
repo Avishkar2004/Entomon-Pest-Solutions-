@@ -4,6 +4,7 @@ import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from './PestOptions2';
+import { Helmet } from 'react-helmet';
 
 
 const locations = [
@@ -1830,6 +1831,11 @@ function FAQSMosSpecifiLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
+            <Helmet>
+                <title>Professional Mosquito Control and Extermination Services</title>
+                <meta name="description" content="Effective mosquito control and extermination services near you. Get rid of mosquitoes with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+                <meta name="keywords" content="mosquito control, mosquito extermination, mosquito treatment, mosquito prevention, mosquito removal, mosquito infestation, mosquito exterminator near me, mosquito control near me, mosquito treatment near me, professional mosquito services, local mosquito control, residential mosquito treatment, commercial mosquito treatment, affordable mosquito control, pest control, pest control near me, exterminator near me, exterminator, mosquitoes, mosquito pest control, mosquito spraying, mosquito dunks, mosquito treatment cost, pest control services, mosquito prevention tips, mosquito control services, mosquito barriers, mosquito extermination near me" />
+            </Helmet>
             <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />

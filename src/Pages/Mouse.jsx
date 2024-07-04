@@ -5,6 +5,7 @@ import Mouses2 from "../assets/Mouse/mouse2.webp";
 import MouseSafe from "../assets/Mouse/mouse3.webp";
 import MouseControl1 from "../assets/Mouse/mouse4.webp";
 import MouseControl2 from "../assets/Mouse/mouse5.webp";
+import { Helmet } from "react-helmet";
 
 const locations = [
   'Aundh-pune',
@@ -96,6 +97,12 @@ const Mouse = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
+      <Helmet>
+        <title>Professional Mosquito Control and Extermination Services</title>
+        <meta name="description" content="Effective mosquito control and extermination services near you. Get rid of mosquitoes with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
+        <meta name="keywords" content="mosquito control, mosquito extermination, mosquito treatment, mosquito prevention, mosquito removal, mosquito infestation, mosquito exterminator near me, mosquito control near me, mosquito treatment near me, professional mosquito services, local mosquito control, residential mosquito treatment, commercial mosquito treatment, affordable mosquito control, pest control, pest control near me, exterminator near me, exterminator, mosquitoes, mosquito pest control, mosquito spraying, mosquito dunks, mosquito treatment cost, pest control services, mosquito prevention tips, mosquito control services, mosquito barriers, mosquito extermination near me" />
+      </Helmet>
+
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
