@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import CockroachSafe from "../assets/Cockroach/cockroach.png";
 import Cockroach1 from "../assets/Cockroach/cockroach1.webp";
 import Cockroach2 from "../assets/Cockroach/cockroach2.webp";
 import Cockroachs from "../assets/Cockroach/safe.png";
 import BeachHouse from "../assets/Termite/beach-house.jpg";
-import { Helmet } from "react-helmet"
 
 const locations = [
   'Aundh-pune',

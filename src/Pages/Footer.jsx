@@ -6,9 +6,9 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Payment from "../assets/Footer/payment.png";
-import { Helmet } from "react-helmet";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="p-1 mb-12 px-12 xsm:mt-[-5rem]">
+    <footer className="p-1 mb-12 px-7 xsm:mt-[-5rem]">
       <Helmet>
         <title>Contact Us for Professional Pest Control Services | Get a Free Quote</title>
         <meta name="description" content="Contact us today for a free quote on our professional pest control services. Our experts are ready to assist with bed bug treatment, termite control, rodent removal, and more. Reach out to us now for affordable pest solutions." />

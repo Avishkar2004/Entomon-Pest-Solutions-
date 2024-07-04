@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Mouses1 from "../assets/Mouse/mouse1.webp";
 import Mouses2 from "../assets/Mouse/mouse2.webp";
 import MouseSafe from "../assets/Mouse/mouse3.webp";
 import MouseControl1 from "../assets/Mouse/mouse4.webp";
 import MouseControl2 from "../assets/Mouse/mouse5.webp";
-import { Helmet } from "react-helmet";
 
 const locations = [
   'Aundh-pune',

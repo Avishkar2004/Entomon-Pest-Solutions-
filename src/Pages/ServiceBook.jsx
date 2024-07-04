@@ -1,7 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { Call as CallIcon } from "@mui/icons-material";
-import { Email as EmailIcon } from "@mui/icons-material";
-import { Home as HomeIcon } from "@mui/icons-material";
+import { Call as CallIcon, Email as EmailIcon, Home as HomeIcon } from "@mui/icons-material";
 import React, { useRef, useState } from "react";
 
 const ServiceBook = () => {

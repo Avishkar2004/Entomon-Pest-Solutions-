@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import TermitePhoto from "../assets/Termite/TermitePhoto.webp";
 import TermitePhoto2 from "../assets/Termite/TermitePhoto2.webp";
@@ -8,7 +9,6 @@ import TermiteNormal from "../assets/Termite/normal.jpg";
 import Solution from "../assets/Termite/solutions.png";
 import TermitePhoto5 from "../assets/Termite/termite5.webp";
 import TermitePhoto6 from "../assets/Termite/termite6.webp";
-import { Helmet } from "react-helmet"
 const locations = [
   'Aundh-pune',
   'hinjewadi-pune',

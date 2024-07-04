@@ -8,9 +8,9 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Logo from "../assets/Navbar/Logo.png";
-import { Helmet } from "react-helmet";
 
 const Header = () => {
   const [openNav, setOpenNav] = useState(false);

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useHistory } from 'react-router-dom';
 import Ant from "../assets/Option/ant.png";
 import BedBug from "../assets/Option/bedbug.png";
@@ -8,7 +9,6 @@ import Mosquito from "../assets/Option/mosquito.png";
 import Mouse from "../assets/Option/mouse.png";
 import Termite from "../assets/Option/termite.png";
 import WoodBorer from "../assets/Option/wood.png";
-import { Helmet } from 'react-helmet';
 
 function PestOptions2() {
     const history = useHistory();

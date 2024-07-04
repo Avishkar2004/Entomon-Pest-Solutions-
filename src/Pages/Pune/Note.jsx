@@ -1,6 +1,6 @@
 import React from 'react';
-import Photo from "../../assets/HowitsWork/pestphoto.jpg";
 import { useParams } from 'react-router-dom';
+import Photo from "../../assets/HowitsWork/pestphoto.jpg";
 
 function Note() {
     const { location } = useParams();

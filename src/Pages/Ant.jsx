@@ -1,11 +1,11 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Ants1 from "../assets/Ant/Ant1.webp";
 import Ants2 from "../assets/Ant/Ant2.webp";
 import AntSafe from "../assets/Ant/Ant3.webp";
 import AntControl from "../assets/Ant/Ant4.webp";
 import AntControl2 from "../assets/Ant/Ant5.webp";
-import { Helmet } from "react-helmet"
 
 const locations = [
   'Aundh-pune',
