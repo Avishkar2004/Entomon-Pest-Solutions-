@@ -32,10 +32,10 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="bg-white min-h-screen md:-mb-60 xl:mb-[-22rem] ssm:-mb-12 lg:mb-[-8rem] sm:mb-[-15rem]">
-      <section className="py-16">
+    <div className="bg-white min-h-screen xsm:mb-28 md:-mb-60 xl:mb-[-22rem] lg:mb-[-8rem] sm:mb-[-15rem]">
+      <section className="py-1">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-semibold mb-4">Why Choose Us?</h2>
+          <h2 className="text-4xl font-semibold mb-4 xsm:text-lg">Why Choose Us?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
             {options.map((option, index) => (
               <div

@@ -95,10 +95,21 @@ const Contact = () => {
             <div className="mt-4 md:mt-0 md:ml-12">
               <h2 className="text-2xl font-semibold text-gray-800">Call Us</h2>
               <p className="text-gray-600 text-lg">For bookings & inquiries</p>
-              <p className="text-[#0071b1] text-center p-[10px] border-2 border-[#0071b1] font-bold text-xl mt-2">
-                <a href="tel:+918010281236">8010281236</a>
+              <p className="text-[#0071b1] text-center p-3 border-2 border-[#0071b1] font-bold text-xl mt-2 rounded-md">
+                <a href="tel:+918010281236" className="hover:underline">8010281236</a>
               </p>
+              <button
+                onClick={() => {
+                  const phoneNumber = "918010281236";
+                  const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+                  window.open(url, "_blank");
+                }}
+                className="bg-green-500 border-2 border-green-500 text-white font-bold text-xl mt-4 px-14 py-3 rounded-md transition duration-300 hover:bg-green-600 hover:border-green-600"
+              >
+                Whatsapp
+              </button>
             </div>
+
           </div>
         </div>
       </div>
@@ -133,7 +144,7 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="mb-4">
+          {/* <div className="mb-4">
             <label className="block font-bold">Email *</label>
             <input
               type="email"
@@ -143,7 +154,7 @@ const Contact = () => {
               className="w-full px-4 py-4 font-semibold border rounded-md focus:outline-none focus:border-blue-500"
               placeholder="Your Email"
             />
-          </div>
+          </div> */}
           <div className="mb-4">
             <label className="block font-bold">Phone *</label>
             <input
