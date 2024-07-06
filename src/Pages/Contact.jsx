@@ -29,7 +29,7 @@ const Contact = () => {
     setSending(true) //Set sending to true to show loader
     const emailParams = {
       user_name: formData.name,
-      user_email: formData.email,
+      // user_email: formData.email,
       user_tal: formData.telephone,
       user_selectService: formData.pests,
       user_texr: formData.postcode,
@@ -37,10 +37,9 @@ const Contact = () => {
     };
 
     // Create the email message with user's information
-    const emailMessage = `You have received a new service booking from ${formData.name} (${formData.email}) (${formData.telephone}). Service type ${formData.telephone} user postcode: ${formData.postcode} user establishmentType: ${formData.establishmentType} The details are as follows:
+    const emailMessage = `You have received a new service booking from ${formData.name}  (${formData.telephone}). Service type ${formData.telephone} user postcode: ${formData.postcode} user establishmentType: ${formData.establishmentType} The details are as follows:
   
   Name: ${formData.name}
-  Email: ${formData.email}
   Phone Number: ${formData.telephone}
   Address: ${formData.postcode}
   Selected Service: ${formData.pests}

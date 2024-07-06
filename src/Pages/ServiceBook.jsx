@@ -135,7 +135,7 @@ const ServiceBook = () => {
               <span className="pl-2 xl:pl-[1px] text-left">
                 Office No-4, Shukdhashree{" "}
                 <p>Apartment, Sr No.422, Narayan Peth,</p>
-                Pune, Pune City, Maharashtra, India, 411030.
+                Pune, Maharashtra, India, 411030.
               </span>
             </div>
 
