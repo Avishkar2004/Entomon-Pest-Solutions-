@@ -16,95 +16,88 @@ const Header = () => {
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+    const handleResize = () => {
+      if (window.innerWidth >= 960) setOpenNav(false);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const navList = (
-    <li className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-2 lg:flex-row lg:items-center lg:gap-20 xxl:gap-28">
+    <ul className="mb-4 mt-2 flex flex-col gap-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-16 xxl:gap-24">
       <Helmet>
         <title>Contact Us for Professional Pest Control Services | Get a Free Quote</title>
-        <meta name="description" content="Contact us today for a free quote on our professional pest control services. Our experts are ready to assist with bed bug treatment, termite control, rodent removal, and more. Reach out to us now for affordable pest solutions." />
-        <meta name="keywords" content="contact pest control, pest control quote, pest control services, pest control experts, free pest control quote, pest control contact, bed bug treatment, termite control, rodent removal, pest control consultation, pest control inquiry, schedule pest control, pest control near me, pest solutions, local pest control, pest control assistance, pest control help, contact exterminator, pest management, pest control appointment, affordable pest control, professional pest control, pest control advice, best pest control, pest control service near me, pest control companies, exterminator contact, pest control information, pest control customer service, pest control support, pest control service request, pest control free estimate, termite treatment, mosquito control, ant exterminator, roach killer, pest control pricing, pest control customer care, emergency pest control, pest control hotline, pest control team, pest control specialists, pest removal services, pest control experts near me, pest control inspection, contact exterminator near me, reliable pest control, pest control contact number, pest control email, pest control service number, pest control hotline number, pest control phone number, pest control booking, pest control scheduling, pest control consultation services, pest control customer support, pest control company contact" />
+        <meta
+          name="description"
+          content="Contact us today for a free quote on our professional pest control services. Fast, effective, and affordable pest management for your home or business."
+        />
       </Helmet>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
+
+      {/* Phone */}
+      <li>
         <a
           href="tel:+918010281236"
-          className="flex items-center text-lg pr-[8rem] xl:pr-[12rem] lg:pl-[2rem] xxl:pl-12 text-green-500 font-bold"
+          className="flex items-center text-green-600 font-semibold text-base hover:text-green-800 transition-all"
         >
-          <CallIcon style={{ marginRight: "8px" }} />
-          +918010281236
+          <CallIcon className="mr-2" />
+          +91 80102 81236
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
+      </li>
 
-
+      {/* Email */}
+      <li>
         <a
           href="mailto:entomon.pestsolution@gmail.com"
-          className="flex items-center mr-6 xl:ml-[-8.5rem] lg:-ml-32  xl:text-lg lg:text-lg text-black font-bold"
+          className="flex items-center text-black font-semibold text-base hover:text-blue-800 transition-all"
         >
-          <EmailIcon style={{ marginRight: "8px" }} />
-          entomon.pestsolution@gmail.com{" "}
+          <EmailIcon className="mr-2" />
+          entomon.pestsolution@gmail.com
         </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
+      </li>
+
+      {/* WhatsApp */}
+      <li>
         <a
           target="_blank"
-          href="https://api.whatsapp.com/send?phone=918010281236"
           rel="noreferrer"
-          className="flex items-center pl-9 xl:pl-2 xl:text-lg text-green-500 font-bold xsm:pl-1"
+          href="https://api.whatsapp.com/send?phone=918010281236"
+          className="flex items-center text-green-600 font-semibold text-base hover:text-green-800 transition-all"
         >
-          <WhatsAppIcon style={{ marginRight: "8px" }} />
+          <WhatsAppIcon className="mr-2" />
           WhatsApp
         </a>
-      </Typography>
-    </li>
+      </li>
+    </ul>
   );
 
   return (
     <Navbar
-      className="mx-auto max-w-screen-xxl py-2 px-4 lg:px-8 lg:py-4"
-      style={{ boxShadow: "-moz-initial" }}
+      className="sticky top-0 z-50 mx-auto  py-3 px-4 lg:px-8 bg-white/80 backdrop-blur-lg border-b border-gray-200 shadow-md"
     >
-      <div className="mx-auto flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="/"
-          className="mr-4 cursor-pointer py-1.5 font-medium"
-        >
+      <div className="flex items-center justify-between">
+        {/* Logo */}
+        <Typography as="a" href="/" className="flex items-center">
           <img
-            className="mx-auto flex h-[5rem] w-auto max-w-screen-xl "
             src={Logo}
             alt="Pest Control In Pune"
+            className="h-14 w-auto lg:h-16 transition-all duration-300"
           />
         </Typography>
 
-        <div className="hidden lg:flex">{navList}</div>
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex items-center gap-8">
+          {navList}
+        </div>
+
+        {/* Desktop Contact Button */}
         <Link
           to="/contact"
-          variant="gradient"
-          size="sm"
-          className="hidden text-base lg:inline-block text-black font-bold ml-12 lg:mr-28 xxl:ml-32"
+          className="hidden lg:inline-block px-6 py-2.5 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-200 shadow-sm hover:shadow-md"
         >
-          <span>Contact Us</span>
+          Contact Us
         </Link>
+
+        {/* Mobile Nav Toggle */}
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -115,7 +108,7 @@ const Header = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-6 w-6 text-black font-bold"
+              className="h-6 w-6 text-gray-700"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth={2}
@@ -129,7 +122,7 @@ const Header = () => {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-black"
+              className="h-6 w-6 text-gray-700"
               fill="none"
               stroke="currentColor"
               strokeWidth={2}
@@ -143,16 +136,16 @@ const Header = () => {
           )}
         </IconButton>
       </div>
+
+      {/* Mobile Nav */}
       <MobileNav open={openNav}>
-        <div className="container mx-auto text-black m-5 gap-y-7">
+        <div className="px-4 py-6 flex flex-col space-y-6 bg-gray-50 rounded-lg mt-2">
           {navList}
           <Link
             to="/contact"
-            variant="gradient"
-            size="sm"
-            className="mb-2 ml-2 text-black bg-white font-bold"
+            className="w-full text-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-200 shadow-sm hover:shadow-md"
           >
-            <span>Contact Us</span>
+            Contact Us
           </Link>
         </div>
       </MobileNav>

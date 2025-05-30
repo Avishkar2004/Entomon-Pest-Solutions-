@@ -22,10 +22,8 @@ const ServiceBook = () => {
       user_texr: address,
     };
     console.log(emailParams);
-    // Create the email message with user's name and phone number
     const emailMessage = `You received a new message from ${name} (${number}) with the subject: ${selectedService} address: ${address}. You have received an inquiry. Best wishes, Thank You.`;
 
-    // Send the email using EmailJS
     emailjs
       .send(
         emailServiceID,
@@ -54,127 +52,136 @@ const ServiceBook = () => {
   ];
 
   return (
-    <div className="flex xsm:mt-[-10rem] xsm:ml-2 xsm:mr-2 xl:mt-[-30rem] md:mt-[-15rem] flex-col lg:mt-[-19rem] sm:mt-[-7rem]  ssm:ml-4 ssm:mr-4 ssm:mt-[-10rem] sm:flex-row items-center justify-center">
-      <div className="p-4 gap-10 sm:p-9 rounded-md sm:rounded-md bg-gradient-to-br border border-black w-full sm:w-96 mb-4 sm:mb-0">
-        <h1 className="text-2xl font-semibold p-2 text-green-500">Get FREE Quotes</h1>
-        <form ref={form} onSubmit={sendEmail}>
-          <label className="block mb-2 font-semibold text-gray-500">Name:</label>
-          <input
-            name="user_name"
-            required
-            type="text"
-            className="w-full p-2 border border-black rounded-md"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Enter Your Name"
-          />
+    <div className="container mx-auto px-4 sm:px-6 md:px-8 py-8 sm:py-12 md:py-16">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch justify-center">
+        {/* Quote Form */}
+        <div className="w-full lg:w-[500px] bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-10 border border-gray-200 flex flex-col">
+          <h1 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-green-600">Get FREE Quotes</h1>
+          <form ref={form} onSubmit={sendEmail} className="space-y-4 sm:space-y-6 flex-grow">
+            <div>
+              <label className="block mb-2 font-medium text-gray-700">Name:</label>
+              <input
+                name="user_name"
+                required
+                type="text"
+                className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Enter Your Name"
+              />
+            </div>
 
-          <label className="block mt-1 mb-2 font-semibold text-gray-500">Phone Number:</label>
-          <input
-            name="user_tal"
-            required
-            type="tel"
-            className="w-full p-2 border border-black rounded-md"
-            value={number}
-            onChange={(e) => setNumber(e.target.value)}
-            placeholder="Enter Your Number"
-          />
+            <div>
+              <label className="block mb-2 font-medium text-gray-700">Phone Number:</label>
+              <input
+                name="user_tal"
+                required
+                type="tel"
+                className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                value={number}
+                onChange={(e) => setNumber(e.target.value)}
+                placeholder="Enter Your Number"
+              />
+            </div>
 
-          <label className="block mt-1 mb-2 font-semibold text-gray-500">Select a Service:</label>
-          <select
-            name="user_selectService"
-            required
-            className="w-full p-2 border border-black rounded-md"
-            value={selectedService}
-            onChange={(e) => setSelectedService(e.target.value)}
-          >
-            <option value="">Select a Service</option>
-            {services.map((service) => (
-              <option key={service} value={service}>
-                {service}
-              </option>
-            ))}
-          </select>
+            <div>
+              <label className="block mb-2 font-medium text-gray-700">Select a Service:</label>
+              <select
+                name="user_selectService"
+                required
+                className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                value={selectedService}
+                onChange={(e) => setSelectedService(e.target.value)}
+              >
+                <option value="">Select a Service</option>
+                {services.map((service) => (
+                  <option key={service} value={service}>
+                    {service}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-          <label className="block mt-1 mb-2 font-semibold text-gray-500">Address</label>
-          <input
-            name="user_texr"
-            required
-            type="text"
-            className="w-full p-2 border border-black rounded-md"
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-            placeholder="Enter Your Address"
-          />
+            <div>
+              <label className="block mb-2 font-medium text-gray-700">Address</label>
+              <input
+                name="user_texr"
+                required
+                type="text"
+                className="w-full p-3 sm:p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                placeholder="Enter Your Address"
+              />
+            </div>
 
-          <button
-            type="submit"
-            className="bg-green-500 font-extrabold text-white mt-4 py-2 px-4 rounded-md"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+            <button
+              type="submit"
+              className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 sm:py-4 px-6 rounded-lg transition-colors duration-200 mt-auto"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
 
-      <div className="flex flex-col items-center sm:flex-row justify-center w-full sm:w-auto">
-        <div className="p-4 sm:p-9 sm:pt-[0] pt-[-5rem] rounded-lg md:pt-[2rem] lg:pt-[5rem] border border-black ssm:ml-4 ssm:mr-4 bg-white">
-          <h1 className="text-center text-2xl font-semibold mb-4">
+        {/* Contact Information */}
+        <div className="w-full lg:w-[500px] bg-white rounded-xl shadow-lg p-6 sm:p-8 md:p-10 border border-gray-200 flex flex-col">
+          <h1 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-green-600">
             Contact Us
           </h1>
-          <div className="text-center">
-            {/* Contact Us content */}
-            <p className="mb-4 p-4 py-6 font-bold rounded-lg">
-              We're open for any suggestions or just to have a chat
-            </p>
 
-            <div className="flex items-center mb-4 ml-[-12px] space-x-4">
-              <span>
-                <HomeIcon />
-              </span>
-              <span className="font-bold">Address:</span>
-              <span className="pl-2 xl:pl-[1px] text-left">
-                Office No-4, Shukdhashree{" "}
-                <p>Apartment, Sr No.422, Narayan Peth,</p>
-                Pune, Maharashtra, India, 411030.
-              </span>
+          <p className="text-gray-600 mb-8 sm:mb-10">
+            We're open for any suggestions or just to have a chat
+          </p>
+
+          <div className="space-y-6 sm:space-y-8 flex-grow">
+            <div className="flex items-start space-x-4">
+              <HomeIcon className="text-green-600 mt-1 w-6 h-6" />
+              <div>
+                <p className="font-semibold text-gray-700 mb-1">Address:</p>
+                <p className="text-gray-600">
+                  Office No-4, Shukdhashree Apartment,<br />
+                  Sr No.422, Narayan Peth,<br />
+                  Pune, Maharashtra, India, 411030.
+                </p>
+              </div>
             </div>
 
-            <div className="mb-4 ml-[-12px]">
-              <p className="flex items-center space-x-2 whitespace-break-spaces gap-2">
-                <span>
-                  <EmailIcon />
-                </span>
-                <span className="font-bold">Email:</span>
-                entomon.pestsolution@gmail.com
-              </p>
+            <div className="flex items-center space-x-4">
+              <EmailIcon className="text-green-600 w-6 h-6" />
+              <div>
+                <p className="font-semibold text-gray-700 mb-1">Email:</p>
+                <p className="text-gray-600">entomon.pestsolution@gmail.com</p>
+              </div>
             </div>
-            <div className="mb-4 ml-[-12px]">
-              <p className="flex items-center space-x-2 whitespace-break-spaces gap-2">
-                <span>
-                  <CallIcon />
-                </span>
-                <span className="font-bold">Mobile Number:</span> +918010281236
-              </p>
+
+            <div className="flex items-center space-x-4">
+              <CallIcon className="text-green-600 w-6 h-6" />
+              <div>
+                <p className="font-semibold text-gray-700 mb-1">Mobile Number:</p>
+                <p className="text-gray-600">+918010281236</p>
+              </div>
             </div>
-            <div className="space-y-4 ml-[-12px]">
+
+            <div className="flex flex-col sm:flex-row gap-4 mt-auto pt-6 sm:pt-8">
               <button
                 onClick={() => {
                   window.location.href = "tel:+918010281236";
                 }}
-                className="bg-blue-500 font-extrabold text-white px-4 py-2 mr-8 rounded-md"
+                className="flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 sm:py-4 px-6 rounded-lg transition-colors duration-200"
               >
                 Call Us
               </button>
 
               <button
                 onClick={() => {
-                  const phoneNumber = "918010281236"; // Phone number without the plus sign and country code
+                  const phoneNumber = "918010281236";
                   const url = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
                   window.open(url, "_blank");
                 }}
-                className="bg-green-500 font-extrabold ml-[-12px] text-white px-4 py-2 mr-8 rounded-md"
+                className="flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 sm:py-4 px-6 rounded-lg transition-colors duration-200"
               >
-                Whatsapp
+                WhatsApp
               </button>
             </div>
           </div>
