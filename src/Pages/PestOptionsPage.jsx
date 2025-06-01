@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useHistory } from "react-router-dom";
 import Ant from "../assets/Option/ant.png";
@@ -13,16 +13,27 @@ import Termite from "../assets/Option/termite.png";
 const PestOptionsPage = () => {
   let history = useHistory();
 
+  const [imagesLoaded, setImagesLoaded] = useState({})
+
   const handleRedirect = (path) => {
     history.push(path);
   };
 
+
+  const handleImageLoad = (imageName) => {
+    setImagesLoaded(prev => ({
+      ...prev,
+      [imageName]: true
+    }))
+  }
+
+
   const pestServices = [
     {
-      name: "Termite",
-      image: Termite,
-      path: "/termite",
-      description: "Professional termite control and prevention"
+      name: "Bed Bug",
+      image: BedBug,
+      path: "/bedbug",
+      description: "Bed bug treatment and removal"
     },
     {
       name: "Cockroach",
@@ -37,10 +48,22 @@ const PestOptionsPage = () => {
       description: "Mosquito control and prevention"
     },
     {
+      name: "Termite",
+      image: Termite,
+      path: "/termite",
+      description: "Professional termite control and prevention"
+    },
+    {
       name: "Mouse",
       image: Mouse,
       path: "/mouse",
       description: "Rodent control and removal"
+    },
+    {
+      name: "Flea & Fly",
+      image: FleaFly,
+      path: "/fleafly",
+      description: "Flea and fly control solutions"
     },
     {
       name: "Ant",
@@ -49,33 +72,15 @@ const PestOptionsPage = () => {
       description: "Ant infestation treatment"
     },
     {
-      name: "Bed Bug",
-      image: BedBug,
-      path: "/bedbug",
-      description: "Bed bug treatment and removal"
-    },
-    {
       name: "Sanitization",
       image: General,
       path: "/sanitization",
       description: "Professional sanitization services"
-    },
-    {
-      name: "Flea & Fly",
-      image: FleaFly,
-      path: "/fleafly",
-      description: "Flea and fly control solutions"
     }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-      <Helmet>
-        <title>Professional Pest Control Services Near You | Extermination and Treatment</title>
-        <meta name="description" content="Get effective pest control services near you. We offer bed bug treatment, termite treatment, rodent control, mosquito control, and more. Contact us for affordable and efficient pest solutions." />
-        <meta name="keywords" content="pest control, pest control services, pest control near me, termite treatment, bed bug treatment, rodent control, mosquito control" />
-      </Helmet>
-
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-green-600 mb-4">
@@ -95,11 +100,14 @@ const PestOptionsPage = () => {
             >
               <div className="p-6">
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 flex items-center justify-center bg-green-50 rounded-full group-hover:bg-green-100 transition-colors duration-300">
-                    <img
-                      src={service.image}
-                      alt={`${service.name} Control`}
-                      className="h-10 w-auto object-contain"
+                  <div className="w-16 h-16 flex items-center justify-center bg-green-50 rounded-full group-hover:bg-green-100 transition-colors duration-300 relative">
+                    {!imagesLoaded[service.name] && (
+                      <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-full"></div>
+                    )}
+                    <img src={service.image} alt={`${service.name} Control`}
+                      className={`h-10 w-auto object-contain transition-opacity duration-300 ${imagesLoaded[service.name] ? "opacity-100" : "opacity-0"}`}
+                      loading="lazy"
+                      onLoad={() => handleImageLoad(service.name)}
                     />
                   </div>
                 </div>

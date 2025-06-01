@@ -719,13 +719,14 @@ const BedBug = () => {
 
       {/* Blog section */}
       <div className="container mx-auto mt-10 px-4 sm:px-0">
+        <hr className=" mt-8 border-t border-b border-gray-300" />
         <h1 className="text-center text-4xl font-bold mt-3 text-gray-800">Blogs</h1>
 
         <div className="grid gap-10 mt-10">
           {/* First Blog */}
           <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
-              <img
+              <imgm "
                 src={BedBugs1}
                 alt="Bed Bug Control"
                 className="w-full h-64 sm:w-72 object-cover"
