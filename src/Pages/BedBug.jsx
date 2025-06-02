@@ -726,7 +726,7 @@ const BedBug = () => {
           {/* First Blog */}
           <div className="rounded-lg shadow-lg overflow-hidden bg-white">
             <div className="flex flex-col sm:flex-row">
-              <imgm "
+              <img
                 src={BedBugs1}
                 alt="Bed Bug Control"
                 className="w-full h-64 sm:w-72 object-cover"
