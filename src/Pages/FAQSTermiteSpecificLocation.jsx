@@ -2,7 +2,6 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
-import { Helmet } from "react-helmet";
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from "./PestOptions2";
 
@@ -1830,11 +1829,6 @@ function FAQSTermiteSpecificLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
-            <Helmet>
-                <title>Expert Termite Treatment and Pest Control Services</title>
-                <meta name="description" content="Professional termite treatment and pest control services near you. Affordable and efficient solutions for termite control, termite inspection, and extermination. Contact us for a free quote and schedule your home inspection today." />
-                <meta name="keywords" content="termite treatment, termite control, termite inspection, termite extermination, termite removal, termite damage repair, termite prevention, termite infestation, termite protection, termite services, termite specialist, termite solutions, termite management, termite bait systems, termite barriers, professional termite services, local termite control, residential termite treatment, commercial termite treatment, affordable termite control, pest control, pest control near me, exterminator near me, exterminator, termites, termite companies near me, termite pest control, termite exterminator, termite treatment cost, pest control services, termite control near me, termite treatment near me, termite extermination near me" />
-            </Helmet>
             <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />

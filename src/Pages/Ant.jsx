@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Ants1 from "../assets/Ant/Ant1.webp";
 import Ants2 from "../assets/Ant/Ant2.webp";
@@ -98,11 +97,6 @@ const Ant = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
-      <Helmet>
-        <title>Expert Ant Extermination and Pest Control Services</title>
-        <meta name="description" content="Professional ant extermination and pest control services near you. Get rid of ants with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
-        <meta name="keywords" content="ant extermination, ant control, ant treatment, ant removal, ant infestation, ant exterminator near me, ant control near me, ant treatment near me, professional ant services, local ant control, residential ant treatment, commercial ant treatment, affordable ant control, pest control, pest control near me, exterminator near me, exterminator, ants, ant pest control, ant problem, ant control services, ant exterminator cost, pest control services, sugar ants, carpenter ants, black ants, ant prevention tips, get rid of ants, ant bait, ant extermination near me" />
-      </Helmet>
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">

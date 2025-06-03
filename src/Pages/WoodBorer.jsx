@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import WoodBorers1 from "../assets/WoodBorer/WoodBorer1.webp";
 import WoodBorers2 from "../assets/WoodBorer/WoodBorer2.webp";
@@ -100,12 +99,6 @@ const WoodBorer = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
-      <Helmet>
-        <title>Expert Woodborer Treatment and Pest Control Services</title>
-        <meta name="description" content="Professional woodborer treatment and pest control services near you. Protect your property from woodborer damage with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
-        <meta name="keywords" content="woodborer treatment, woodborer control, woodborer inspection, woodborer removal, woodborer infestation, woodborer exterminator near me, woodborer control near me, woodborer treatment near me, professional woodborer services, local woodborer control, residential woodborer treatment, commercial woodborer treatment, affordable woodborer control, pest control, pest control near me, exterminator near me, exterminator, woodborers, woodborer pest control, woodborer prevention, woodborer damage repair, woodborer solutions, woodborer management, pest control services, woodborer control services, woodborer extermination near me" />
-      </Helmet>
-
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <h1 className="mt-1 text-lg font-semibold text-white sm:text-slate-900 md:text-2xl dark:sm:text-white">

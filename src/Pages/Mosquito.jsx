@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import MosquitoControl2 from "../assets/Mosquito/gpp.jpeg";
 import MosquitoSafe from "../assets/Mosquito/mm.avif";
@@ -99,11 +98,7 @@ const Mosquito = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
-      <Helmet>
-        <title>Professional Mosquito Control and Extermination Services</title>
-        <meta name="description" content="Effective mosquito control and extermination services near you. Get rid of mosquitoes with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
-        <meta name="keywords" content="mosquito control, mosquito extermination, mosquito treatment, mosquito prevention, mosquito removal, mosquito infestation, mosquito exterminator near me, mosquito control near me, mosquito treatment near me, professional mosquito services, local mosquito control, residential mosquito treatment, commercial mosquito treatment, affordable mosquito control, pest control, pest control near me, exterminator near me, exterminator, mosquitoes, mosquito pest control, mosquito spraying, mosquito dunks, mosquito treatment cost, pest control services, mosquito prevention tips, mosquito control services, mosquito barriers, mosquito extermination near me" />
-      </Helmet>
+ 
 
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">

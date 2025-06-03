@@ -1,5 +1,4 @@
 import React from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import Generals1 from "../assets/General/General1.jpg";
 import Generals2 from "../assets/General/General2.jpg";
@@ -17,12 +16,7 @@ const General = () => {
 
   return (
     <main className="py-6 px-4 sm:p-6 md:py-10 md:px-8">
-      <Helmet>
-        <title>Sanitization Services | Disinfection and Cleaning Solutions</title>
-        <meta name="description" content="Explore our professional sanitization services designed to disinfect and clean residential and commercial spaces. We offer comprehensive sanitization solutions to ensure a safe and healthy environment." />
-        <meta name="keywords" content="sanitization services, disinfection services, cleaning services, professional sanitization, residential sanitization, commercial sanitization, sanitization solutions, sanitization experts, sanitization company, disinfection company, cleaning company, sanitize home, sanitize office, sanitize business, disinfect home, disinfect office, disinfect business, sanitize and disinfect, disinfection experts, cleaning and disinfection, sanitize service, disinfect service, COVID-19 sanitization, pandemic sanitization, virus disinfection, bacteria cleaning, deep cleaning, sanitize workplace, disinfect workplace, sanitization process, cleaning process, sanitization methods, disinfection methods, cleaning methods, certified sanitization, eco-friendly sanitization, safe sanitization, professional cleaning, disinfection experts, sanitize environment, disinfect environment" />
-      </Helmet>
-
+     
       <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
         <div className="relative p-3 col-start-1 row-start-1 flex flex-col-reverse rounded-lg bg-gradient-to-t from-black/75 via-black/0 sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
           <p className="text-sm leading-4 font-medium text-white sm:text-slate-500 dark:sm:text-slate-400">
