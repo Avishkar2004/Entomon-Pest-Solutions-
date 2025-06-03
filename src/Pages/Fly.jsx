@@ -234,10 +234,7 @@ const Fly = () => {
               exterior openings. Repair all holes and tears in window screens.
               Locate any unsealed crevices or cracks that lead outside of your
               building and seal them with a silicone-based caulk. Create a
-              positive airflow draft that directs air outside of your building.
-              This way, smaller airborne flies will have difficulty entering
-              your business. Make sure that your employees remember to close all
-              doors and windows, especially those adjacent to lights.
+              positive airflow draft 
             </p>
             {isExpanded && (
               <>
