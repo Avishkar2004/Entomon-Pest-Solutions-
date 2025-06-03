@@ -1,11 +1,60 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
-import c1 from "../assets/ServiceType/c1.jpeg";
-import c2 from "../assets/ServiceType/c2.jpeg";
-import c4 from "../assets/ServiceType/c4.jpeg";
-import c5 from "../assets/ServiceType/c5.avif";
-import c6 from "../assets/ServiceType/c6.png";
+
+// Lazy load images
+const c1 = new URL("../assets/ServiceType/c1.jpeg", import.meta.url).href;
+const c2 = new URL("../assets/ServiceType/c2.jpeg", import.meta.url).href;
+const c4 = new URL("../assets/ServiceType/c4.jpeg", import.meta.url).href;
+const c5 = new URL("../assets/ServiceType/c5.avif", import.meta.url).href;
+const c6 = new URL("../assets/ServiceType/c6.png", import.meta.url).href;
+
+// Client card component
+const ClientCard = React.memo(({ image, title, description }) => (
+  <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
+    <div className="relative w-full h-48 mb-4">
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-48 object-cover rounded-lg mb-4"
+        loading="lazy"
+        decoding="async"
+        fetchPriority="low"
+      />
+    </div>
+    <p className="text-lg font-semibold">{title}</p>
+    <p className="text-gray-600">{description}</p>
+  </div>
+));
+
+// Client data
+const clientData = [
+  {
+    image: c1,
+    title: "Goderaj Infinity",
+    description: "Annual maintenance for general pest control for Goderaj Infinity premises"
+  },
+  {
+    image: c4,
+    title: "Goderaj Rejue",
+    description: "Annual maintenance for general pest control for goderaj premises"
+  },
+  {
+    image: c2,
+    title: "Water purification factory",
+    description: "Annual maintenance for general pest control for Factory premises"
+  },
+  {
+    image: c6,
+    title: "Bank Of Maharashtra",
+    description: "Good customer with Yearly contract with Entomon Pest Solutions"
+  },
+  {
+    image: c5,
+    title: "State bank of India",
+    description: "Provided good quality service to SBI"
+  }
+];
 
 function Client() {
   return (
@@ -15,116 +64,35 @@ function Client() {
           Our Valued Clients
         </h1>
 
-        {/* Use carousel for small screens and grid for larger screens */}
+        {/* Mobile Carousel */}
         <div className="md:hidden">
-          <Carousel
-            showArrows={true}
-            showStatus={false}
-            showThumbs={false}
-            infiniteLoop={true}
-            autoPlay={true}
-            interval={3000} // Adjust the slide interval as needed
-          >
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c1}
-                alt="Goderaj Infinity"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Goderaj Infinity</p>
-              <p className="text-gray-600">Anual maintace for general pest control for goderaj premises</p>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c4}
-                alt="Goderaj Rejue"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Goderaj Rejue</p>
-              <p className="text-gray-600">Anual maintace for general pest control for goderaj premises</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c2}
-                alt="Water purification factory"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Water purification factory</p>
-              <p className="text-gray-600">Anual maintace for general pest control for Factory premises</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c6}
-                alt="Bank Of Maharastra"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Bank Of Maharastra</p>
-              <p className="text-gray-600">Good customer with Yearly contract with pestokiller</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c5}
-                alt="State bank of India"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">State bank of India</p>
-              <p className="text-gray-600">Provided good quality service to SBI </p>
-            </div>
-
-            {/* Repeat the above card structure for more clients */}
-          </Carousel>
+          <Suspense fallback={<div>Loading...</div>}>
+            <Carousel
+              showArrows={true}
+              showStatus={false}
+              showThumbs={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              interval={3000}
+              stopOnHover={true}
+              swipeable={true}
+              emulateTouch={true}
+              preventMovementUntilSwipeScrollTolerance={true}
+              swipeScrollTolerance={50}
+            >
+              {clientData.map((client, index) => (
+                <ClientCard key={index} {...client} />
+              ))}
+            </Carousel>
+          </Suspense>
         </div>
 
+        {/* Desktop Grid */}
         <div className="hidden md:block">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c1}
-                alt="Goderaj Infinity"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Goderaj Infinity</p>
-              <p className="text-gray-600">Anual maintace for general pest control for Goderaj Infinity premises</p>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c4}
-                alt="Goderaj Rejue"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Goderaj Rejue</p>
-              <p className="text-gray-600">Anual maintace for general pest control for goderaj premises</p>
-            </div>
-
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c2}
-                alt="Water purification factory"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Water purification factory</p>
-              <p className="text-gray-600">Anual maintace for general pest control for Factory premises</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c6}
-                alt="Bank Of Maharastra"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">Bank Of Maharastra</p>
-              <p className="text-gray-600">Good customer with Yearly contract with pestokiller</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer">
-              <img
-                src={c5}
-                alt="State bank of India"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-              <p className="text-lg font-semibold">State bank of India</p>
-              <p className="text-gray-600">Provided good quality service to SBI</p>
-            </div>
+            {clientData.map((client, index) => (
+              <ClientCard key={index} {...client} />
+            ))}
           </div>
         </div>
       </div>
@@ -132,4 +100,4 @@ function Client() {
   );
 }
 
-export default Client;
+export default React.memo(Client);

@@ -8,7 +8,6 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Logo from "../assets/Navbar/Logo.png";
 
@@ -25,14 +24,6 @@ const Header = () => {
 
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-16 xxl:gap-24">
-      <Helmet>
-        <title>Contact Us for Professional Pest Control Services | Get a Free Quote</title>
-        <meta
-          name="description"
-          content="Contact us today for a free quote on our professional pest control services. Fast, effective, and affordable pest management for your home or business."
-        />
-      </Helmet>
-
       {/* Phone */}
       <li>
         <a

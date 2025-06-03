@@ -2,7 +2,6 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from "./PestOptions2";
 
@@ -1831,11 +1830,6 @@ function FAQSAntSpecifiLocation() {
 
     return (
         <div className="max-w-5xl mx-auto p-6">
-            <Helmet>
-                <title>Expert Ant Extermination and Pest Control Services</title>
-                <meta name="description" content="Professional ant extermination and pest control services near you. Get rid of ants with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
-                <meta name="keywords" content="ant extermination, ant control, ant treatment, ant removal, ant infestation, ant exterminator near me, ant control near me, ant treatment near me, professional ant services, local ant control, residential ant treatment, commercial ant treatment, affordable ant control, pest control, pest control near me, exterminator near me, exterminator, ants, ant pest control, ant problem, ant control services, ant exterminator cost, pest control services, sugar ants, carpenter ants, black ants, ant prevention tips, get rid of ants, ant bait, ant extermination near me" />
-            </Helmet>
             <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />

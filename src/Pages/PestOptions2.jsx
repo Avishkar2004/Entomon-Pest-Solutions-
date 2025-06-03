@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { useHistory } from 'react-router-dom';
 import Ant from "../assets/Option/ant.png";
 import BedBug from "../assets/Option/bedbug.png";

@@ -2,7 +2,6 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { Collapse } from '@mui/material';
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
 import PestOptions2 from './PestOptions2';
 
@@ -1828,12 +1827,6 @@ function FAQSFlySpecifiLocation() {
     }
     return (
         <div className="max-w-5xl mx-auto p-6">
-            <Helmet>
-                <title>Professional Fly Control and Extermination Services</title>
-                <meta name="description" content="Effective fly control and extermination services near you. Get rid of flies with our affordable and efficient solutions. Contact us for a free quote and schedule your home inspection today." />
-                <meta name="keywords" content="fly control, fly extermination, fly treatment, fly removal, fly infestation, fly exterminator near me, fly control near me, fly treatment near me, professional fly services, local fly control, residential fly treatment, commercial fly treatment, affordable fly control, pest control, pest control near me, exterminator near me, exterminator, flies, fly pest control, fly prevention, fly solutions, fly management, pest control services, fly control services, fly extermination near me, get rid of flies, best fly control, indoor fly control, outdoor fly control, house fly control, fruit fly control, fly killer, fly traps, fly repellent" />
-            </Helmet>
-
             <PestOptions2 />
             <h1 className="text-3xl font-bold text-center text-black mb-6 border-b-2 border-gray-300 pb-4">{faq.title}</h1>
             <div />

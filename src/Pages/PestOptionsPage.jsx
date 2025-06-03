@@ -14,6 +14,34 @@ const PestOptionsPage = () => {
   let history = useHistory();
 
   const [imagesLoaded, setImagesLoaded] = useState({})
+  const [isTextLoaded, setIsTextLoaded] = useState(false);
+
+  useEffect(() => {
+    // Set text loaded immediately to reduce render delay
+    setIsTextLoaded(true);
+
+    // Preload critical images
+    const preloadImages = pestServices.map(service => {
+      const img = new Image();
+      img.src = service.image;
+      return img;
+    });
+
+    // Handle image loading
+    Promise.all(preloadImages.map(img => {
+      return new Promise((resolve) => {
+        if (img.complete) {
+          resolve();
+        } else {
+          img.onload = resolve;
+        }
+      });
+    })).then(() => {
+      pestServices.forEach(service => {
+        handleImageLoad(service.name);
+      });
+    });
+  }, []);
 
   const handleRedirect = (path) => {
     history.push(path);
@@ -86,13 +114,22 @@ const PestOptionsPage = () => {
           <h1 className="text-3xl sm:text-4xl font-bold text-green-600 mb-4">
             Our Pest Control Services
           </h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Professional pest control solutions for your home and business. We offer comprehensive treatment plans for all types of pests.
-          </p>
+          <div className="relative">
+            {!isTextLoaded && (
+              <div className="h-6 bg-gray-200 animate-pulse rounded max-w-2xl mx-auto"></div>
+            )}
+            <p
+              className={`text-gray-600 max-w-2xl mx-auto transition-opacity duration-300 ${isTextLoaded ? 'opacity-100' : 'opacity-0'
+                }`}
+              style={{ contentVisibility: 'auto' }}
+            >
+              Professional pest control solutions for your home and business. We offer comprehensive treatment plans for all types of pests.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {pestServices.map((service) => (
+          {pestServices.map((service, index) => (
             <div
               key={service.name}
               onClick={() => handleRedirect(service.path)}
@@ -104,9 +141,12 @@ const PestOptionsPage = () => {
                     {!imagesLoaded[service.name] && (
                       <div className="absolute inset-0 bg-gray-200 animate-pulse rounded-full"></div>
                     )}
-                    <img src={service.image} alt={`${service.name} Control`}
+                    <img
+                      src={service.image}
+                      alt={`${service.name} Control`}
                       className={`h-10 w-auto object-contain transition-opacity duration-300 ${imagesLoaded[service.name] ? "opacity-100" : "opacity-0"}`}
-                      loading="lazy"
+                      loading={index < 4 ? "eager" : "lazy"}
+                      fetchpriority={index < 4 ? "high" : "low"}
                       onLoad={() => handleImageLoad(service.name)}
                     />
                   </div>

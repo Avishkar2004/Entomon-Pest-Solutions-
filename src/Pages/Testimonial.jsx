@@ -46,7 +46,7 @@ const Testimonial = () => {
                   and causes of pest in my factory. Then the performed the
                   lizard and spider control service. This service was too
                   effective and my premises is now free from any pest. And in
-                  too affordable price. Highly recommended Thank you Pestokiller
+                  too affordable price. Highly recommended Thank you Entomon Pest Solutions
                   and team!
                 </p>
               </div>
